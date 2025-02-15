@@ -357,6 +357,11 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>BuyerAttributes</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>CanAllowPortalSelfReg</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
