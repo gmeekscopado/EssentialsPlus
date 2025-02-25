@@ -41,6 +41,10 @@
                 <behavior>Edit</behavior>
                 <field>Occupation__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Email_Domain__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
