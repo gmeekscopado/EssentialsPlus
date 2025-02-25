@@ -352,6 +352,16 @@
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <fields>
+        <fullName>Email_Domain__c</fullName>
+        <externalId>false</externalId>
+        <label>Email Domain</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Department__c</fullName>
         <label>Department</label>
         <required>false</required>
