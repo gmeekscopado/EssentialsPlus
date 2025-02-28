@@ -24,11 +24,15 @@
                 <elementReference>Test_Date</elementReference>
             </value>
         </inputParameters>
+        <inputParameters>
+            <name>visibility</name>
+        </inputParameters>
         <nameSegment>chatterPost</nameSegment>
+        <offset>0</offset>
         <storeOutputAutomatically>true</storeOutputAutomatically>
-        <versionSegment>1</versionSegment>
     </actionCalls>
     <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <decisions>
         <name>Third_Step</name>
         <label>Third Step</label>
@@ -99,5 +103,5 @@
             <targetReference>First_Step</targetReference>
         </connector>
     </start>
-    <status>Obsolete</status>
+    <status>Active</status>
 </Flow>
