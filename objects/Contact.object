@@ -378,10 +378,9 @@
     <fields>
         <fullName>Client_Phone_Number__c</fullName>
         <businessStatus>Active</businessStatus>
-        <complianceGroup>GDPR</complianceGroup>
+        <complianceGroup>PII;GDPR</complianceGroup>
         <description>Insert preferred client phone number here (mobile or landline).</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Use the following format: x + (xxx) xxx-xxxx</inlineHelpText>
+        <inlineHelpText>Use the following format: x + xxx xxx-xxxx</inlineHelpText>
         <label>Client Phone Number</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
