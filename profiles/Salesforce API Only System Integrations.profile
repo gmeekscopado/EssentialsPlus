@@ -109,7 +109,11 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>TestDataFactory</apexClass>
+        <apexClass>ContactUtility</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ContactUtilityTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <custom>true</custom>
@@ -1177,6 +1181,11 @@
         <editable>true</editable>
         <field>Contact.Email</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.Email_Domain__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
