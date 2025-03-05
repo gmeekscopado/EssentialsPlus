@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Picklist to denote which email provider the customer is using. --></help>
+    <label><!-- Email Service --></label>
+    <name>Email_Service__c</name>
+    <picklistValues>
+        <masterLabel>AOL</masterLabel>
+        <translation><!-- AOL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gmail</masterLabel>
+        <translation><!-- Gmail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hotmail</masterLabel>
+        <translation><!-- Hotmail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proton</masterLabel>
+        <translation><!-- Proton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yahoo</masterLabel>
+        <translation><!-- Yahoo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

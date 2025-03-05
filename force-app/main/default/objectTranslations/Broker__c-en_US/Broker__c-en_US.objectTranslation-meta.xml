@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Broker</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Brokers</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The User phone number must include a 3 digit area code followed by the 7 digit phone number. --></errorMessage>
+        <name>Phone_Number_10_Numbers</name>
+    </validationRules>
+</CustomObjectTranslation>

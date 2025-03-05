@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand__c</fullName>
+    <description>What is the bicycle brand?</description>
+    <inlineHelpText>Insert bicycle brand here.</inlineHelpText>
+    <label>Brand</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Haro</fullName>
+                <default>false</default>
+                <label>Haro</label>
+            </value>
+            <value>
+                <fullName>Mongoose</fullName>
+                <default>false</default>
+                <label>Mongoose</label>
+            </value>
+            <value>
+                <fullName>Trek</fullName>
+                <default>false</default>
+                <label>Trek</label>
+            </value>
+            <value>
+                <fullName>Specialized</fullName>
+                <default>false</default>
+                <label>Specialized</label>
+            </value>
+            <value>
+                <fullName>Scott</fullName>
+                <default>false</default>
+                <label>Scott</label>
+            </value>
+            <value>
+                <fullName>Giant</fullName>
+                <default>false</default>
+                <label>Giant</label>
+            </value>
+            <value>
+                <fullName>Santa Cruz</fullName>
+                <default>false</default>
+                <label>Santa Cruz</label>
+            </value>
+            <value>
+                <fullName>Merida</fullName>
+                <default>false</default>
+                <label>Merida</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
