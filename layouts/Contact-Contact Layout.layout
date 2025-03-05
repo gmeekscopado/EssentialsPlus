@@ -32,6 +32,10 @@
                 <behavior>Required</behavior>
                 <field>First_Contact__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Preferred_Renewal_Method__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
