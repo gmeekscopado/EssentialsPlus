@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Routing_Number__c</fullName>
+    <businessStatus>Hidden</businessStatus>
+    <complianceGroup>PII</complianceGroup>
+    <description>Bank routing number is used for ensuring the correct bank is referenced.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Double check to ensure correct banking information is filled in.</inlineHelpText>
+    <label>Routing Number</label>
+    <length>10</length>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

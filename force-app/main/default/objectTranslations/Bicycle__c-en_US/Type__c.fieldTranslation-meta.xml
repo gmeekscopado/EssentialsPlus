@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>BMX</masterLabel>
+        <translation><!-- BMX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mountain</masterLabel>
+        <translation><!-- Mountain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Road</masterLabel>
+        <translation><!-- Road --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

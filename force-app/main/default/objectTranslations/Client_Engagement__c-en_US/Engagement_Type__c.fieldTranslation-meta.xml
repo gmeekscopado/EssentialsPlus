@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Engagement Type --></label>
+    <name>Engagement_Type__c</name>
+    <picklistValues>
+        <masterLabel>Co-Managed IT</masterLabel>
+        <translation><!-- Co-Managed IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cybersecurity Consultancy</masterLabel>
+        <translation><!-- Cybersecurity Consultancy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outsourced IT</masterLabel>
+        <translation><!-- Outsourced IT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

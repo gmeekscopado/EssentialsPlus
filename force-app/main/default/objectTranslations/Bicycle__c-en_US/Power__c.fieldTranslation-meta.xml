@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Power --></label>
+    <name>Power__c</name>
+    <picklistValues>
+        <masterLabel>Electric</masterLabel>
+        <translation><!-- Electric --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gas</masterLabel>
+        <translation><!-- Gas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hybrid</masterLabel>
+        <translation><!-- Hybrid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manual</masterLabel>
+        <translation><!-- Manual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solar</masterLabel>
+        <translation><!-- Solar --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Insert bicycle brand here. --></help>
+    <label><!-- Brand --></label>
+    <name>Brand__c</name>
+    <picklistValues>
+        <masterLabel>Giant</masterLabel>
+        <translation><!-- Giant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Haro</masterLabel>
+        <translation><!-- Haro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merida</masterLabel>
+        <translation><!-- Merida --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mongoose</masterLabel>
+        <translation><!-- Mongoose --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Cruz</masterLabel>
+        <translation><!-- Santa Cruz --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scott</masterLabel>
+        <translation><!-- Scott --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specialized</masterLabel>
+        <translation><!-- Specialized --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trek</masterLabel>
+        <translation><!-- Trek --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

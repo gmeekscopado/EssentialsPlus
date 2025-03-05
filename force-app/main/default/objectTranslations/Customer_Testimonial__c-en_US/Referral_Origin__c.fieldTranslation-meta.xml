@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Referral Origin --></label>
+    <name>Referral_Origin__c</name>
+    <picklistValues>
+        <masterLabel>Email</masterLabel>
+        <translation><!-- Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Facebook</masterLabel>
+        <translation><!-- Facebook --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Friend</masterLabel>
+        <translation><!-- Friend --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Google</masterLabel>
+        <translation><!-- Google --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instagram</masterLabel>
+        <translation><!-- Instagram --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Number__c</fullName>
+    <complianceGroup>GDPR</complianceGroup>
+    <description>Auto-number field for creating new products.</description>
+    <displayFormat>A-{0000}</displayFormat>
+    <externalId>false</externalId>
+    <inlineHelpText>This number will auto-populate. If there is an error, contact your manager.</inlineHelpText>
+    <label>Product Number</label>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>false</trackHistory>
+    <type>AutoNumber</type>
+</CustomField>
