@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the form type you need access to. --></help>
+    <label><!-- Form Request --></label>
+    <name>Form_Request__c</name>
+    <picklistValues>
+        <masterLabel>Insurance</masterLabel>
+        <translation><!-- Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lease</masterLabel>
+        <translation><!-- Lease --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not listed</masterLabel>
+        <translation><!-- Not listed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tax</masterLabel>
+        <translation><!-- Tax --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
