@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bicycle</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Bicycles</value>
+    </caseValues>
+    <layouts>
+        <layout>Bicycle Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <sharingReasons>
+        <label><!-- Bicycle Access --></label>
+        <name>Bicycle_Access</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
