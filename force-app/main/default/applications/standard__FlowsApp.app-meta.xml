@@ -11,6 +11,7 @@
     <tabs>standard-FlowRecord</tabs>
     <tabs>Customer_Testimonial__c</tabs>
     <tabs>standard-Monitor</tabs>
+    <tabs>Supplier__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>FlowsApp_UtilityBar</utilityBar>
 </CustomApplication>

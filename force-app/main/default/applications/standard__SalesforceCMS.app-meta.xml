@@ -12,10 +12,14 @@
     <tabs>standard-CmsWorkspaces</tabs>
     <tabs>standard-CmsExperiences</tabs>
     <tabs>Customer_Testimonial__c</tabs>
+    <tabs>Supplier__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
         <mappings>
             <tab>Customer_Testimonial__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Supplier__c</tab>
         </mappings>
         <mappings>
             <tab>standard-CmsAuthorHome</tab>

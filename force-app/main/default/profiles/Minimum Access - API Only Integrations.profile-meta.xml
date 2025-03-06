@@ -111,10 +111,6 @@
         <apexClass>ContactUtilityTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
-    <classAccesses>
-        <apexClass>TestDataFactory</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
     <custom>false</custom>
     <fieldPermissions>
         <editable>false</editable>
@@ -3093,6 +3089,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Supplier__c.Safety_Certification_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Task.ActivityDate</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3454,6 +3455,9 @@
     <layoutAssignments>
         <layout>Security_Alert__c-Security Alert Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Supplier__c-Supplier Layout</layout>
+    </layoutAssignments>
     <pageAccesses>
         <apexPage>ChatterAnswersAgentView</apexPage>
         <enabled>false</enabled>
@@ -3518,6 +3522,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Getting_Started</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Supplier__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

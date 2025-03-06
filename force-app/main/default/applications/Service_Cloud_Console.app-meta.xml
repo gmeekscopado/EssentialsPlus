@@ -186,12 +186,16 @@
     <tabs>standard-Contact</tabs>
     <tabs>standard-report</tabs>
     <tabs>Customer_Testimonial__c</tabs>
+    <tabs>Supplier__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Customer_Testimonial__c</tab>
         </mappings>
         <mappings>
             <tab>Getting_Started</tab>
+        </mappings>
+        <mappings>
+            <tab>Supplier__c</tab>
         </mappings>
         <mappings>
             <tab>standard-Case</tab>
