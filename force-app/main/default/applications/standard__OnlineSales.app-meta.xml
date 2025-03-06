@@ -11,6 +11,5 @@
     <tabs>standard-SalesforceContract</tabs>
     <tabs>standard-SalesforceInvoice</tabs>
     <tabs>standard-SalesforceProductCatalog</tabs>
-    <tabs>Customer_Testimonial__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

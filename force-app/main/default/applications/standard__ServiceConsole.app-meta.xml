@@ -183,11 +183,7 @@
     <tabs>standard-Lead</tabs>
     <tabs>standard-Knowledge</tabs>
     <tabs>standard-Document</tabs>
-    <tabs>Customer_Testimonial__c</tabs>
     <workspaceConfig>
-        <mappings>
-            <tab>Customer_Testimonial__c</tab>
-        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

@@ -180,11 +180,7 @@
     </preferences>
     <tabs>standard-Case</tabs>
     <tabs>standard-Knowledge</tabs>
-    <tabs>Customer_Testimonial__c</tabs>
     <workspaceConfig>
-        <mappings>
-            <tab>Customer_Testimonial__c</tab>
-        </mappings>
         <mappings>
             <tab>standard-Case</tab>
         </mappings>
