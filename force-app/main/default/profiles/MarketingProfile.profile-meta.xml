@@ -634,7 +634,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Bicycle__c.Brand__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>

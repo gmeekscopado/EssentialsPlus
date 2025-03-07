@@ -56,6 +56,56 @@
                 <default>false</default>
                 <label>Other</label>
             </value>
+            <value>
+                <fullName>Cannondale</fullName>
+                <default>false</default>
+                <label>Cannondale</label>
+            </value>
+            <value>
+                <fullName>Kona Bicycle Company</fullName>
+                <default>false</default>
+                <label>Kona Bicycle Company</label>
+            </value>
+            <value>
+                <fullName>Canyon</fullName>
+                <default>false</default>
+                <label>Canyon</label>
+            </value>
+            <value>
+                <fullName>Merida Bikes</fullName>
+                <default>false</default>
+                <label>Merida Bikes</label>
+            </value>
+            <value>
+                <fullName>Bishop Bikes</fullName>
+                <default>false</default>
+                <label>Bishop Bikes</label>
+            </value>
+            <value>
+                <fullName>Felt</fullName>
+                <default>false</default>
+                <label>Felt</label>
+            </value>
+            <value>
+                <fullName>GT</fullName>
+                <default>false</default>
+                <label>GT</label>
+            </value>
+            <value>
+                <fullName>Bianchi</fullName>
+                <default>false</default>
+                <label>Bianchi</label>
+            </value>
+            <value>
+                <fullName>Colnago</fullName>
+                <default>false</default>
+                <label>Colnago</label>
+            </value>
+            <value>
+                <fullName>3T Cycling</fullName>
+                <default>false</default>
+                <label>3T Cycling</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
