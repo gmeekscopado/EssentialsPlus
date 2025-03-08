@@ -4,6 +4,38 @@
     <label><!-- Brand --></label>
     <name>Brand__c</name>
     <picklistValues>
+        <masterLabel>3T Cycling</masterLabel>
+        <translation><!-- 3T Cycling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bianchi</masterLabel>
+        <translation><!-- Bianchi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bishop Bikes</masterLabel>
+        <translation><!-- Bishop Bikes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cannondale</masterLabel>
+        <translation><!-- Cannondale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canyon</masterLabel>
+        <translation><!-- Canyon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colnago</masterLabel>
+        <translation><!-- Colnago --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Felt</masterLabel>
+        <translation><!-- Felt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GT</masterLabel>
+        <translation><!-- GT --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Giant</masterLabel>
         <translation><!-- Giant --></translation>
     </picklistValues>
@@ -12,8 +44,16 @@
         <translation><!-- Haro --></translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Kona Bicycle Company</masterLabel>
+        <translation><!-- Kona Bicycle Company --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Merida</masterLabel>
         <translation><!-- Merida --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merida Bikes</masterLabel>
+        <translation><!-- Merida Bikes --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Mongoose</masterLabel>
