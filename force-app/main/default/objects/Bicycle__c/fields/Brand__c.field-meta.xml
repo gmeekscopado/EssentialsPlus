@@ -56,6 +56,56 @@
                 <default>false</default>
                 <label>Other</label>
             </value>
+            <value>
+                <fullName>Cannondale</fullName>
+                <default>false</default>
+                <label>Cannondale</label>
+            </value>
+            <value>
+                <fullName>Kona Bicycle Company</fullName>
+                <default>false</default>
+                <label>Kona Bicycle Company</label>
+            </value>
+            <value>
+                <fullName>BMC</fullName>
+                <default>false</default>
+                <label>BMC</label>
+            </value>
+            <value>
+                <fullName>Fuji Bikes</fullName>
+                <default>false</default>
+                <label>Fuji Bikes</label>
+            </value>
+            <value>
+                <fullName>Pinarello</fullName>
+                <default>false</default>
+                <label>Pinarello</label>
+            </value>
+            <value>
+                <fullName>Cervélo</fullName>
+                <default>false</default>
+                <label>Cervélo</label>
+            </value>
+            <value>
+                <fullName>Allied Cycle Works</fullName>
+                <default>false</default>
+                <label>Allied Cycle Works</label>
+            </value>
+            <value>
+                <fullName>Bearclaw Bicycle</fullName>
+                <default>false</default>
+                <label>Bearclaw Bicycle</label>
+            </value>
+            <value>
+                <fullName>Electra Bicycle Company</fullName>
+                <default>false</default>
+                <label>Electra Bicycle Company</label>
+            </value>
+            <value>
+                <fullName>Alchemy</fullName>
+                <default>false</default>
+                <label>Alchemy</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
