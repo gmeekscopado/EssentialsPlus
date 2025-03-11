@@ -4,12 +4,48 @@
     <label><!-- Brand --></label>
     <name>Brand__c</name>
     <picklistValues>
+        <masterLabel>Alchemy</masterLabel>
+        <translation><!-- Alchemy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Allied Cycle Works</masterLabel>
+        <translation><!-- Allied Cycle Works --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BMC</masterLabel>
+        <translation><!-- BMC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bearclaw Bicycle</masterLabel>
+        <translation><!-- Bearclaw Bicycle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cannondale</masterLabel>
+        <translation><!-- Cannondale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cervélo</masterLabel>
+        <translation><!-- Cervélo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electra Bicycle Company</masterLabel>
+        <translation><!-- Electra Bicycle Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fuji Bikes</masterLabel>
+        <translation><!-- Fuji Bikes --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Giant</masterLabel>
         <translation><!-- Giant --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Haro</masterLabel>
         <translation><!-- Haro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kona Bicycle Company</masterLabel>
+        <translation><!-- Kona Bicycle Company --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Merida</masterLabel>
@@ -22,6 +58,10 @@
     <picklistValues>
         <masterLabel>Other</masterLabel>
         <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pinarello</masterLabel>
+        <translation><!-- Pinarello --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Santa Cruz</masterLabel>
