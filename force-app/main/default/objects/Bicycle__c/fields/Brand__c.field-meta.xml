@@ -67,44 +67,44 @@
                 <label>Kona Bicycle Company</label>
             </value>
             <value>
-                <fullName>Canyon</fullName>
+                <fullName>BMC</fullName>
                 <default>false</default>
-                <label>Canyon</label>
+                <label>BMC</label>
             </value>
             <value>
-                <fullName>Merida Bikes</fullName>
+                <fullName>Fuji Bikes</fullName>
                 <default>false</default>
-                <label>Merida Bikes</label>
+                <label>Fuji Bikes</label>
             </value>
             <value>
-                <fullName>Bishop Bikes</fullName>
+                <fullName>Pinarello</fullName>
                 <default>false</default>
-                <label>Bishop Bikes</label>
+                <label>Pinarello</label>
             </value>
             <value>
-                <fullName>Felt</fullName>
+                <fullName>Cervélo</fullName>
                 <default>false</default>
-                <label>Felt</label>
+                <label>Cervélo</label>
             </value>
             <value>
-                <fullName>GT</fullName>
+                <fullName>Allied Cycle Works</fullName>
                 <default>false</default>
-                <label>GT</label>
+                <label>Allied Cycle Works</label>
             </value>
             <value>
-                <fullName>Bianchi</fullName>
+                <fullName>Bearclaw Bicycle</fullName>
                 <default>false</default>
-                <label>Bianchi</label>
+                <label>Bearclaw Bicycle</label>
             </value>
             <value>
-                <fullName>Colnago</fullName>
+                <fullName>Electra Bicycle Company</fullName>
                 <default>false</default>
-                <label>Colnago</label>
+                <label>Electra Bicycle Company</label>
             </value>
             <value>
-                <fullName>3T Cycling</fullName>
+                <fullName>Alchemy</fullName>
                 <default>false</default>
-                <label>3T Cycling</label>
+                <label>Alchemy</label>
             </value>
         </valueSetDefinition>
     </valueSet>
