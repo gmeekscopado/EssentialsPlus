@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Mission_Statement__c</fullName>
     <externalId>false</externalId>
+    <inlineHelpText>This field is used to document the mission statement of the charity.</inlineHelpText>
     <label>Mission Statement</label>
     <length>56</length>
     <required>false</required>
