@@ -2,12 +2,12 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Blackcard_Member__c</fullName>
     <businessStatus>Active</businessStatus>
-    <complianceGroup>PII;GDPR</complianceGroup>
+    <complianceGroup>PII</complianceGroup>
     <defaultValue>false</defaultValue>
-    <description>This field is used for customers who have obtained Blackcard status. Treat with care!</description>
+    <description>This field is used for customers who have obtained Blackcard status.</description>
     <inlineHelpText>Blackcard status is a priority designation. This can designate the level of attention a customer will warrant.</inlineHelpText>
     <label>Blackcard Member</label>
-    <securityClassification>Confidential</securityClassification>
+    <securityClassification>Internal</securityClassification>
     <trackFeedHistory>false</trackFeedHistory>
     <type>Checkbox</type>
 </CustomField>
