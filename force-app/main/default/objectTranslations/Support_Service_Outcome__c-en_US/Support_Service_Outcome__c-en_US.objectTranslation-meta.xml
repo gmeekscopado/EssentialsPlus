@@ -2,18 +2,11 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Charity</value>
+        <value>Support Service Outcome</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Charities</value>
+        <value>Support Service Outcomes</value>
     </caseValues>
-    <layouts>
-        <layout>Charity Layout</layout>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
