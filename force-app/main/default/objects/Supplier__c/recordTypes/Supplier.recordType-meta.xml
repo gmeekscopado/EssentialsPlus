@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supplier</fullName>
+    <active>true</active>
+    <label>Supplier</label>
+    <picklistValues>
+        <picklist>Certification_Level__c</picklist>
+        <values>
+            <fullName>- ISO 45001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aerial Lift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carbon Neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical Safety Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confined Space</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confined Space Entry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Safety Protocol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crane Operation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crisis Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOT Hazmat Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dangerous Goods Handling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Response Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental Leader</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evacuation Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Excavation Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fall Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire Safety Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First Aid %26 CPR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First Responder Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forklift Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green Business Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HAZWOPER 24-Hour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HAZWOPER 40-Hour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heavy Equipment Operation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heights %26 Ladder Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot Work Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISO 14001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incident Command System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Emergency Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OHSAS 18001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OSHA 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPE Specialist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCRA Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scaffolding Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Safety Supervisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Security Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spill Response Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traffic Control Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VPP Star</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Certification_Type__c</picklist>
+        <values>
+            <fullName>Emergency Response Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hazardous Materials Handling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety Management System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Safety Protocol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Worker Certification</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Compliance_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disqualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provisional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requires Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Safety_Certification_Status__c</picklist>
+        <values>
+            <fullName>Compliant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Compliant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Review</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Certification_Type__c</fullName>
+    <label>Certification Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Safety Management System</fullName>
+                <default>false</default>
+                <label>Safety Management System</label>
+            </value>
+            <value>
+                <fullName>Environmental Compliance</fullName>
+                <default>false</default>
+                <label>Environmental Compliance</label>
+            </value>
+            <value>
+                <fullName>Worker Certification</fullName>
+                <default>false</default>
+                <label>Worker Certification</label>
+            </value>
+            <value>
+                <fullName>Equipment Safety</fullName>
+                <default>false</default>
+                <label>Equipment Safety</label>
+            </value>
+            <value>
+                <fullName>Hazardous Materials Handling</fullName>
+                <default>false</default>
+                <label>Hazardous Materials Handling</label>
+            </value>
+            <value>
+                <fullName>Site Safety Protocol</fullName>
+                <default>false</default>
+                <label>Site Safety Protocol</label>
+            </value>
+            <value>
+                <fullName>Emergency Response Plan</fullName>
+                <default>false</default>
+                <label>Emergency Response Plan</label>
+            </value>
+            <value>
+                <fullName>Quality Management</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Quality Management</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
