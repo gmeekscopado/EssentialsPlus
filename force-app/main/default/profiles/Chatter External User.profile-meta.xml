@@ -3154,6 +3154,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Supplier__c.Certification_Level__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Supplier__c.Certification_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Supplier__c.Compliance_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Supplier__c.Safety_Certification_Status__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3507,14 +3522,6 @@
         <field>WorkOrderLineItem.UnitPrice</field>
         <readable>true</readable>
     </fieldPermissions>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>Copado_Test</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>Update_Account_Last_Opportunity_Date</flow>
-    </flowAccesses>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
@@ -3736,6 +3743,14 @@
         <layout>Supplier__c-Supplier Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Supplier__c-Supplier Layout</layout>
+        <recordType>Supplier__c.Contractor</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Supplier__c-Supplier Layout</layout>
+        <recordType>Supplier__c.Supplier</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Support_Service_Outcome__c-Support Service Outcome Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3819,6 +3834,16 @@
         <default>false</default>
         <recordType>Idea.Record_type_for_community_09ai0000000TOLlAAO_entity_Idea</recordType>
         <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Supplier__c.Contractor</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Supplier__c.Supplier</recordType>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
         <tab>Customer_Testimonial__c</tab>
