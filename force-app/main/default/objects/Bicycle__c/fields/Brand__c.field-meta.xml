@@ -5,6 +5,7 @@
     <inlineHelpText>Insert bicycle brand here.</inlineHelpText>
     <label>Brand</label>
     <required>false</required>
+    <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
@@ -67,44 +68,92 @@
                 <label>Kona Bicycle Company</label>
             </value>
             <value>
-                <fullName>Canyon</fullName>
+                <fullName>BMC</fullName>
                 <default>false</default>
-                <label>Canyon</label>
+                <label>BMC</label>
             </value>
             <value>
-                <fullName>Merida Bikes</fullName>
+                <fullName>Fuji Bikes</fullName>
                 <default>false</default>
-                <label>Merida Bikes</label>
+                <label>Fuji Bikes</label>
+            </value>
+            <value>
+                <fullName>Pinarello</fullName>
+                <default>false</default>
+                <label>Pinarello</label>
+            </value>
+            <value>
+                <fullName>Cervélo</fullName>
+                <default>false</default>
+                <label>Cervélo</label>
+            </value>
+            <value>
+                <fullName>Allied Cycle Works</fullName>
+                <default>false</default>
+                <label>Allied Cycle Works</label>
+            </value>
+            <value>
+                <fullName>Bearclaw Bicycle</fullName>
+                <default>false</default>
+                <label>Bearclaw Bicycle</label>
+            </value>
+            <value>
+                <fullName>Electra Bicycle Company</fullName>
+                <default>false</default>
+                <label>Electra Bicycle Company</label>
+            </value>
+            <value>
+                <fullName>Alchemy</fullName>
+                <default>false</default>
+                <label>Alchemy</label>
+            </value>
+            <value>
+                <fullName>3T Cycling</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3T Cycling</label>
+            </value>
+            <value>
+                <fullName>Bianchi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bianchi</label>
             </value>
             <value>
                 <fullName>Bishop Bikes</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Bishop Bikes</label>
+            </value>
+            <value>
+                <fullName>Canyon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Canyon</label>
+            </value>
+            <value>
+                <fullName>Colnago</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Colnago</label>
             </value>
             <value>
                 <fullName>Felt</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Felt</label>
             </value>
             <value>
                 <fullName>GT</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>GT</label>
             </value>
             <value>
-                <fullName>Bianchi</fullName>
+                <fullName>Merida Bikes</fullName>
                 <default>false</default>
-                <label>Bianchi</label>
-            </value>
-            <value>
-                <fullName>Colnago</fullName>
-                <default>false</default>
-                <label>Colnago</label>
-            </value>
-            <value>
-                <fullName>3T Cycling</fullName>
-                <default>false</default>
-                <label>3T Cycling</label>
+                <isActive>false</isActive>
+                <label>Merida Bikes</label>
             </value>
         </valueSetDefinition>
     </valueSet>

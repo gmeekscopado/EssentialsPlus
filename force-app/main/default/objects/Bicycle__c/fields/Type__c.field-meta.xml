@@ -4,6 +4,7 @@
     <description>What type of bicycle is this? What is the intended use?</description>
     <label>Type</label>
     <required>false</required>
+    <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Certification Level --></label>
+    <name>Certification_Level__c</name>
+    <picklistValues>
+        <masterLabel>- ISO 45001</masterLabel>
+        <translation><!-- - ISO 45001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aerial Lift</masterLabel>
+        <translation><!-- Aerial Lift --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carbon Neutral</masterLabel>
+        <translation><!-- Carbon Neutral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chemical Safety Management</masterLabel>
+        <translation><!-- Chemical Safety Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Confined Space</masterLabel>
+        <translation><!-- Confined Space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Confined Space Entry</masterLabel>
+        <translation><!-- Confined Space Entry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction Safety Protocol</masterLabel>
+        <translation><!-- Construction Safety Protocol --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crane Operation</masterLabel>
+        <translation><!-- Crane Operation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crisis Management</masterLabel>
+        <translation><!-- Crisis Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOT Hazmat Certification</masterLabel>
+        <translation><!-- DOT Hazmat Certification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dangerous Goods Handling</masterLabel>
+        <translation><!-- Dangerous Goods Handling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency Communications</masterLabel>
+        <translation><!-- Emergency Communications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency Response Coordinator</masterLabel>
+        <translation><!-- Emergency Response Coordinator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental Leader</masterLabel>
+        <translation><!-- Environmental Leader --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evacuation Management</masterLabel>
+        <translation><!-- Evacuation Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excavation Safety</masterLabel>
+        <translation><!-- Excavation Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fall Protection</masterLabel>
+        <translation><!-- Fall Protection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire Safety Response</masterLabel>
+        <translation><!-- Fire Safety Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First Aid &amp; CPR</masterLabel>
+        <translation><!-- First Aid &amp; CPR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First Responder Operations</masterLabel>
+        <translation><!-- First Responder Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Forklift Certified</masterLabel>
+        <translation><!-- Forklift Certified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Green Business Certified</masterLabel>
+        <translation><!-- Green Business Certified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HAZWOPER 24-Hour</masterLabel>
+        <translation><!-- HAZWOPER 24-Hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HAZWOPER 40-Hour</masterLabel>
+        <translation><!-- HAZWOPER 40-Hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heavy Equipment Operation</masterLabel>
+        <translation><!-- Heavy Equipment Operation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heights &amp; Ladder Safety</masterLabel>
+        <translation><!-- Heights &amp; Ladder Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hot Work Safety</masterLabel>
+        <translation><!-- Hot Work Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISO 14001</masterLabel>
+        <translation><!-- ISO 14001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incident Command System</masterLabel>
+        <translation><!-- Incident Command System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal SMS</masterLabel>
+        <translation><!-- Internal SMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Emergency Response</masterLabel>
+        <translation><!-- Medical Emergency Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OHSAS 18001</masterLabel>
+        <translation><!-- OHSAS 18001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSHA 30</masterLabel>
+        <translation><!-- OSHA 30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PPE Specialist</masterLabel>
+        <translation><!-- PPE Specialist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCRA Training</masterLabel>
+        <translation><!-- RCRA Training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scaffolding Safety</masterLabel>
+        <translation><!-- Scaffolding Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Safety Supervisor</masterLabel>
+        <translation><!-- Site Safety Supervisor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Security Management</masterLabel>
+        <translation><!-- Site Security Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spill Response Certification</masterLabel>
+        <translation><!-- Spill Response Certification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic Control Safety</masterLabel>
+        <translation><!-- Traffic Control Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VPP Star</masterLabel>
+        <translation><!-- VPP Star --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

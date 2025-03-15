@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Insert tire type here. --></help>
     <label><!-- Tires --></label>
     <name>Tires__c</name>
     <picklistValues>
@@ -18,9 +17,5 @@
     <picklistValues>
         <masterLabel>Snow</masterLabel>
         <translation><!-- Snow --></translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>Water</masterLabel>
-        <translation><!-- Water --></translation>
     </picklistValues>
 </CustomFieldTranslation>
