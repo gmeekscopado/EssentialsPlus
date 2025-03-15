@@ -19,5 +19,13 @@
             <section>Custom Links</section>
         </sections>
     </layouts>
+    <recordTypes>
+        <label><!-- Contractor --></label>
+        <name>Contractor</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Supplier --></label>
+        <name>Supplier</name>
+    </recordTypes>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

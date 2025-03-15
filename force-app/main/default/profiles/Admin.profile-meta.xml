@@ -113,16 +113,6 @@
     </classAccesses>
     <custom>false</custom>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Supplier__c.Certification_Level__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Supplier__c.Certification_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
@@ -3158,6 +3148,21 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Supplier__c.Certification_Level__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Supplier__c.Certification_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Supplier__c.Compliance_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Supplier__c.Safety_Certification_Status__c</field>
         <readable>false</readable>
@@ -3521,14 +3526,6 @@
         <flow>Update_Account_Last_Opportunity_Date</flow>
     </flowAccesses>
     <layoutAssignments>
-        <layout>Supplier__c-Supplier Layout</layout>
-        <recordType>Supplier__c.Contractor</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Supplier__c-Supplier Layout</layout>
-        <recordType>Supplier__c.Supplier</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3747,6 +3744,14 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Supplier__c-Supplier Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Supplier__c-Supplier Layout</layout>
+        <recordType>Supplier__c.Contractor</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Supplier__c-Supplier Layout</layout>
+        <recordType>Supplier__c.Supplier</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Support_Service_Outcome__c-Support Service Outcome Layout</layout>
@@ -4566,16 +4571,6 @@
     </pageAccesses>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Supplier__c.Contractor</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>true</default>
-        <recordType>Supplier__c.Supplier</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -4583,6 +4578,16 @@
         <default>false</default>
         <recordType>Idea.Record_type_for_community_09ai0000000TOLlAAO_entity_Idea</recordType>
         <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Supplier__c.Contractor</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Supplier__c.Supplier</recordType>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
         <tab>Customer_Testimonial__c</tab>
