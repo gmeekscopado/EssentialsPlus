@@ -4,36 +4,36 @@
     <label><!-- Brand --></label>
     <name>Brand__c</name>
     <picklistValues>
-        <masterLabel>3T Cycling</masterLabel>
-        <translation><!-- 3T Cycling --></translation>
+        <masterLabel>Alchemy</masterLabel>
+        <translation><!-- Alchemy --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Bianchi</masterLabel>
-        <translation><!-- Bianchi --></translation>
+        <masterLabel>Allied Cycle Works</masterLabel>
+        <translation><!-- Allied Cycle Works --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Bishop Bikes</masterLabel>
-        <translation><!-- Bishop Bikes --></translation>
+        <masterLabel>BMC</masterLabel>
+        <translation><!-- BMC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bearclaw Bicycle</masterLabel>
+        <translation><!-- Bearclaw Bicycle --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Cannondale</masterLabel>
         <translation><!-- Cannondale --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Canyon</masterLabel>
-        <translation><!-- Canyon --></translation>
+        <masterLabel>Cervélo</masterLabel>
+        <translation><!-- Cervélo --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Colnago</masterLabel>
-        <translation><!-- Colnago --></translation>
+        <masterLabel>Electra Bicycle Company</masterLabel>
+        <translation><!-- Electra Bicycle Company --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Felt</masterLabel>
-        <translation><!-- Felt --></translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>GT</masterLabel>
-        <translation><!-- GT --></translation>
+        <masterLabel>Fuji Bikes</masterLabel>
+        <translation><!-- Fuji Bikes --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Giant</masterLabel>
@@ -52,16 +52,16 @@
         <translation><!-- Merida --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Merida Bikes</masterLabel>
-        <translation><!-- Merida Bikes --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>Mongoose</masterLabel>
         <translation><!-- Mongoose --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Other</masterLabel>
         <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pinarello</masterLabel>
+        <translation><!-- Pinarello --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Santa Cruz</masterLabel>

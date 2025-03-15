@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Certification_Level__c</fullName>
+    <label>Certification Level</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Certification_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>- ISO 45001</fullName>
+                <default>false</default>
+                <label>- ISO 45001</label>
+            </value>
+            <value>
+                <fullName>OHSAS 18001</fullName>
+                <default>false</default>
+                <label>OHSAS 18001</label>
+            </value>
+            <value>
+                <fullName>VPP Star</fullName>
+                <default>false</default>
+                <label>VPP Star</label>
+            </value>
+            <value>
+                <fullName>Internal SMS</fullName>
+                <default>false</default>
+                <label>Internal SMS</label>
+            </value>
+            <value>
+                <fullName>ISO 14001</fullName>
+                <default>false</default>
+                <label>ISO 14001</label>
+            </value>
+            <value>
+                <fullName>Green Business Certified</fullName>
+                <default>false</default>
+                <label>Green Business Certified</label>
+            </value>
+            <value>
+                <fullName>Carbon Neutral</fullName>
+                <default>false</default>
+                <label>Carbon Neutral</label>
+            </value>
+            <value>
+                <fullName>Environmental Leader</fullName>
+                <default>false</default>
+                <label>Environmental Leader</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Safety Management System</controllingFieldValue>
+            <valueName>- ISO 45001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety Management System</controllingFieldValue>
+            <valueName>OHSAS 18001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety Management System</controllingFieldValue>
+            <valueName>VPP Star</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety Management System</controllingFieldValue>
+            <valueName>Internal SMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Environmental Compliance</controllingFieldValue>
+            <valueName>ISO 14001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Environmental Compliance</controllingFieldValue>
+            <valueName>Green Business Certified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Environmental Compliance</controllingFieldValue>
+            <valueName>Carbon Neutral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Environmental Compliance</controllingFieldValue>
+            <valueName>Environmental Leader</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

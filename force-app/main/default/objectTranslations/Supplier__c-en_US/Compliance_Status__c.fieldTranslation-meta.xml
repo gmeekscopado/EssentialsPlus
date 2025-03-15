@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Compliance Status --></label>
+    <name>Compliance_Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disqualified</masterLabel>
+        <translation><!-- Disqualified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fully Compliant</masterLabel>
+        <translation><!-- Fully Compliant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Compliant</masterLabel>
+        <translation><!-- Non-Compliant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Review</masterLabel>
+        <translation><!-- Pending Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Provisional</masterLabel>
+        <translation><!-- Provisional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requires Audit</masterLabel>
+        <translation><!-- Requires Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suspended</masterLabel>
+        <translation><!-- Suspended --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Investigation</masterLabel>
+        <translation><!-- Under Investigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Review</masterLabel>
+        <translation><!-- Under Review --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

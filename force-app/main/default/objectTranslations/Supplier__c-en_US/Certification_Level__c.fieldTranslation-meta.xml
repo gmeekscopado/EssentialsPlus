@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Certification Level --></label>
+    <name>Certification_Level__c</name>
+    <picklistValues>
+        <masterLabel>- ISO 45001</masterLabel>
+        <translation><!-- - ISO 45001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carbon Neutral</masterLabel>
+        <translation><!-- Carbon Neutral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental Leader</masterLabel>
+        <translation><!-- Environmental Leader --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Green Business Certified</masterLabel>
+        <translation><!-- Green Business Certified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISO 14001</masterLabel>
+        <translation><!-- ISO 14001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal SMS</masterLabel>
+        <translation><!-- Internal SMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OHSAS 18001</masterLabel>
+        <translation><!-- OHSAS 18001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VPP Star</masterLabel>
+        <translation><!-- VPP Star --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
