@@ -4,10 +4,10 @@
     <businessStatus>Active</businessStatus>
     <complianceGroup>GDPR</complianceGroup>
     <description>What type of tires does the bike have?</description>
+    <inlineHelpText>Insert tire type here.</inlineHelpText>
     <label>Tires</label>
     <required>true</required>
     <securityClassification>Public</securityClassification>
-    <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
@@ -37,7 +37,6 @@
             <value>
                 <fullName>Water</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
                 <label>Water</label>
             </value>
         </valueSetDefinition>
