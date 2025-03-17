@@ -20,11 +20,6 @@
                 <label>Environmental Compliance</label>
             </value>
             <value>
-                <fullName>Quality Management</fullName>
-                <default>false</default>
-                <label>Quality Management</label>
-            </value>
-            <value>
                 <fullName>Worker Certification</fullName>
                 <default>false</default>
                 <label>Worker Certification</label>
@@ -48,6 +43,12 @@
                 <fullName>Emergency Response Plan</fullName>
                 <default>false</default>
                 <label>Emergency Response Plan</label>
+            </value>
+            <value>
+                <fullName>Quality Management</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Quality Management</label>
             </value>
         </valueSetDefinition>
     </valueSet>
