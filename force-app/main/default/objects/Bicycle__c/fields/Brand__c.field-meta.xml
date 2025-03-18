@@ -106,6 +106,54 @@
                 <default>false</default>
                 <label>Alchemy</label>
             </value>
+            <value>
+                <fullName>3T Cycling</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3T Cycling</label>
+            </value>
+            <value>
+                <fullName>Bianchi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bianchi</label>
+            </value>
+            <value>
+                <fullName>Bishop Bikes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bishop Bikes</label>
+            </value>
+            <value>
+                <fullName>Canyon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Canyon</label>
+            </value>
+            <value>
+                <fullName>Colnago</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Colnago</label>
+            </value>
+            <value>
+                <fullName>Felt</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Felt</label>
+            </value>
+            <value>
+                <fullName>GT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GT</label>
+            </value>
+            <value>
+                <fullName>Merida Bikes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Merida Bikes</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
