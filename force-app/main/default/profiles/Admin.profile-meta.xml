@@ -4584,6 +4584,7 @@
     </pageAccesses>
     <recordTypeVisibilities>
         <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Charity__c.Relationship_Manager</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
