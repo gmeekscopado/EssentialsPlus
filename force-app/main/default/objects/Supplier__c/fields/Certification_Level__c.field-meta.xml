@@ -51,202 +51,169 @@
                 <label>Environmental Leader</label>
             </value>
             <value>
-                <fullName>Aerial Lift</fullName>
+                <fullName>OSHA 30</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
-                <label>Aerial Lift</label>
-            </value>
-            <value>
-                <fullName>Chemical Safety Management</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Chemical Safety Management</label>
-            </value>
-            <value>
-                <fullName>Confined Space</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Confined Space</label>
-            </value>
-            <value>
-                <fullName>Confined Space Entry</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Confined Space Entry</label>
-            </value>
-            <value>
-                <fullName>Construction Safety Protocol</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Construction Safety Protocol</label>
-            </value>
-            <value>
-                <fullName>Crane Operation</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Crane Operation</label>
-            </value>
-            <value>
-                <fullName>Crisis Management</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Crisis Management</label>
-            </value>
-            <value>
-                <fullName>DOT Hazmat Certification</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>DOT Hazmat Certification</label>
-            </value>
-            <value>
-                <fullName>Dangerous Goods Handling</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Dangerous Goods Handling</label>
-            </value>
-            <value>
-                <fullName>Emergency Communications</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Emergency Communications</label>
-            </value>
-            <value>
-                <fullName>Emergency Response Coordinator</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Emergency Response Coordinator</label>
-            </value>
-            <value>
-                <fullName>Evacuation Management</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Evacuation Management</label>
-            </value>
-            <value>
-                <fullName>Excavation Safety</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Excavation Safety</label>
-            </value>
-            <value>
-                <fullName>Fall Protection</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Fall Protection</label>
-            </value>
-            <value>
-                <fullName>Fire Safety Response</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Fire Safety Response</label>
+                <label>OSHA 30</label>
             </value>
             <value>
                 <fullName>First Aid &amp; CPR</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
                 <label>First Aid &amp; CPR</label>
             </value>
             <value>
-                <fullName>First Responder Operations</fullName>
+                <fullName>Confined Space</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
-                <label>First Responder Operations</label>
+                <label>Confined Space</label>
             </value>
             <value>
-                <fullName>Forklift Certified</fullName>
+                <fullName>Fall Protection</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
-                <label>Forklift Certified</label>
-            </value>
-            <value>
-                <fullName>HAZWOPER 24-Hour</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>HAZWOPER 24-Hour</label>
-            </value>
-            <value>
-                <fullName>HAZWOPER 40-Hour</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>HAZWOPER 40-Hour</label>
+                <label>Fall Protection</label>
             </value>
             <value>
                 <fullName>Heavy Equipment Operation</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
                 <label>Heavy Equipment Operation</label>
             </value>
             <value>
-                <fullName>Heights &amp; Ladder Safety</fullName>
+                <fullName>Crane Operation</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
-                <label>Heights &amp; Ladder Safety</label>
+                <label>Crane Operation</label>
             </value>
             <value>
-                <fullName>Hot Work Safety</fullName>
+                <fullName>Forklift Certified</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
-                <label>Hot Work Safety</label>
+                <label>Forklift Certified</label>
             </value>
             <value>
-                <fullName>Incident Command System</fullName>
+                <fullName>Aerial Lift</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
-                <label>Incident Command System</label>
-            </value>
-            <value>
-                <fullName>Medical Emergency Response</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Medical Emergency Response</label>
-            </value>
-            <value>
-                <fullName>OSHA 30</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>OSHA 30</label>
-            </value>
-            <value>
-                <fullName>PPE Specialist</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>PPE Specialist</label>
-            </value>
-            <value>
-                <fullName>RCRA Training</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>RCRA Training</label>
+                <label>Aerial Lift</label>
             </value>
             <value>
                 <fullName>Scaffolding Safety</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
                 <label>Scaffolding Safety</label>
             </value>
             <value>
-                <fullName>Site Safety Supervisor</fullName>
+                <fullName>HAZWOPER 40-Hour</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
-                <label>Site Safety Supervisor</label>
+                <label>HAZWOPER 40-Hour</label>
             </value>
             <value>
-                <fullName>Site Security Management</fullName>
+                <fullName>HAZWOPER 24-Hour</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
-                <label>Site Security Management</label>
+                <label>HAZWOPER 24-Hour</label>
+            </value>
+            <value>
+                <fullName>DOT Hazmat Certification</fullName>
+                <default>false</default>
+                <label>DOT Hazmat Certification</label>
+            </value>
+            <value>
+                <fullName>RCRA Training</fullName>
+                <default>false</default>
+                <label>RCRA Training</label>
+            </value>
+            <value>
+                <fullName>Chemical Safety Management</fullName>
+                <default>false</default>
+                <label>Chemical Safety Management</label>
+            </value>
+            <value>
+                <fullName>Dangerous Goods Handling</fullName>
+                <default>false</default>
+                <label>Dangerous Goods Handling</label>
             </value>
             <value>
                 <fullName>Spill Response Certification</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
                 <label>Spill Response Certification</label>
+            </value>
+            <value>
+                <fullName>PPE Specialist</fullName>
+                <default>false</default>
+                <label>PPE Specialist</label>
+            </value>
+            <value>
+                <fullName>Site Safety Supervisor</fullName>
+                <default>false</default>
+                <label>Site Safety Supervisor</label>
+            </value>
+            <value>
+                <fullName>Construction Safety Protocol</fullName>
+                <default>false</default>
+                <label>Construction Safety Protocol</label>
+            </value>
+            <value>
+                <fullName>Confined Space Entry</fullName>
+                <default>false</default>
+                <label>Confined Space Entry</label>
+            </value>
+            <value>
+                <fullName>Hot Work Safety</fullName>
+                <default>false</default>
+                <label>Hot Work Safety</label>
+            </value>
+            <value>
+                <fullName>Excavation Safety</fullName>
+                <default>false</default>
+                <label>Excavation Safety</label>
+            </value>
+            <value>
+                <fullName>Heights &amp; Ladder Safety</fullName>
+                <default>false</default>
+                <label>Heights &amp; Ladder Safety</label>
             </value>
             <value>
                 <fullName>Traffic Control Safety</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
                 <label>Traffic Control Safety</label>
+            </value>
+            <value>
+                <fullName>Site Security Management</fullName>
+                <default>false</default>
+                <label>Site Security Management</label>
+            </value>
+            <value>
+                <fullName>Emergency Response Coordinator</fullName>
+                <default>false</default>
+                <label>Emergency Response Coordinator</label>
+            </value>
+            <value>
+                <fullName>First Responder Operations</fullName>
+                <default>false</default>
+                <label>First Responder Operations</label>
+            </value>
+            <value>
+                <fullName>Incident Command System</fullName>
+                <default>false</default>
+                <label>Incident Command System</label>
+            </value>
+            <value>
+                <fullName>Emergency Communications</fullName>
+                <default>false</default>
+                <label>Emergency Communications</label>
+            </value>
+            <value>
+                <fullName>Evacuation Management</fullName>
+                <default>false</default>
+                <label>Evacuation Management</label>
+            </value>
+            <value>
+                <fullName>Fire Safety Response</fullName>
+                <default>false</default>
+                <label>Fire Safety Response</label>
+            </value>
+            <value>
+                <fullName>Medical Emergency Response</fullName>
+                <default>false</default>
+                <label>Medical Emergency Response</label>
+            </value>
+            <value>
+                <fullName>Crisis Management</fullName>
+                <default>false</default>
+                <label>Crisis Management</label>
             </value>
         </valueSetDefinition>
         <valueSettings>
@@ -280,6 +247,138 @@
         <valueSettings>
             <controllingFieldValue>Environmental Compliance</controllingFieldValue>
             <valueName>Environmental Leader</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Worker Certification</controllingFieldValue>
+            <valueName>OSHA 30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Worker Certification</controllingFieldValue>
+            <valueName>First Aid &amp; CPR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Worker Certification</controllingFieldValue>
+            <valueName>Confined Space</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Worker Certification</controllingFieldValue>
+            <valueName>Fall Protection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Worker Certification</controllingFieldValue>
+            <valueName>Heavy Equipment Operation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Safety</controllingFieldValue>
+            <valueName>Crane Operation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Safety</controllingFieldValue>
+            <valueName>Forklift Certified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Safety</controllingFieldValue>
+            <valueName>Aerial Lift</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Safety</controllingFieldValue>
+            <valueName>Scaffolding Safety</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hazardous Materials Handling</controllingFieldValue>
+            <valueName>HAZWOPER 40-Hour</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hazardous Materials Handling</controllingFieldValue>
+            <valueName>HAZWOPER 24-Hour</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hazardous Materials Handling</controllingFieldValue>
+            <valueName>DOT Hazmat Certification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hazardous Materials Handling</controllingFieldValue>
+            <valueName>RCRA Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hazardous Materials Handling</controllingFieldValue>
+            <valueName>Chemical Safety Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hazardous Materials Handling</controllingFieldValue>
+            <valueName>Dangerous Goods Handling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hazardous Materials Handling</controllingFieldValue>
+            <valueName>Spill Response Certification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hazardous Materials Handling</controllingFieldValue>
+            <valueName>PPE Specialist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Safety Protocol</controllingFieldValue>
+            <valueName>Site Safety Supervisor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Safety Protocol</controllingFieldValue>
+            <valueName>Construction Safety Protocol</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Safety Protocol</controllingFieldValue>
+            <valueName>Confined Space Entry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Safety Protocol</controllingFieldValue>
+            <valueName>Hot Work Safety</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Safety Protocol</controllingFieldValue>
+            <valueName>Excavation Safety</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Safety Protocol</controllingFieldValue>
+            <valueName>Heights &amp; Ladder Safety</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Safety Protocol</controllingFieldValue>
+            <valueName>Traffic Control Safety</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Safety Protocol</controllingFieldValue>
+            <valueName>Site Security Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency Response Plan</controllingFieldValue>
+            <valueName>Emergency Response Coordinator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency Response Plan</controllingFieldValue>
+            <valueName>First Responder Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency Response Plan</controllingFieldValue>
+            <valueName>Incident Command System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency Response Plan</controllingFieldValue>
+            <valueName>Emergency Communications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency Response Plan</controllingFieldValue>
+            <valueName>Evacuation Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency Response Plan</controllingFieldValue>
+            <valueName>Fire Safety Response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency Response Plan</controllingFieldValue>
+            <valueName>Medical Emergency Response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency Response Plan</controllingFieldValue>
+            <valueName>Crisis Management</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>
