@@ -19,10 +19,6 @@
         <translation><!-- Hazardous Materials Handling --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Quality Management</masterLabel>
-        <translation><!-- Quality Management --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>Safety Management System</masterLabel>
         <translation><!-- Safety Management System --></translation>
     </picklistValues>
