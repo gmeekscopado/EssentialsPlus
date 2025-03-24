@@ -107,6 +107,10 @@
         <apexClass>AccountAutomationsTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>TestDataFactory</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <custom>true</custom>
     <fieldPermissions>
         <editable>false</editable>
@@ -3586,6 +3590,10 @@
         <layout>Charity__c-Charity Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Charity__c-Charity Layout</layout>
+        <recordType>Charity__c.Relationship_Manager</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Client_Engagement__c-Client Engagement Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3954,6 +3962,11 @@
         <apexPage>scc_tour_style</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Charity__c.Relationship_Manager</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
