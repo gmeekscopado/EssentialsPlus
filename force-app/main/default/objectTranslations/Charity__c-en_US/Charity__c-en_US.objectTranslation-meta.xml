@@ -11,6 +11,10 @@
     <layouts>
         <layout>Charity Layout</layout>
         <sections>
+            <label><!-- Charity Information --></label>
+            <section>Charity Information</section>
+        </sections>
+        <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
         </sections>
