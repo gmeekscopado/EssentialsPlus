@@ -1024,6 +1024,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Charity__c.Date_Founded__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Charity__c.Mission_Statement__c</field>
         <readable>false</readable>
