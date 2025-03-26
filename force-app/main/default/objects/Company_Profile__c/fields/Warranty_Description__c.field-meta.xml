@@ -3,6 +3,7 @@
     <fullName>Warranty_Description__c</fullName>
     <description>What type of coverage is needed?</description>
     <externalId>false</externalId>
+    <inlineHelpText>The warranty will be used to determine who will be liable for any services required.</inlineHelpText>
     <label>Warranty Description</label>
     <length>255</length>
     <required>false</required>

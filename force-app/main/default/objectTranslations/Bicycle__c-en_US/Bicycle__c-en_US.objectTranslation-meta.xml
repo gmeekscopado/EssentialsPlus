@@ -11,6 +11,10 @@
     <layouts>
         <layout>Bicycle Layout</layout>
         <sections>
+            <label><!-- Bicycle Information --></label>
+            <section>Bicycle Information</section>
+        </sections>
+        <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
         </sections>
