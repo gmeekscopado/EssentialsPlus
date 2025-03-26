@@ -3,10 +3,6 @@
     <label><!-- Power --></label>
     <name>Power__c</name>
     <picklistValues>
-        <masterLabel>Battery</masterLabel>
-        <translation><!-- Battery --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>Electric</masterLabel>
         <translation><!-- Electric --></translation>
     </picklistValues>
@@ -23,7 +19,7 @@
         <translation><!-- Manual --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Natural Gas</masterLabel>
-        <translation><!-- Natural Gas --></translation>
+        <masterLabel>Solar</masterLabel>
+        <translation><!-- Solar --></translation>
     </picklistValues>
 </CustomFieldTranslation>

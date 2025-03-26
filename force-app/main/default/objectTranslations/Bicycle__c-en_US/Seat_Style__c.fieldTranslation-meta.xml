@@ -7,10 +7,6 @@
         <translation><!-- Cruiser --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>No seat</masterLabel>
-        <translation><!-- No seat --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>Racing</masterLabel>
         <translation><!-- Racing --></translation>
     </picklistValues>

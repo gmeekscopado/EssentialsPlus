@@ -11,9 +11,17 @@
     <layouts>
         <layout>Charity Layout</layout>
         <sections>
+            <label><!-- Charity Information --></label>
+            <section>Charity Information</section>
+        </sections>
+        <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
         </sections>
     </layouts>
+    <recordTypes>
+        <label><!-- Relationship Manager --></label>
+        <name>Relationship_Manager</name>
+    </recordTypes>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
