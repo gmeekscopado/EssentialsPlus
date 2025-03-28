@@ -41,10 +41,6 @@
     <picklistValues>
         <picklist>Certification_Type__c</picklist>
         <values>
-            <fullName>Emergency Response Plan</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Environmental Compliance</fullName>
             <default>false</default>
         </values>
@@ -76,10 +72,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Disqualified</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Provisional</fullName>
             <default>false</default>
         </values>
@@ -96,10 +88,6 @@
         <picklist>Safety_Certification_Status__c</picklist>
         <values>
             <fullName>Compliant</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Expired</fullName>
             <default>false</default>
         </values>
         <values>
