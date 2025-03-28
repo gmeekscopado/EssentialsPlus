@@ -4,7 +4,7 @@
     <businessStatus>Active</businessStatus>
     <complianceGroup>GDPR</complianceGroup>
     <description>What type of tires does the bike have?</description>
-    <inlineHelpText>Insert tire type here.</inlineHelpText>
+    <inlineHelpText>Be sure to include tire size in this response.</inlineHelpText>
     <label>Tires</label>
     <required>true</required>
     <securityClassification>Public</securityClassification>

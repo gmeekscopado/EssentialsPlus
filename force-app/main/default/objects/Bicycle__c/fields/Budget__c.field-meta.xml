@@ -3,6 +3,7 @@
     <fullName>Budget__c</fullName>
     <businessStatus>Active</businessStatus>
     <description>Allocated budget for bicycles.</description>
+    <inlineHelpText>Please insert value in USD.</inlineHelpText>
     <label>Budget</label>
     <precision>18</precision>
     <required>false</required>
