@@ -3,6 +3,7 @@
     <fullName>Brand__c</fullName>
     <businessStatus>Active</businessStatus>
     <description>Bicycle manufacturer information.</description>
+    <inlineHelpText>If brand is unknown, ask a supervisor.</inlineHelpText>
     <label>Brand</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
