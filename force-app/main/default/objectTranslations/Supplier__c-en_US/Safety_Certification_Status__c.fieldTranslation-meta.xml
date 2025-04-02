@@ -7,10 +7,6 @@
         <translation><!-- Compliant --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Expired</masterLabel>
-        <translation><!-- Expired --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>Non-Compliant</masterLabel>
         <translation><!-- Non-Compliant --></translation>
     </picklistValues>
