@@ -3,10 +3,6 @@
     <label><!-- Certification Type --></label>
     <name>Certification_Type__c</name>
     <picklistValues>
-        <masterLabel>Emergency Response Plan</masterLabel>
-        <translation><!-- Emergency Response Plan --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>Environmental Compliance</masterLabel>
         <translation><!-- Environmental Compliance --></translation>
     </picklistValues>

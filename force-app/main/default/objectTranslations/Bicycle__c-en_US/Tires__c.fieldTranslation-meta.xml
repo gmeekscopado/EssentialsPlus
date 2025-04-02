@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Insert tire type here. --></help>
+    <help><!-- Be sure to include tire size in this response. --></help>
     <label><!-- Tires --></label>
     <name>Tires__c</name>
     <picklistValues>
