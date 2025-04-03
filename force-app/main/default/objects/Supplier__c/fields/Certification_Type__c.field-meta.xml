@@ -47,7 +47,6 @@
             <value>
                 <fullName>Emergency Response Plan</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
                 <label>Emergency Response Plan</label>
             </value>
         </valueSetDefinition>
