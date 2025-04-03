@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target_Audience__c</fullName>
+    <label>Target Audience</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Donors and Sponsors</fullName>
+                <default>false</default>
+                <label>Donors and Sponsors</label>
+            </value>
+            <value>
+                <fullName>Volunteers</fullName>
+                <default>false</default>
+                <label>Volunteers</label>
+            </value>
+            <value>
+                <fullName>Fundraising Event Participants</fullName>
+                <default>false</default>
+                <label>Fundraising Event Participants</label>
+            </value>
+            <value>
+                <fullName>Beneficiaries of the Charity</fullName>
+                <default>false</default>
+                <label>Beneficiaries of the Charity</label>
+            </value>
+            <value>
+                <fullName>Advocates and Activists</fullName>
+                <default>false</default>
+                <label>Advocates and Activists</label>
+            </value>
+            <value>
+                <fullName>Government and Foundations</fullName>
+                <default>false</default>
+                <label>Government and Foundations</label>
+            </value>
+            <value>
+                <fullName>Youth and Students</fullName>
+                <default>false</default>
+                <label>Youth and Students</label>
+            </value>
+            <value>
+                <fullName>Social Media and Online Communities</fullName>
+                <default>false</default>
+                <label>Social Media and Online Communities</label>
+            </value>
+            <value>
+                <fullName>Faith-Based Groups</fullName>
+                <default>false</default>
+                <label>Faith-Based Groups</label>
+            </value>
+            <value>
+                <fullName>Corporate Partners and Employers</fullName>
+                <default>false</default>
+                <label>Corporate Partners and Employers</label>
+            </value>
+            <value>
+                <fullName>Media and Press</fullName>
+                <default>false</default>
+                <label>Media and Press</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
