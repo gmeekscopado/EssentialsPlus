@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Target Audience Subcategory --></label>
+    <name>Target_Audience_Subcategory__c</name>
+    <picklistValues>
+        <masterLabel>Advocacy Groups and Partners</masterLabel>
+        <translation><!-- Advocacy Groups and Partners --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Communities in Need</masterLabel>
+        <translation><!-- Communities in Need --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Companies Offering Matching Gifts</masterLabel>
+        <translation><!-- Companies Offering Matching Gifts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corporate Social Responsibility (CSR) Programs</masterLabel>
+        <translation><!-- Corporate Social Responsibility (CSR) Programs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corporate Sponsors</masterLabel>
+        <translation><!-- Corporate Sponsors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corporate Volunteers</masterLabel>
+        <translation><!-- Corporate Volunteers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Supporters</masterLabel>
+        <translation><!-- Digital Supporters --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Direct Beneficiaries</masterLabel>
+        <translation><!-- Direct Beneficiaries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Event-Goers</masterLabel>
+        <translation><!-- Event-Goers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government Agencies</masterLabel>
+        <translation><!-- Government Agencies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Individual Donors</masterLabel>
+        <translation><!-- Individual Donors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Influencers and Bloggers</masterLabel>
+        <translation><!-- Influencers and Bloggers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Journalists</masterLabel>
+        <translation><!-- Journalists --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Local Volunteers</masterLabel>
+        <translation><!-- Local Volunteers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Major Donors/High Net-Worth Individuals</masterLabel>
+        <translation><!-- Major Donors/High Net-Worth Individuals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Online Volunteers</masterLabel>
+        <translation><!-- Online Volunteers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Philanthropic Foundations</masterLabel>
+        <translation><!-- Philanthropic Foundations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Relations Professionals</masterLabel>
+        <translation><!-- Public Relations Professionals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Religious Communities</masterLabel>
+        <translation><!-- Religious Communities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sports Teams/Community Groups</masterLabel>
+        <translation><!-- Sports Teams/Community Groups --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Student Fundraisers</masterLabel>
+        <translation><!-- Student Fundraisers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supporters of Social Causes</masterLabel>
+        <translation><!-- Supporters of Social Causes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Young Volunteers</masterLabel>
+        <translation><!-- Young Volunteers --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

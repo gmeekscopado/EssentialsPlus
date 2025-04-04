@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- If brand is unknown, ask a supervisor. --></help>
     <label><!-- Brand --></label>
     <name>Brand__c</name>
-    <picklistValues>
-        <masterLabel>Alchemy</masterLabel>
-        <translation><!-- Alchemy --></translation>
-    </picklistValues>
     <picklistValues>
         <masterLabel>Allied Cycle Works</masterLabel>
         <translation><!-- Allied Cycle Works --></translation>
@@ -20,6 +15,10 @@
         <translation><!-- Bearclaw Bicycle --></translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Bishop Bikes</masterLabel>
+        <translation><!-- Bishop Bikes --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Cannondale</masterLabel>
         <translation><!-- Cannondale --></translation>
     </picklistValues>
@@ -28,8 +27,8 @@
         <translation><!-- Cervélo --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Electra Bicycle Company</masterLabel>
-        <translation><!-- Electra Bicycle Company --></translation>
+        <masterLabel>Felt</masterLabel>
+        <translation><!-- Felt --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Fuji Bikes</masterLabel>
