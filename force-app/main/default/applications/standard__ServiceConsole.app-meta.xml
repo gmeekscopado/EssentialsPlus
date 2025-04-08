@@ -183,7 +183,15 @@
     <tabs>standard-Lead</tabs>
     <tabs>standard-Knowledge</tabs>
     <tabs>standard-Document</tabs>
+    <tabs>Payment__c</tabs>
+    <tabs>Invoice__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Invoice__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Payment__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

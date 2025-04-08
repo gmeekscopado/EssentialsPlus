@@ -180,7 +180,15 @@
     </preferences>
     <tabs>standard-Case</tabs>
     <tabs>standard-Knowledge</tabs>
+    <tabs>Payment__c</tabs>
+    <tabs>Invoice__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Invoice__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Payment__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Case</tab>
         </mappings>

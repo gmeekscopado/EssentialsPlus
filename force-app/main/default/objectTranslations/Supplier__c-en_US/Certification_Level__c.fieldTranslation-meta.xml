@@ -19,6 +19,14 @@
         <translation><!-- Green Business Certified --></translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>HAZWOPER 24-Hour</masterLabel>
+        <translation><!-- HAZWOPER 24-Hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HAZWOPER 40-Hour</masterLabel>
+        <translation><!-- HAZWOPER 40-Hour --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>ISO 14001</masterLabel>
         <translation><!-- ISO 14001 --></translation>
     </picklistValues>

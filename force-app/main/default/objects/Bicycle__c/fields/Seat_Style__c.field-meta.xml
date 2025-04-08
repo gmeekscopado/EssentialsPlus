@@ -25,6 +25,12 @@
                 <default>false</default>
                 <label>Sport</label>
             </value>
+            <value>
+                <fullName>No seat</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No seat</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

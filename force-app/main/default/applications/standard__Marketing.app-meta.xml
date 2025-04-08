@@ -13,4 +13,6 @@
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-Chatter</tabs>
+    <tabs>Payment__c</tabs>
+    <tabs>Invoice__c</tabs>
 </CustomApplication>
