@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Industry --></label>
+    <name>Customer_Industry__c</name>
+    <picklistValues>
+        <masterLabel>Education</masterLabel>
+        <translation><!-- Education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Services &amp; Banking</masterLabel>
+        <translation><!-- Financial Services &amp; Banking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government &amp; Public Sector</masterLabel>
+        <translation><!-- Government &amp; Public Sector --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Healthcare &amp; Life Sciences</masterLabel>
+        <translation><!-- Healthcare &amp; Life Sciences --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance</masterLabel>
+        <translation><!-- Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturing</masterLabel>
+        <translation><!-- Manufacturing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional Services</masterLabel>
+        <translation><!-- Professional Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail &amp; Consumer Goods</masterLabel>
+        <translation><!-- Retail &amp; Consumer Goods --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technology &amp; Software Companies</masterLabel>
+        <translation><!-- Technology &amp; Software Companies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telecommunications</masterLabel>
+        <translation><!-- Telecommunications --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
