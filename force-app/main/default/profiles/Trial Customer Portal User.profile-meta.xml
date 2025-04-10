@@ -1770,7 +1770,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Customer_Testimonial__c.Customer_Industry__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Customer_Testimonial__c.Customer_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Testimonial__c.Customer_Satisfaction_Score__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
