@@ -13,10 +13,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Test_Number_Field__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
                 <field>Customer_Since__c</field>
             </layoutItems>
             <layoutItems>
@@ -167,7 +163,6 @@
         <fields>Account_Number__c</fields>
         <fields>Picklist_Test__c</fields>
         <fields>Account_Picklist__c</fields>
-        <fields>Test_Number_Field__c</fields>
         <fields>Customer_Since__c</fields>
     </miniLayout>
     <platformActionList>
