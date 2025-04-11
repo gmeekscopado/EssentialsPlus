@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Mission_Statement__c</fullName>
-    <businessStatus>Active</businessStatus>
-    <complianceGroup>GDPR</complianceGroup>
+    <businessStatus>Hidden</businessStatus>
+    <complianceGroup>GDPR;PCI</complianceGroup>
     <description>Please provide your Mission Statement to help us learn about your charity goals.</description>
     <externalId>false</externalId>
-    <inlineHelpText>This field is used to document the mission statement of the charity.</inlineHelpText>
     <label>Mission Statement</label>
     <length>255</length>
     <required>false</required>
-    <securityClassification>Public</securityClassification>
+    <securityClassification>Internal</securityClassification>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Text</type>
