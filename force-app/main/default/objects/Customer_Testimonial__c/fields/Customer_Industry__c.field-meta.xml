@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Customer_Industry__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <complianceGroup>GDPR</complianceGroup>
     <label>Customer Industry</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
@@ -40,24 +42,26 @@
                 <label>Professional Services</label>
             </value>
             <value>
-                <fullName>Telecommunications</fullName>
-                <default>false</default>
-                <label>Telecommunications</label>
-            </value>
-            <value>
                 <fullName>Insurance</fullName>
                 <default>false</default>
                 <label>Insurance</label>
             </value>
             <value>
-                <fullName>Government &amp; Public Sector</fullName>
-                <default>false</default>
-                <label>Government &amp; Public Sector</label>
-            </value>
-            <value>
                 <fullName>Education</fullName>
                 <default>false</default>
                 <label>Education</label>
+            </value>
+            <value>
+                <fullName>Government &amp; Public Sector</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Government &amp; Public Sector</label>
+            </value>
+            <value>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Telecommunications</label>
             </value>
         </valueSetDefinition>
     </valueSet>

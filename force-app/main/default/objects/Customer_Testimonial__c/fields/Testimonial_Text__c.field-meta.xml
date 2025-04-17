@@ -3,6 +3,7 @@
     <fullName>Testimonial_Text__c</fullName>
     <businessStatus>Active</businessStatus>
     <complianceGroup>PII</complianceGroup>
+    <description>Tell us about your experience!</description>
     <label>Testimonial Text</label>
     <length>32768</length>
     <securityClassification>Public</securityClassification>
