@@ -4619,4 +4619,5 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <userLicense>Salesforce</userLicense>
+    <fullName>Standard</fullName>
 </Profile>
