@@ -11,10 +11,6 @@
         <translation><!-- Financial Services &amp; Banking --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Government &amp; Public Sector</masterLabel>
-        <translation><!-- Government &amp; Public Sector --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>Healthcare &amp; Life Sciences</masterLabel>
         <translation><!-- Healthcare &amp; Life Sciences --></translation>
     </picklistValues>
@@ -37,9 +33,5 @@
     <picklistValues>
         <masterLabel>Technology &amp; Software Companies</masterLabel>
         <translation><!-- Technology &amp; Software Companies --></translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>Telecommunications</masterLabel>
-        <translation><!-- Telecommunications --></translation>
     </picklistValues>
 </CustomFieldTranslation>
