@@ -16,6 +16,4 @@
     <tabs>standard-Solution</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
-    <tabs>Payment__c</tabs>
-    <tabs>Invoice__c</tabs>
 </CustomApplication>

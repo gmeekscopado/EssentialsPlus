@@ -11,6 +11,4 @@
     <tabs>standard-OtherUserProfile</tabs>
     <tabs>standard-CollaborationGroup</tabs>
     <tabs>standard-File</tabs>
-    <tabs>Payment__c</tabs>
-    <tabs>Invoice__c</tabs>
 </CustomApplication>

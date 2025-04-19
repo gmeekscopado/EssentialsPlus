@@ -6,6 +6,4 @@
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
     <tabs>standard-AppLauncher</tabs>
-    <tabs>Payment__c</tabs>
-    <tabs>Invoice__c</tabs>
 </CustomApplication>
