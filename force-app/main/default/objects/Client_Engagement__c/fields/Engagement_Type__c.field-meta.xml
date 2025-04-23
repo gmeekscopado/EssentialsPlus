@@ -24,6 +24,11 @@
                 <default>false</default>
                 <label>Cybersecurity Consultancy</label>
             </value>
+            <value>
+                <fullName>Boutique</fullName>
+                <default>false</default>
+                <label>Boutique</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
