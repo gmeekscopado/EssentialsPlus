@@ -97,14 +97,14 @@
                 <label>Bearclaw Bicycle</label>
             </value>
             <value>
-                <fullName>Electra Bicycle Company</fullName>
+                <fullName>Felt</fullName>
                 <default>false</default>
-                <label>Electra Bicycle Company</label>
+                <label>Felt</label>
             </value>
             <value>
-                <fullName>Alchemy</fullName>
+                <fullName>Bishop Bikes</fullName>
                 <default>false</default>
-                <label>Alchemy</label>
+                <label>Bishop Bikes</label>
             </value>
             <value>
                 <fullName>3T Cycling</fullName>
@@ -113,16 +113,16 @@
                 <label>3T Cycling</label>
             </value>
             <value>
+                <fullName>Alchemy</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alchemy</label>
+            </value>
+            <value>
                 <fullName>Bianchi</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Bianchi</label>
-            </value>
-            <value>
-                <fullName>Bishop Bikes</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Bishop Bikes</label>
             </value>
             <value>
                 <fullName>Canyon</fullName>
@@ -137,10 +137,10 @@
                 <label>Colnago</label>
             </value>
             <value>
-                <fullName>Felt</fullName>
+                <fullName>Electra Bicycle Company</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
-                <label>Felt</label>
+                <label>Electra Bicycle Company</label>
             </value>
             <value>
                 <fullName>GT</fullName>
