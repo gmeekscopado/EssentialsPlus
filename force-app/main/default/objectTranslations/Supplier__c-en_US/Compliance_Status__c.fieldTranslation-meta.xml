@@ -7,6 +7,10 @@
         <translation><!-- Approved --></translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Disqualified</masterLabel>
+        <translation><!-- Disqualified --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Fully Compliant</masterLabel>
         <translation><!-- Fully Compliant --></translation>
     </picklistValues>
