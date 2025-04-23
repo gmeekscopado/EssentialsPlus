@@ -8,6 +8,13 @@
         <plural>true</plural>
         <value>Brokers</value>
     </caseValues>
+    <layouts>
+        <layout>Broker Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage><!-- The User phone number must include a 3 digit area code followed by the 7 digit phone number. --></errorMessage>
