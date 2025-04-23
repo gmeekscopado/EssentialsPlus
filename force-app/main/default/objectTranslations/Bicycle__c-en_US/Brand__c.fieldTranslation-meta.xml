@@ -3,6 +3,10 @@
     <label><!-- Brand --></label>
     <name>Brand__c</name>
     <picklistValues>
+        <masterLabel>Alchemy</masterLabel>
+        <translation><!-- Alchemy --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Allied Cycle Works</masterLabel>
         <translation><!-- Allied Cycle Works --></translation>
     </picklistValues>
@@ -15,10 +19,6 @@
         <translation><!-- Bearclaw Bicycle --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Bishop Bikes</masterLabel>
-        <translation><!-- Bishop Bikes --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>Cannondale</masterLabel>
         <translation><!-- Cannondale --></translation>
     </picklistValues>
@@ -27,8 +27,8 @@
         <translation><!-- Cervélo --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Felt</masterLabel>
-        <translation><!-- Felt --></translation>
+        <masterLabel>Electra Bicycle Company</masterLabel>
+        <translation><!-- Electra Bicycle Company --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Fuji Bikes</masterLabel>
