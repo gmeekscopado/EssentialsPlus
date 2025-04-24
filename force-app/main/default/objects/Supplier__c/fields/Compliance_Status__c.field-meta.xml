@@ -50,14 +50,15 @@
                 <label>Under Review</label>
             </value>
             <value>
-                <fullName>Disqualified</fullName>
-                <default>false</default>
-                <label>Disqualified</label>
-            </value>
-            <value>
                 <fullName>Requires Audit</fullName>
                 <default>false</default>
                 <label>Requires Audit</label>
+            </value>
+            <value>
+                <fullName>Disqualified</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Disqualified</label>
             </value>
         </valueSetDefinition>
     </valueSet>

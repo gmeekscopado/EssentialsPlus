@@ -51,6 +51,16 @@
                 <label>Environmental Leader</label>
             </value>
             <value>
+                <fullName>HAZWOPER 40-Hour</fullName>
+                <default>false</default>
+                <label>HAZWOPER 40-Hour</label>
+            </value>
+            <value>
+                <fullName>HAZWOPER 24-Hour</fullName>
+                <default>false</default>
+                <label>HAZWOPER 24-Hour</label>
+            </value>
+            <value>
                 <fullName>Aerial Lift</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
@@ -157,18 +167,6 @@
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Forklift Certified</label>
-            </value>
-            <value>
-                <fullName>HAZWOPER 24-Hour</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>HAZWOPER 24-Hour</label>
-            </value>
-            <value>
-                <fullName>HAZWOPER 40-Hour</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>HAZWOPER 40-Hour</label>
             </value>
             <value>
                 <fullName>Heavy Equipment Operation</fullName>
