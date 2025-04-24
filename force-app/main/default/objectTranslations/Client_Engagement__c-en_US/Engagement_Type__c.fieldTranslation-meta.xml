@@ -3,6 +3,10 @@
     <label><!-- Engagement Type --></label>
     <name>Engagement_Type__c</name>
     <picklistValues>
+        <masterLabel>Boutique</masterLabel>
+        <translation><!-- Boutique --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Co-Managed IT</masterLabel>
         <translation><!-- Co-Managed IT --></translation>
     </picklistValues>
