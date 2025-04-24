@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relationship_Manager</fullName>
+    <active>true</active>
+    <label>Relationship Manager</label>
+    <picklistValues>
+        <picklist>Field_Event_Industry__c</picklist>
+        <values>
+            <fullName>Animal Welfare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arts and Culture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Children and Youth Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civil Rights and Advocacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare and Medical Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poverty and Humanitarian Aid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Religious Organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veterans Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
