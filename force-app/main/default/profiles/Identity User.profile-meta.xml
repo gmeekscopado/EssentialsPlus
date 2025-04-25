@@ -1031,6 +1031,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Charity__c.Field_Event_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Charity__c.Field_Event_Industry__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Charity__c.Field_Event_Location__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Charity__c.Mission_Statement__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3682,6 +3697,10 @@
         <layout>Charity__c-Charity Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Charity__c-Charity Layout</layout>
+        <recordType>Charity__c.Relationship_Manager</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Client_Engagement__c-Client Engagement Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3946,6 +3965,11 @@
         <apexPage>scc_tour_style</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Charity__c.Relationship_Manager</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
