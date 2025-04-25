@@ -4,6 +4,49 @@
     <active>true</active>
     <label>Relationship Manager</label>
     <picklistValues>
+        <picklist>Field_Event_Industry__c</picklist>
+        <values>
+            <fullName>Animal Welfare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arts and Culture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Children and Youth Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civil Rights and Advocacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare and Medical Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poverty and Humanitarian Aid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Religious Organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veterans Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Target_Audience_Subcategory__c</picklist>
         <values>
             <fullName>Advocacy Groups and Partners</fullName>
@@ -142,49 +185,6 @@
         </values>
         <values>
             <fullName>Youth and Students</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Field_Event_Industry__c</picklist>
-        <values>
-            <fullName>Animal Welfare</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Arts and Culture</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Children and Youth Services</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Civil Rights and Advocacy</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Education</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Environmental</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Healthcare and Medical Research</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Poverty and Humanitarian Aid</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Religious Organization</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Veterans Services</fullName>
             <default>false</default>
         </values>
     </picklistValues>
