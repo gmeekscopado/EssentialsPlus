@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Engagement_Type__c</fullName>
-    <label>Engagement Type</label>
+    <fullName>Markets__c</fullName>
+    <label>Markets</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -10,25 +10,19 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Outsourced IT</fullName>
+                <fullName>Financial Securities</fullName>
                 <default>false</default>
-                <label>Outsourced IT</label>
+                <label>Financial Securities</label>
             </value>
             <value>
-                <fullName>Co-Managed IT</fullName>
+                <fullName>Real Estate</fullName>
                 <default>false</default>
-                <label>Co-Managed IT</label>
+                <label>Real Estate</label>
             </value>
             <value>
-                <fullName>Cybersecurity Consultancy</fullName>
+                <fullName>Insurance</fullName>
                 <default>false</default>
-                <label>Cybersecurity Consultancy</label>
-            </value>
-            <value>
-                <fullName>Boutique</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Boutique</label>
+                <label>Insurance</label>
             </value>
         </valueSetDefinition>
     </valueSet>

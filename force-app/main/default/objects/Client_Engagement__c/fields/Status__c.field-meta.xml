@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Status__c</fullName>
+    <complianceGroup>GDPR</complianceGroup>
     <label>Status</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
@@ -28,6 +29,12 @@
                 <fullName>Completed</fullName>
                 <default>false</default>
                 <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pending</label>
             </value>
         </valueSetDefinition>
     </valueSet>
