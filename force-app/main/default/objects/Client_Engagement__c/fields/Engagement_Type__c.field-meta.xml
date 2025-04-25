@@ -27,6 +27,7 @@
             <value>
                 <fullName>Boutique</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Boutique</label>
             </value>
         </valueSetDefinition>
