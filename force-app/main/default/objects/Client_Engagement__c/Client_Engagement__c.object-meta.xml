@@ -155,7 +155,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Client Engagement</label>
     <nameField>
-        <label>Client Engagement Name</label>
+        <label>Client Name</label>
         <type>Text</type>
     </nameField>
     <pluralLabel>Client Engagements</pluralLabel>
