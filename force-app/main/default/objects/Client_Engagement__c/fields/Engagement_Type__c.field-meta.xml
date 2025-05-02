@@ -27,17 +27,8 @@
             <value>
                 <fullName>Boutique</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Boutique</label>
-            </value>
-            <value>
-                <fullName>Ongoing</fullName>
-                <default>false</default>
-                <label>Ongoing</label>
-            </value>
-            <value>
-                <fullName>Short-Term</fullName>
-                <default>false</default>
-                <label>Short-Term</label>
             </value>
         </valueSetDefinition>
     </valueSet>
