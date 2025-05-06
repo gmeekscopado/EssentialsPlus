@@ -14,14 +14,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Companies Offering Matching Gifts</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Corporate Social Responsibility %28CSR%29 Programs</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Corporate Sponsors</fullName>
             <default>false</default>
         </values>
@@ -126,10 +118,6 @@
         </values>
         <values>
             <fullName>Government and Foundations</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Media and Press</fullName>
             <default>false</default>
         </values>
         <values>
