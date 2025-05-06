@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Target Audience --></label>
+    <name>Target_Audience__c</name>
+    <picklistValues>
+        <masterLabel>Advocates and Activists</masterLabel>
+        <translation><!-- Advocates and Activists --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beneficiaries of the Charity</masterLabel>
+        <translation><!-- Beneficiaries of the Charity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corporate Partners and Employers</masterLabel>
+        <translation><!-- Corporate Partners and Employers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Donors and Sponsors</masterLabel>
+        <translation><!-- Donors and Sponsors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Faith-Based Groups</masterLabel>
+        <translation><!-- Faith-Based Groups --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundraising Event Participants</masterLabel>
+        <translation><!-- Fundraising Event Participants --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government and Foundations</masterLabel>
+        <translation><!-- Government and Foundations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Media and Online Communities</masterLabel>
+        <translation><!-- Social Media and Online Communities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Volunteers</masterLabel>
+        <translation><!-- Volunteers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Youth and Students</masterLabel>
+        <translation><!-- Youth and Students --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
