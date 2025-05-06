@@ -205,5 +205,13 @@
             <controllingFieldValue>Faith-Based Groups</controllingFieldValue>
             <valueName>Religious Communities</valueName>
         </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate Partners and Employers</controllingFieldValue>
+            <valueName>Companies Offering Matching Gifts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate Partners and Employers</controllingFieldValue>
+            <valueName>Corporate Social Responsibility (CSR) Programs</valueName>
+        </valueSettings>
     </valueSet>
 </CustomField>
