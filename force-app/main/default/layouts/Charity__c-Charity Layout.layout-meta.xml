@@ -25,10 +25,6 @@
                 <behavior>Edit</behavior>
                 <field>Target_Audience__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Target_Audience_Subcategory__c</field>
-            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
