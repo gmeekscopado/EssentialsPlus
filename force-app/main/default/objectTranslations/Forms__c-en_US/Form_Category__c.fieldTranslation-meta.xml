@@ -16,6 +16,10 @@
         <translation><!-- Contract --></translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Inquiry</masterLabel>
+        <translation><!-- Inquiry --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Release</masterLabel>
         <translation><!-- Release --></translation>
     </picklistValues>
