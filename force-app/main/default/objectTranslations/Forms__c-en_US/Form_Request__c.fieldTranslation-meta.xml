@@ -12,6 +12,10 @@
         <translation><!-- Lease --></translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Miscellaneous</masterLabel>
+        <translation><!-- Miscellaneous --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Not listed</masterLabel>
         <translation><!-- Not listed --></translation>
     </picklistValues>
