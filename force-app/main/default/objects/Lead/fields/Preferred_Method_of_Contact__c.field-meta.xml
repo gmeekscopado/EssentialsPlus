@@ -20,9 +20,9 @@
                 <label>Email</label>
             </value>
             <value>
-                <fullName>Facts</fullName>
+                <fullName>Fax</fullName>
                 <default>false</default>
-                <label>Facts</label>
+                <label>Fax</label>
             </value>
             <value>
                 <fullName>Home Phone</fullName>
@@ -43,6 +43,12 @@
                 <fullName>Pager</fullName>
                 <default>false</default>
                 <label>Pager</label>
+            </value>
+            <value>
+                <fullName>Facts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Facts</label>
             </value>
         </valueSetDefinition>
     </valueSet>
