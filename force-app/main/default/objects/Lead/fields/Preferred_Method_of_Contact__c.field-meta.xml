@@ -44,6 +44,12 @@
                 <default>false</default>
                 <label>Pager</label>
             </value>
+            <value>
+                <fullName>Facts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Facts</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
