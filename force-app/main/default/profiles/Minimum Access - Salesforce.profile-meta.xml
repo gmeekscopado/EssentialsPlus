@@ -965,6 +965,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.Satisfaction__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.ServiceContractId</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2291,11 +2296,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.Phone</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Lead.Preferred_Method_of_Contact__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
