@@ -2299,11 +2299,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Lead.Preferred_Method_of_Contact__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Lead.Primary__c</field>
         <readable>false</readable>
     </fieldPermissions>
