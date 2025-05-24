@@ -180,7 +180,11 @@
     </preferences>
     <tabs>standard-Case</tabs>
     <tabs>standard-Knowledge</tabs>
+    <tabs>Program__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Program__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Case</tab>
         </mappings>
