@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Organizations collaborating on program delivery --></help>
+    <label><!-- Community Partners --></label>
+    <name>Community_Partners__c</name>
+</CustomFieldTranslation>

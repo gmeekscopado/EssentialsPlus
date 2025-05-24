@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Program Type --></label>
+    <name>Program_Type__c</name>
+    <picklistValues>
+        <masterLabel>Clean Energy</masterLabel>
+        <translation><!-- Clean Energy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Outreach</masterLabel>
+        <translation><!-- Community Outreach --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cooling Solutions</masterLabel>
+        <translation><!-- Cooling Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Access</masterLabel>
+        <translation><!-- Power Access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Services</masterLabel>
+        <translation><!-- Water Services --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

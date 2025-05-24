@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Type__c</fullName>
+    <label>Program Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Clean Energy</fullName>
+                <default>false</default>
+                <label>Clean Energy</label>
+            </value>
+            <value>
+                <fullName>Cooling Solutions</fullName>
+                <default>false</default>
+                <label>Cooling Solutions</label>
+            </value>
+            <value>
+                <fullName>Power Access</fullName>
+                <default>false</default>
+                <label>Power Access</label>
+            </value>
+            <value>
+                <fullName>Water Services</fullName>
+                <default>false</default>
+                <label>Water Services</label>
+            </value>
+            <value>
+                <fullName>Community Outreach</fullName>
+                <default>false</default>
+                <label>Community Outreach</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
