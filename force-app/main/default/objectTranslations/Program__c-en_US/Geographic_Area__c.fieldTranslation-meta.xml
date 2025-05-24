@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Regions or communities served by this program --></help>
+    <label><!-- Geographic Area --></label>
+    <name>Geographic_Area__c</name>
+</CustomFieldTranslation>
