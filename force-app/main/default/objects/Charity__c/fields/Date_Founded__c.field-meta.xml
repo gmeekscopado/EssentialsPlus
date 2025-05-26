@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Date_Founded__c</fullName>
     <businessStatus>Active</businessStatus>
-    <complianceGroup>PII;GDPR</complianceGroup>
+    <complianceGroup>GDPR</complianceGroup>
     <description>When was the Charity founded?</description>
     <inlineHelpText>This field can use omitted if the founding date is unknown.</inlineHelpText>
     <label>Date Founded</label>
