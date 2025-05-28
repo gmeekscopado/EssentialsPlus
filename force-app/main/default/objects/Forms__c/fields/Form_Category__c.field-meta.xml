@@ -39,6 +39,11 @@
                 <default>false</default>
                 <label>Billing</label>
             </value>
+            <value>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+                <label>Inquiry</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

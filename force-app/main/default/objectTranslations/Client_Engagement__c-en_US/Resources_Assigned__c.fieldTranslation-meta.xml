@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Named Resources Assigned --></label>
+    <name>Resources_Assigned__c</name>
+    <picklistValues>
+        <masterLabel>Aaron</masterLabel>
+        <translation><!-- Aaron --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beth</masterLabel>
+        <translation><!-- Beth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blake</masterLabel>
+        <translation><!-- Blake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chibuikum</masterLabel>
+        <translation><!-- Chibuikum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diane</masterLabel>
+        <translation><!-- Diane --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harry</masterLabel>
+        <translation><!-- Harry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kevin</masterLabel>
+        <translation><!-- Kevin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mario</masterLabel>
+        <translation><!-- Mario --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Osiris</masterLabel>
+        <translation><!-- Osiris --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vanessa</masterLabel>
+        <translation><!-- Vanessa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zach</masterLabel>
+        <translation><!-- Zach --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

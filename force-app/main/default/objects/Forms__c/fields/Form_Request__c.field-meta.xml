@@ -30,6 +30,11 @@
                 <default>false</default>
                 <label>Not listed</label>
             </value>
+            <value>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+                <label>Miscellaneous</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

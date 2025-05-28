@@ -112,7 +112,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Support_Service__c</field>
+                <field>Satisfaction__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>

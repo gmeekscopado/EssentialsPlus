@@ -969,6 +969,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.Satisfaction__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.ServiceContractId</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1065,6 +1070,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Client_Engagement__c.Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Client_Engagement__c.Resources_Assigned__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1990,6 +2000,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Forms__c.Form_Category__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Forms__c.Form_Number__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
