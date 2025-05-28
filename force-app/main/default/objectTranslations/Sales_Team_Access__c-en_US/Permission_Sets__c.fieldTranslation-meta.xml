@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Permission Sets --></label>
+    <name>Permission_Sets__c</name>
+    <picklistValues>
+        <masterLabel>Dashboard_Admin</masterLabel>
+        <translation><!-- Dashboard_Admin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Report_Builder</masterLabel>
+        <translation><!-- Report_Builder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales_Manager</masterLabel>
+        <translation><!-- Sales_Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales_User</masterLabel>
+        <translation><!-- Sales_User --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
