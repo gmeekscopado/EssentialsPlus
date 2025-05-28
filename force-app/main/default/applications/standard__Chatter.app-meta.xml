@@ -13,4 +13,5 @@
     <tabs>standard-File</tabs>
     <tabs>Customer_Testimonial__c</tabs>
     <tabs>Supplier__c</tabs>
+    <tabs>Sales_Team_Access__c</tabs>
 </CustomApplication>

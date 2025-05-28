@@ -11,8 +11,12 @@
     <tabs>standard-SalesforceJourney</tabs>
     <tabs>standard-JourneyMap</tabs>
     <tabs>Supplier__c</tabs>
+    <tabs>Sales_Team_Access__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
+        <mappings>
+            <tab>Sales_Team_Access__c</tab>
+        </mappings>
         <mappings>
             <tab>Supplier__c</tab>
         </mappings>

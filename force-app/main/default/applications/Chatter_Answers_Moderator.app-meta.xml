@@ -182,9 +182,13 @@
     <tabs>standard-Knowledge</tabs>
     <tabs>Customer_Testimonial__c</tabs>
     <tabs>Supplier__c</tabs>
+    <tabs>Sales_Team_Access__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Customer_Testimonial__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Sales_Team_Access__c</tab>
         </mappings>
         <mappings>
             <tab>Supplier__c</tab>
