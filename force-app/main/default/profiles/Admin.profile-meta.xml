@@ -109,11 +109,6 @@
     </classAccesses>
     <custom>false</custom>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Company_Profile__c.Test__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
@@ -1156,6 +1151,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Company_Profile__c.Company_Industry__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Company_Profile__c.Test__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Use this field to document the company age. --></help>
     <label><!-- Year Founded --></label>
     <name>Year_Founded__c</name>
 </CustomFieldTranslation>
