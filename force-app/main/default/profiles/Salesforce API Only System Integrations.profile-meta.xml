@@ -2805,6 +2805,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Project__c.Project_Team__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Sales_Team_Access__c.Access_Level__c</field>
         <readable>false</readable>
     </fieldPermissions>
