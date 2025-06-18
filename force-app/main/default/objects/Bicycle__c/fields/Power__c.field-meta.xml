@@ -31,11 +31,6 @@
                 <label>Hybrid</label>
             </value>
             <value>
-                <fullName>Solar</fullName>
-                <default>false</default>
-                <label>Solar</label>
-            </value>
-            <value>
                 <fullName>Battery</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
@@ -46,6 +41,12 @@
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Natural Gas</label>
+            </value>
+            <value>
+                <fullName>Solar</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Solar</label>
             </value>
         </valueSetDefinition>
     </valueSet>

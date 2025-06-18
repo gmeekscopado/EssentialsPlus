@@ -25,6 +25,11 @@
                 <default>false</default>
                 <label>Road</label>
             </value>
+            <value>
+                <fullName>Show</fullName>
+                <default>false</default>
+                <label>Show</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
