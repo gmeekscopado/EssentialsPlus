@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Power__c</fullName>
-    <description>What is the bicycle owner&apos;s name?</description>
     <label>Power</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
@@ -26,26 +25,28 @@
                 <label>Gas</label>
             </value>
             <value>
-                <fullName>Hybrid</fullName>
-                <default>false</default>
-                <label>Hybrid</label>
-            </value>
-            <value>
-                <fullName>Solar</fullName>
-                <default>false</default>
-                <label>Solar</label>
-            </value>
-            <value>
                 <fullName>Battery</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Battery</label>
             </value>
             <value>
+                <fullName>Hybrid</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hybrid</label>
+            </value>
+            <value>
                 <fullName>Natural Gas</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Natural Gas</label>
+            </value>
+            <value>
+                <fullName>Solar</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Solar</label>
             </value>
         </valueSetDefinition>
     </valueSet>

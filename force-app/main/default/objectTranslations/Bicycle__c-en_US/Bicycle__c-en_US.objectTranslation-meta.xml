@@ -8,17 +8,6 @@
         <plural>true</plural>
         <value>Bicycles</value>
     </caseValues>
-    <layouts>
-        <layout>Bicycle Layout</layout>
-        <sections>
-            <label><!-- Bicycle Information --></label>
-            <section>Bicycle Information</section>
-        </sections>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-    </layouts>
     <sharingReasons>
         <label><!-- Bicycle Access --></label>
         <name>Bicycle_Access</name>
