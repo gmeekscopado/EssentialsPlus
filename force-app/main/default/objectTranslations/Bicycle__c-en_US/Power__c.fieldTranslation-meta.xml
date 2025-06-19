@@ -11,15 +11,7 @@
         <translation><!-- Gas --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Hybrid</masterLabel>
-        <translation><!-- Hybrid --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>Manual</masterLabel>
         <translation><!-- Manual --></translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>Solar</masterLabel>
-        <translation><!-- Solar --></translation>
     </picklistValues>
 </CustomFieldTranslation>
