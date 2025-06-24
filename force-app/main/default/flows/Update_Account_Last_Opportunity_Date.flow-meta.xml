@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <actionCalls>
         <name>Send_Email</name>
         <label>Send Email</label>
-        <locationX>308</locationX>
+        <locationX>314</locationX>
         <locationY>755</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+        </inputParameters>
+        <inputParameters>
+            <name>ccRecipientAddressList</name>
+        </inputParameters>
         <inputParameters>
             <name>emailSubject</name>
             <value>
@@ -28,7 +34,7 @@
     <assignments>
         <name>Set_New_Last_Opportunity_Date</name>
         <label>Set New Last Opportunity Date</label>
-        <locationX>308</locationX>
+        <locationX>314</locationX>
         <locationY>539</locationY>
         <assignmentItems>
             <assignToReference>Get_Related_Account.Last_Opportunity_Date__c</assignToReference>
@@ -48,10 +54,20 @@
             <targetReference>Update_Account</targetReference>
         </connector>
     </assignments>
+    <customErrors>
+        <name>Wrong_Answer</name>
+        <label>Wrong Answer</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <customErrorMessages>
+            <errorMessage xsi:nil="true"/>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
     <decisions>
         <name>Is_Newer_Opportunity</name>
         <label>Is Newer Opportunity?</label>
-        <locationX>176</locationX>
+        <locationX>182</locationX>
         <locationY>431</locationY>
         <defaultConnector>
             <targetReference>Set_New_Last_Opportunity_Date</targetReference>
@@ -67,6 +83,9 @@
                     <elementReference>Get_Related_Account.Last_Opportunity_Date__c</elementReference>
                 </rightValue>
             </conditions>
+            <connector>
+                <targetReference>Wrong_Answer</targetReference>
+            </connector>
             <label>Outcome 1 of Decision 1</label>
         </rules>
     </decisions>
@@ -95,7 +114,7 @@
     <recordLookups>
         <name>Get_Related_Account</name>
         <label>Get Related Account</label>
-        <locationX>176</locationX>
+        <locationX>182</locationX>
         <locationY>323</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -119,7 +138,7 @@
     <recordUpdates>
         <name>Update_Account</name>
         <label>Update Account</label>
-        <locationX>308</locationX>
+        <locationX>314</locationX>
         <locationY>647</locationY>
         <connector>
             <targetReference>Send_Email</targetReference>
@@ -130,16 +149,10 @@
                 <elementReference>Get_Related_Account.Last_Opportunity_Date__c</elementReference>
             </value>
         </inputAssignments>
-        <inputAssignments>
-            <field>null__NotFound</field>
-            <value>
-                <elementReference>Get_Related_Account.null__NotFound</elementReference>
-            </value>
-        </inputAssignments>
         <object>Account</object>
     </recordUpdates>
     <start>
-        <locationX>50</locationX>
+        <locationX>56</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Get_Related_Account</targetReference>
