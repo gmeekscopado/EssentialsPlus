@@ -2794,11 +2794,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Project__c.Project_Team__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Security_Alert__c.Date_Encountered__c</field>
         <readable>false</readable>
     </fieldPermissions>

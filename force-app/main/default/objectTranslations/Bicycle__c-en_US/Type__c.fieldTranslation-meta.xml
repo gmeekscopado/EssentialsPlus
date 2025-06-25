@@ -14,8 +14,4 @@
         <masterLabel>Road</masterLabel>
         <translation><!-- Road --></translation>
     </picklistValues>
-    <picklistValues>
-        <masterLabel>Show</masterLabel>
-        <translation><!-- Show --></translation>
-    </picklistValues>
 </CustomFieldTranslation>
