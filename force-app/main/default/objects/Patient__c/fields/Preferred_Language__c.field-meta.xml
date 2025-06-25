@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Power__c</fullName>
-    <label>Power</label>
+    <fullName>Preferred_Language__c</fullName>
+    <label>Preferred Language</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -10,43 +10,39 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Manual</fullName>
+                <fullName>English</fullName>
                 <default>false</default>
-                <label>Manual</label>
+                <label>English</label>
             </value>
             <value>
-                <fullName>Electric</fullName>
+                <fullName>Spanish</fullName>
                 <default>false</default>
-                <label>Electric</label>
+                <label>Spanish</label>
             </value>
             <value>
-                <fullName>Gas</fullName>
+                <fullName>Mandarin</fullName>
                 <default>false</default>
-                <label>Gas</label>
+                <label>Mandarin</label>
             </value>
             <value>
-                <fullName>Battery</fullName>
+                <fullName>Arabic</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
-                <label>Battery</label>
+                <label>Arabic</label>
             </value>
             <value>
-                <fullName>Hybrid</fullName>
+                <fullName>Vietnamese</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
-                <label>Hybrid</label>
+                <label>Vietnamese</label>
             </value>
             <value>
-                <fullName>Natural Gas</fullName>
+                <fullName>Russian</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
-                <label>Natural Gas</label>
+                <label>Russian</label>
             </value>
             <value>
-                <fullName>Solar</fullName>
+                <fullName>Other</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
-                <label>Solar</label>
+                <label>Other</label>
             </value>
         </valueSetDefinition>
     </valueSet>
