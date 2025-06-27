@@ -12,8 +12,12 @@
     <tabs>standard-CmsWorkspaces</tabs>
     <tabs>standard-CmsExperiences</tabs>
     <tabs>Program__c</tabs>
+    <tabs>NOLA__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
+        <mappings>
+            <tab>NOLA__c</tab>
+        </mappings>
         <mappings>
             <tab>Program__c</tab>
         </mappings>

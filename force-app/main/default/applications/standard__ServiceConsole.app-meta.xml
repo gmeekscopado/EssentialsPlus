@@ -184,7 +184,11 @@
     <tabs>standard-Knowledge</tabs>
     <tabs>standard-Document</tabs>
     <tabs>Program__c</tabs>
+    <tabs>NOLA__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>NOLA__c</tab>
+        </mappings>
         <mappings>
             <tab>Program__c</tab>
         </mappings>
