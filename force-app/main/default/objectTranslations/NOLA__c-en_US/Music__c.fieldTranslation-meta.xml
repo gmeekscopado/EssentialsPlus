@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Music --></label>
+    <name>Music__c</name>
+    <picklistValues>
+        <masterLabel>Blues</masterLabel>
+        <translation><!-- Blues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Country</masterLabel>
+        <translation><!-- Country --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hip Hop</masterLabel>
+        <translation><!-- Hip Hop --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jazz</masterLabel>
+        <translation><!-- Jazz --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rock</masterLabel>
+        <translation><!-- Rock --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
