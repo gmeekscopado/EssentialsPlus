@@ -3704,14 +3704,6 @@
         <field>WorkOrderLineItem.UnitPrice</field>
         <readable>false</readable>
     </fieldPermissions>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>Copado_Test</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>Update_Account_Last_Opportunity_Date</flow>
-    </flowAccesses>
     <layoutAssignments>
         <layout>Bicycle__c-Bicycle Layout</layout>
     </layoutAssignments>
