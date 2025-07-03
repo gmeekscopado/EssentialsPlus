@@ -182,7 +182,15 @@
     <tabs>standard-Knowledge</tabs>
     <tabs>Program__c</tabs>
     <tabs>NOLA__c</tabs>
+    <tabs>Film_Resource__c</tabs>
+    <tabs>Film__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Film_Resource__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Film__c</tab>
+        </mappings>
         <mappings>
             <tab>NOLA__c</tab>
         </mappings>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Age Rating --></label>
+    <name>Age_Rating__c</name>
+    <picklistValues>
+        <masterLabel>12</masterLabel>
+        <translation><!-- 12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>12A</masterLabel>
+        <translation><!-- 12A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>15</masterLabel>
+        <translation><!-- 15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>18</masterLabel>
+        <translation><!-- 18 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PG</masterLabel>
+        <translation><!-- PG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U</masterLabel>
+        <translation><!-- U --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

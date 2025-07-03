@@ -13,5 +13,7 @@
     <tabs>standard-SalesforceProductCatalog</tabs>
     <tabs>Program__c</tabs>
     <tabs>NOLA__c</tabs>
+    <tabs>Film_Resource__c</tabs>
+    <tabs>Film__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>
