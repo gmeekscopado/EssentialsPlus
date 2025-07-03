@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Target Age Range --></label>
+    <name>Target_Age_Range__c</name>
+    <picklistValues>
+        <masterLabel>12-14</masterLabel>
+        <translation><!-- 12-14 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>15-18</masterLabel>
+        <translation><!-- 15-18 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5-7</masterLabel>
+        <translation><!-- 5-7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8-11</masterLabel>
+        <translation><!-- 8-11 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
