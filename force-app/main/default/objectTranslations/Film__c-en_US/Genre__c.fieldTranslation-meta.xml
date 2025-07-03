@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Genre --></label>
+    <name>Genre__c</name>
+    <picklistValues>
+        <masterLabel>Action</masterLabel>
+        <translation><!-- Action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comedy</masterLabel>
+        <translation><!-- Comedy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drama</masterLabel>
+        <translation><!-- Drama --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Horror</masterLabel>
+        <translation><!-- Horror --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suspense</masterLabel>
+        <translation><!-- Suspense --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
