@@ -3416,6 +3416,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Warehouse__c.Active__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Warehouse__c.Location__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Warehouse__c.Sensitivity_Level__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>WorkOrder.AccountId</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3779,6 +3794,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Therapeutic_Area__c-Therapeutic Area Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Warehouse__c-Warehouse Layout</layout>
     </layoutAssignments>
     <pageAccesses>
         <apexPage>ChatterAnswersAgentView</apexPage>
