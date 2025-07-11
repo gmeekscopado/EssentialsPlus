@@ -20,4 +20,5 @@
     <tabs>NOLA__c</tabs>
     <tabs>Film_Resource__c</tabs>
     <tabs>Film__c</tabs>
+    <tabs>Contact_Department__c</tabs>
 </CustomApplication>
