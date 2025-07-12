@@ -1641,21 +1641,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Contact_Department__c.Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact_Department__c.Email_Address__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact_Department__c.Phone_Number__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Contract.ActivatedById</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3814,14 +3799,6 @@
         <field>WorkOrderLineItem.UnitPrice</field>
         <readable>false</readable>
     </fieldPermissions>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>Copado_Test</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>Update_Account_Last_Opportunity_Date</flow>
-    </flowAccesses>
     <layoutAssignments>
         <layout>Bicycle__c-Bicycle Layout</layout>
     </layoutAssignments>
@@ -3849,9 +3826,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>ContactPointPhone-Contact Point Phone Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Contact_Department__c-Contact Department Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Copado__c-Copado Layout</layout>
@@ -4016,10 +3990,6 @@
         <recordType>Supplier__c.Supplier</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
-    <tabVisibilities>
-        <tab>Contact_Department__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
     <tabVisibilities>
         <tab>Customer_Testimonial__c</tab>
         <visibility>Hidden</visibility>
