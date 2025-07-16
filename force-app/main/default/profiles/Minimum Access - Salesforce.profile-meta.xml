@@ -2171,6 +2171,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Inventory__c.Category__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Inventory__c.Item_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Inventory__c.Subcategory__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Lead.Address</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3776,6 +3791,9 @@
         <layout>House__c-House Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Inventory__c-Inventory Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>License__c-License Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -3917,6 +3935,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Getting_Started</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Inventory__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

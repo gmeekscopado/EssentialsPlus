@@ -12,8 +12,12 @@
     <tabs>standard-JourneyMap</tabs>
     <tabs>Supplier__c</tabs>
     <tabs>Sales_Team_Access__c</tabs>
+    <tabs>Inventory__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
+        <mappings>
+            <tab>Inventory__c</tab>
+        </mappings>
         <mappings>
             <tab>Sales_Team_Access__c</tab>
         </mappings>

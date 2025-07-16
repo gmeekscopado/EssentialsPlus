@@ -14,5 +14,6 @@
     <tabs>Customer_Testimonial__c</tabs>
     <tabs>Supplier__c</tabs>
     <tabs>Sales_Team_Access__c</tabs>
+    <tabs>Inventory__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>
