@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Subcategory --></label>
+    <name>Subcategory__c</name>
+    <picklistValues>
+        <masterLabel>Computers</masterLabel>
+        <translation><!-- Computers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hard Drives</masterLabel>
+        <translation><!-- Hard Drives --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operating Systems</masterLabel>
+        <translation><!-- Operating Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Processors</masterLabel>
+        <translation><!-- Processors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Programs</masterLabel>
+        <translation><!-- Programs --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
