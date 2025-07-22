@@ -5,7 +5,6 @@
     <complianceGroup>GDPR</complianceGroup>
     <description>When was the company founded?</description>
     <externalId>false</externalId>
-    <inlineHelpText>Use this field to document the company age.</inlineHelpText>
     <label>Year Founded</label>
     <precision>18</precision>
     <required>false</required>
