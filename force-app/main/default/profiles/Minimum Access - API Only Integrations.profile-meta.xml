@@ -1886,6 +1886,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Employee__c.PTO_Request__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Entitlement.AssetId</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3768,6 +3773,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Customer_Testimonial__c-Customer Testimonial Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Employee__c-Employee Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Health_Portal__c-Health Portal Layout</layout>
