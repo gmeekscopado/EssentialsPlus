@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Name_Required_Validation</fullName>
+    <active>true</active>
+    <description>Ensures Account Name is not blank and has minimum 3 characters</description>
+    <errorConditionFormula>OR(
+  ISBLANK(Name),
+  LEN(Name) &lt; 3
+)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Please enter a valid Account Name (minimum 3 characters required)</errorMessage>
+</ValidationRule>
