@@ -101,15 +101,15 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
-        <apexClass>AccountValidationTest</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>AccountAutomations</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>AccountAutomationsTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AccountValidationTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -280,6 +280,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Territory_Manager__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Territory_Region__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -961,6 +971,11 @@
         <editable>true</editable>
         <field>Case.Priority</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Priority_Score__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
