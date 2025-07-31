@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Resource Type --></label>
+    <name>Resource_Type__c</name>
+    <picklistValues>
+        <masterLabel>Activity Sheet</masterLabel>
+        <translation><!-- Activity Sheet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Film Guide</masterLabel>
+        <translation><!-- Film Guide --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lesson Plan</masterLabel>
+        <translation><!-- Lesson Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Video Tutorial</masterLabel>
+        <translation><!-- Video Tutorial --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

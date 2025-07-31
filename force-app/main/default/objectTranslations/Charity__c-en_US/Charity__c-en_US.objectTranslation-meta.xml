@@ -18,6 +18,10 @@
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
         </sections>
+        <sections>
+            <label><!-- Field Events --></label>
+            <section>Field Events</section>
+        </sections>
     </layouts>
     <recordTypes>
         <label><!-- Relationship Manager --></label>
