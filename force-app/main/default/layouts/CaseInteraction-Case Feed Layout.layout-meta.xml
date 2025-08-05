@@ -112,7 +112,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Satisfaction__c</field>
+                <field>Priority_Score__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Field Event Industry --></label>
+    <name>Field_Event_Industry__c</name>
+    <picklistValues>
+        <masterLabel>Animal Welfare</masterLabel>
+        <translation><!-- Animal Welfare --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arts and Culture</masterLabel>
+        <translation><!-- Arts and Culture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Children and Youth Services</masterLabel>
+        <translation><!-- Children and Youth Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Civil Rights and Advocacy</masterLabel>
+        <translation><!-- Civil Rights and Advocacy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Education</masterLabel>
+        <translation><!-- Education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental</masterLabel>
+        <translation><!-- Environmental --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Healthcare and Medical Research</masterLabel>
+        <translation><!-- Healthcare and Medical Research --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poverty and Humanitarian Aid</masterLabel>
+        <translation><!-- Poverty and Humanitarian Aid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Religious Organization</masterLabel>
+        <translation><!-- Religious Organization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Veterans Services</masterLabel>
+        <translation><!-- Veterans Services --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
