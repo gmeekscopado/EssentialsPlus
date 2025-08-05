@@ -4,7 +4,7 @@
     <businessStatus>Active</businessStatus>
     <complianceGroup>GDPR</complianceGroup>
     <label>Account Picklist</label>
-    <required>true</required>
+    <required>false</required>
     <securityClassification>Public</securityClassification>
     <trackFeedHistory>false</trackFeedHistory>
     <type>Picklist</type>
