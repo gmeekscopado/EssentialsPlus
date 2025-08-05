@@ -3,7 +3,7 @@
     <fullName>Picklist_Test__c</fullName>
     <complianceGroup>GDPR</complianceGroup>
     <label>Picklist Test</label>
-    <required>true</required>
+    <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <type>Picklist</type>
     <valueSet>
