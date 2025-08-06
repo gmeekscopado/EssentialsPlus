@@ -22,6 +22,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Target_Audience__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Target_Audience_Subcategory__c</field>
             </layoutItems>
         </layoutColumns>
@@ -42,6 +46,10 @@
         <editHeading>true</editHeading>
         <label>Field Events</label>
         <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Field_Event_Date__c</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Field_Event_Industry__c</field>
