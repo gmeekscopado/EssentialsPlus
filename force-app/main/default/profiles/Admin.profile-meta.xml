@@ -1078,11 +1078,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Charity__c.Field_Event_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Charity__c.Field_Event_Industry__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1100,11 +1095,6 @@
         <editable>true</editable>
         <field>Charity__c.Target_Audience_Subcategory__c</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Charity__c.Target_Audience__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
