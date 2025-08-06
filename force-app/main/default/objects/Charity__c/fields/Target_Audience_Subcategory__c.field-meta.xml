@@ -11,7 +11,6 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        <controllingField>Target_Audience__c</controllingField>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
@@ -131,89 +130,5 @@
                 <label>Corporate Social Responsibility (CSR) Programs</label>
             </value>
         </valueSetDefinition>
-        <valueSettings>
-            <controllingFieldValue>Donors and Sponsors</controllingFieldValue>
-            <valueName>Individual Donors</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Donors and Sponsors</controllingFieldValue>
-            <valueName>Corporate Sponsors</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Donors and Sponsors</controllingFieldValue>
-            <valueName>Major Donors/High Net-Worth Individuals</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Volunteers</controllingFieldValue>
-            <valueName>Local Volunteers</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Volunteers</controllingFieldValue>
-            <valueName>Corporate Volunteers</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Volunteers</controllingFieldValue>
-            <valueName>Online Volunteers</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Fundraising Event Participants</controllingFieldValue>
-            <valueName>Event-Goers</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Fundraising Event Participants</controllingFieldValue>
-            <valueName>Sports Teams/Community Groups</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Beneficiaries of the Charity</controllingFieldValue>
-            <valueName>Direct Beneficiaries</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Beneficiaries of the Charity</controllingFieldValue>
-            <valueName>Communities in Need</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Advocates and Activists</controllingFieldValue>
-            <valueName>Supporters of Social Causes</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Advocates and Activists</controllingFieldValue>
-            <valueName>Advocacy Groups and Partners</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Government and Foundations</controllingFieldValue>
-            <valueName>Government Agencies</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Government and Foundations</controllingFieldValue>
-            <valueName>Philanthropic Foundations</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Youth and Students</controllingFieldValue>
-            <valueName>Young Volunteers</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Youth and Students</controllingFieldValue>
-            <valueName>Student Fundraisers</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Social Media and Online Communities</controllingFieldValue>
-            <valueName>Digital Supporters</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Social Media and Online Communities</controllingFieldValue>
-            <valueName>Influencers and Bloggers</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Faith-Based Groups</controllingFieldValue>
-            <valueName>Religious Communities</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Corporate Partners and Employers</controllingFieldValue>
-            <valueName>Companies Offering Matching Gifts</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Corporate Partners and Employers</controllingFieldValue>
-            <valueName>Corporate Social Responsibility (CSR) Programs</valueName>
-        </valueSettings>
     </valueSet>
 </CustomField>
