@@ -141,4 +141,47 @@
             <default>false</default>
         </values>
     </picklistValues>
+    <picklistValues>
+        <picklist>Target_Audience__c</picklist>
+        <values>
+            <fullName>Advocates and Activists</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beneficiaries of the Charity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Partners and Employers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donors and Sponsors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faith-Based Groups</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundraising Event Participants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government and Foundations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media and Online Communities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volunteers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Youth and Students</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
 </RecordType>
