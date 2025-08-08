@@ -47,97 +47,45 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Target_Audience_Subcategory__c</picklist>
+        <picklist>Target_Audience__c</picklist>
         <values>
-            <fullName>Advocacy Groups and Partners</fullName>
+            <fullName>Advocates and Activists</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Communities in Need</fullName>
+            <fullName>Beneficiaries of the Charity</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Companies Offering Matching Gifts</fullName>
+            <fullName>Corporate Partners and Employers</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Corporate Social Responsibility %28CSR%29 Programs</fullName>
+            <fullName>Donors and Sponsors</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Corporate Sponsors</fullName>
+            <fullName>Faith-Based Groups</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Corporate Volunteers</fullName>
+            <fullName>Fundraising Event Participants</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Digital Supporters</fullName>
+            <fullName>Government and Foundations</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Direct Beneficiaries</fullName>
+            <fullName>Social Media and Online Communities</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Event-Goers</fullName>
+            <fullName>Volunteers</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Government Agencies</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Individual Donors</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Influencers and Bloggers</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Journalists</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Local Volunteers</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Major Donors%2FHigh Net-Worth Individuals</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Online Volunteers</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Philanthropic Foundations</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Public Relations Professionals</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Religious Communities</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Sports Teams%2FCommunity Groups</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Student Fundraisers</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Supporters of Social Causes</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Young Volunteers</fullName>
+            <fullName>Youth and Students</fullName>
             <default>false</default>
         </values>
     </picklistValues>
