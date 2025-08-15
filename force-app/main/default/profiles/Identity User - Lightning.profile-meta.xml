@@ -2162,6 +2162,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Financial_Plan__c.Budget__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Financial_Plan__c.Financial_Goal__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Financial_Plan__c.Goal_Deadline__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Forms__c.Form_Category__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4126,6 +4141,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Film__c-Film Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Financial_Plan__c-Financial Plan Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Forms__c-Form Layout</layout>
