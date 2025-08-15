@@ -14,5 +14,6 @@
     <tabs>Film_Resource__c</tabs>
     <tabs>Film__c</tabs>
     <tabs>Contact_Department__c</tabs>
+    <tabs>Financial_Plan__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

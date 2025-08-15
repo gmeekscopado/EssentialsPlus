@@ -16,6 +16,7 @@
     <tabs>Film_Resource__c</tabs>
     <tabs>Film__c</tabs>
     <tabs>Contact_Department__c</tabs>
+    <tabs>Financial_Plan__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
         <mappings>
@@ -26,6 +27,9 @@
         </mappings>
         <mappings>
             <tab>Film__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Financial_Plan__c</tab>
         </mappings>
         <mappings>
             <tab>NOLA__c</tab>

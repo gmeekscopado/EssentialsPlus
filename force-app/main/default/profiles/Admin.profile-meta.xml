@@ -2176,6 +2176,21 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Financial_Plan__c.Budget__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Financial_Plan__c.Financial_Goal__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Financial_Plan__c.Goal_Deadline__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Forms__c.Form_Category__c</field>
         <readable>false</readable>
@@ -4048,6 +4063,9 @@
         <layout>Film__c-Film Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Financial_Plan__c-Financial Plan Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Forms__c-Form Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4643,6 +4661,15 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
+        <object>Financial_Plan__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
         <object>Forms__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
@@ -5128,6 +5155,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Film__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Financial_Plan__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
