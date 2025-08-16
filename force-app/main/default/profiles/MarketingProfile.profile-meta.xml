@@ -1077,12 +1077,27 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Charity__c.Field_Event_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Charity__c.Field_Event_Industry__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Charity__c.Field_Event_Location__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Charity__c.Mission_Statement__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Charity__c.Target_Audience_Subcategory__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3008,11 +3023,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Project__c.Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Project__c.Project_End_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
