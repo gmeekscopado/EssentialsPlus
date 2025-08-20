@@ -128,6 +128,11 @@
     <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Bicycle__c.Power__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Lead.Affiliations__c</field>
         <readable>true</readable>
     </fieldPermissions>
