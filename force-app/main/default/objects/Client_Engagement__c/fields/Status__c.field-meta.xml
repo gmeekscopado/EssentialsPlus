@@ -33,6 +33,7 @@
             <value>
                 <fullName>Pending</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Pending</label>
             </value>
         </valueSetDefinition>

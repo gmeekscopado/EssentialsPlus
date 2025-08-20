@@ -15,10 +15,6 @@
         <translation><!-- On Hold --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Pending</masterLabel>
-        <translation><!-- Pending --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>Planning</masterLabel>
         <translation><!-- Planning --></translation>
     </picklistValues>
