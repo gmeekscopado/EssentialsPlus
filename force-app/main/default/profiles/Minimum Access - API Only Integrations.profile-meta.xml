@@ -2333,6 +2333,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Lead.Affiliations__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Lead.AnnualRevenue</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2359,6 +2364,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.Fax</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.First_Contact__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
