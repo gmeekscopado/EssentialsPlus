@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Brand__c</fullName>
-    <businessStatus>Active</businessStatus>
-    <description>Bicycle manufacturer information.</description>
     <label>Brand</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
@@ -52,61 +50,6 @@
                 <label>Merida</label>
             </value>
             <value>
-                <fullName>Other</fullName>
-                <default>false</default>
-                <label>Other</label>
-            </value>
-            <value>
-                <fullName>Cannondale</fullName>
-                <default>false</default>
-                <label>Cannondale</label>
-            </value>
-            <value>
-                <fullName>Kona Bicycle Company</fullName>
-                <default>false</default>
-                <label>Kona Bicycle Company</label>
-            </value>
-            <value>
-                <fullName>BMC</fullName>
-                <default>false</default>
-                <label>BMC</label>
-            </value>
-            <value>
-                <fullName>Fuji Bikes</fullName>
-                <default>false</default>
-                <label>Fuji Bikes</label>
-            </value>
-            <value>
-                <fullName>Pinarello</fullName>
-                <default>false</default>
-                <label>Pinarello</label>
-            </value>
-            <value>
-                <fullName>Cervélo</fullName>
-                <default>false</default>
-                <label>Cervélo</label>
-            </value>
-            <value>
-                <fullName>Allied Cycle Works</fullName>
-                <default>false</default>
-                <label>Allied Cycle Works</label>
-            </value>
-            <value>
-                <fullName>Bearclaw Bicycle</fullName>
-                <default>false</default>
-                <label>Bearclaw Bicycle</label>
-            </value>
-            <value>
-                <fullName>Felt</fullName>
-                <default>false</default>
-                <label>Felt</label>
-            </value>
-            <value>
-                <fullName>Bishop Bikes</fullName>
-                <default>false</default>
-                <label>Bishop Bikes</label>
-            </value>
-            <value>
                 <fullName>3T Cycling</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
@@ -119,16 +62,52 @@
                 <label>Alchemy</label>
             </value>
             <value>
+                <fullName>Allied Cycle Works</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Allied Cycle Works</label>
+            </value>
+            <value>
+                <fullName>BMC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BMC</label>
+            </value>
+            <value>
+                <fullName>Bearclaw Bicycle</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bearclaw Bicycle</label>
+            </value>
+            <value>
                 <fullName>Bianchi</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Bianchi</label>
             </value>
             <value>
+                <fullName>Bishop Bikes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bishop Bikes</label>
+            </value>
+            <value>
+                <fullName>Cannondale</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cannondale</label>
+            </value>
+            <value>
                 <fullName>Canyon</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Canyon</label>
+            </value>
+            <value>
+                <fullName>Cervélo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cervélo</label>
             </value>
             <value>
                 <fullName>Colnago</fullName>
@@ -143,16 +122,46 @@
                 <label>Electra Bicycle Company</label>
             </value>
             <value>
+                <fullName>Felt</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Felt</label>
+            </value>
+            <value>
+                <fullName>Fuji Bikes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fuji Bikes</label>
+            </value>
+            <value>
                 <fullName>GT</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>GT</label>
             </value>
             <value>
+                <fullName>Kona Bicycle Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Kona Bicycle Company</label>
+            </value>
+            <value>
                 <fullName>Merida Bikes</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Merida Bikes</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pinarello</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pinarello</label>
             </value>
         </valueSetDefinition>
     </valueSet>
