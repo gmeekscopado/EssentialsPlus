@@ -3712,6 +3712,26 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Test_Result__c.Additional_Screening_Recommended__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Test_Result__c.Maternal_Haplotype__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Test_Result__c.Paternal_Haplotype__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Test_Result__c.Total_Cholesterol__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Therapeutic_Area__c.Active__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4164,6 +4184,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Support_Service_Outcome__c-Support Service Outcome Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Test_Result__c-Test Result Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Therapeutic_Area__c-Therapeutic Area Layout</layout>
