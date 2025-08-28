@@ -17,6 +17,7 @@
     <tabs>Film__c</tabs>
     <tabs>Contact_Department__c</tabs>
     <tabs>Financial_Plan__c</tabs>
+    <tabs>Test_Result__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
         <mappings>
@@ -36,6 +37,9 @@
         </mappings>
         <mappings>
             <tab>Program__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Test_Result__c</tab>
         </mappings>
         <mappings>
             <tab>standard-CmsAuthorHome</tab>

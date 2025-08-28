@@ -3617,6 +3617,26 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Test_Result__c.Additional_Screening_Recommended__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Test_Result__c.Maternal_Haplotype__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Test_Result__c.Paternal_Haplotype__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Test_Result__c.Total_Cholesterol__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Warehouse__c.Active__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4018,6 +4038,9 @@
         <layout>Support_Service_Outcome__c-Support Service Outcome Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Test_Result__c-Test Result Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Warehouse__c-Warehouse Layout</layout>
     </layoutAssignments>
     <pageAccesses>
@@ -4139,6 +4162,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Supplier__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Test_Result__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
