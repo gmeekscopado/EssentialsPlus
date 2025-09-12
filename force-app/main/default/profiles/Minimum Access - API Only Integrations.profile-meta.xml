@@ -2,7 +2,7 @@
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <custom>false</custom>
     <layoutAssignments>
-        <layout>Test_Dev_1__c-Test Dev 1 Layout</layout>
+        <layout>Test_Dev_2__c-Test Layout</layout>
     </layoutAssignments>
     <userLicense>Salesforce Integration</userLicense>
 </Profile>
