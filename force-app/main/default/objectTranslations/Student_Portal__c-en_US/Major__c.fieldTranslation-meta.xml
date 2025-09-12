@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Major --></label>
+    <name>Major__c</name>
+    <picklistValues>
+        <masterLabel>Business</masterLabel>
+        <translation><!-- Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Education</masterLabel>
+        <translation><!-- Education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental Science</masterLabel>
+        <translation><!-- Environmental Science --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liberal Arts</masterLabel>
+        <translation><!-- Liberal Arts --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
