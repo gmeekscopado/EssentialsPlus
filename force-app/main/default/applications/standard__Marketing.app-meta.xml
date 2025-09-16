@@ -13,4 +13,6 @@
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-Chatter</tabs>
+    <tabs>Performance_Review__c</tabs>
+    <tabs>Goal_Tracker__c</tabs>
 </CustomApplication>

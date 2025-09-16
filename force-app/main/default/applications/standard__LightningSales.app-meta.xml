@@ -26,6 +26,8 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Forecasting3</tabs>
     <tabs>standard-EmailTemplate</tabs>
+    <tabs>Performance_Review__c</tabs>
+    <tabs>Goal_Tracker__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSales_UtilityBar</utilityBar>
 </CustomApplication>

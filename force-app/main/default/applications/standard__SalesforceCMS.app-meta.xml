@@ -11,8 +11,16 @@
     <tabs>standard-CmsChannel</tabs>
     <tabs>standard-CmsWorkspaces</tabs>
     <tabs>standard-CmsExperiences</tabs>
+    <tabs>Performance_Review__c</tabs>
+    <tabs>Goal_Tracker__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
+        <mappings>
+            <tab>Goal_Tracker__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Performance_Review__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-CmsAuthorHome</tab>
         </mappings>

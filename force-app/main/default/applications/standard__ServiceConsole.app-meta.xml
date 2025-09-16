@@ -183,7 +183,15 @@
     <tabs>standard-Lead</tabs>
     <tabs>standard-Knowledge</tabs>
     <tabs>standard-Document</tabs>
+    <tabs>Performance_Review__c</tabs>
+    <tabs>Goal_Tracker__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Goal_Tracker__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Performance_Review__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

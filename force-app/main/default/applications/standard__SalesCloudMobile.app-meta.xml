@@ -22,5 +22,7 @@
     <tabs>standard-Feed</tabs>
     <tabs>standard-CollaborationGroup</tabs>
     <tabs>standard-File</tabs>
+    <tabs>Performance_Review__c</tabs>
+    <tabs>Goal_Tracker__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

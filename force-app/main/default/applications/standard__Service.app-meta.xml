@@ -16,4 +16,6 @@
     <tabs>standard-Solution</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
+    <tabs>Performance_Review__c</tabs>
+    <tabs>Goal_Tracker__c</tabs>
 </CustomApplication>

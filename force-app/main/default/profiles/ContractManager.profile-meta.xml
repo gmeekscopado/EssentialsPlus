@@ -1108,11 +1108,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Client_Engagement__c.Client_Industry__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Client_Engagement__c.End_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1134,6 +1129,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Client_Engagement__c.Payment_Deadline__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Client_Engagement__c.Policy_Start_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Client_Engagement__c.Policy_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2002,11 +2007,6 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Employee__c.PTO_Request__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Entitlement.AssetId</field>
         <readable>true</readable>
@@ -2199,6 +2199,31 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Forms__c.Form_Request__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Goal_Tracker__c.Achievement_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Goal_Tracker__c.Goal_Category__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Goal_Tracker__c.Goal_Title__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Goal_Tracker__c.Progress_Percentage__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Goal_Tracker__c.Target_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2922,6 +2947,51 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Performance_Review__c.Comments__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Performance_Review__c.Employee_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Performance_Review__c.Manager_Approval__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Performance_Review__c.Overall_Rating__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Performance_Review__c.Review_Period__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Performance_Review__c.Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Performance_Setting__mdt.Auto_Approval_Threshold__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Performance_Setting__mdt.Notification_Email__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Performance_Setting__mdt.Review_Frequency__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Product2.Description</field>
         <readable>true</readable>
@@ -2979,16 +3049,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Project__c.Project_Start_Date__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Request__c.Client__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Request__c.Request_Deadline__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3553,6 +3613,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Student_Portal__c.Major__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Student_Portal__c.Start_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Supplier__c.Certification_Level__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4097,9 +4167,6 @@
         <layout>Email__c-Email Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Employee__c-Employee Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Entitlement-Entitlement Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4125,6 +4192,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Global-Global Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Goal_Tracker__c-Goal Tracker Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Health_Portal__c-Health Portal Layout</layout>
@@ -4182,6 +4252,12 @@
         <layout>Payment__c-Payment Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Performance_Review__c-Performance Review Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Performance_Setting__mdt-Performance Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Pricebook2-Price Book Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4198,9 +4274,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>QuickText-Quick Text Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Request__c-Request Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Sales_Team_Access__c-Sales Team Access Layout</layout>
@@ -4234,6 +4307,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Solution-Solution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Student_Portal__c-Student Portal Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Supplier__c-Supplier Layout</layout>
@@ -4808,6 +4884,10 @@
         <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Goal_Tracker__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Inventory__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -4824,7 +4904,15 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Performance_Review__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Sales_Team_Access__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Student_Portal__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

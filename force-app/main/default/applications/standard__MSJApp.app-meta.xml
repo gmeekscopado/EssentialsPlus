@@ -10,8 +10,16 @@
     <tabs>standard-JourneyHome</tabs>
     <tabs>standard-SalesforceJourney</tabs>
     <tabs>standard-JourneyMap</tabs>
+    <tabs>Performance_Review__c</tabs>
+    <tabs>Goal_Tracker__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
+        <mappings>
+            <tab>Goal_Tracker__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Performance_Review__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-JourneyHome</tab>
         </mappings>
