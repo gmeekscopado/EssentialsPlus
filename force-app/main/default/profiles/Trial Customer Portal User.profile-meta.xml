@@ -1137,6 +1137,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Client_Engagement__c.Last_Contact_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Client_Engagement__c.Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2232,6 +2237,31 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Goal_Tracker__c.Achievement_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Goal_Tracker__c.Goal_Category__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Goal_Tracker__c.Goal_Title__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Goal_Tracker__c.Progress_Percentage__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Goal_Tracker__c.Target_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Health_Portal__c.ABO_Blood_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2948,6 +2978,36 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Payment__c.Payment_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Performance_Review__c.Comments__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Performance_Review__c.Employee_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Performance_Review__c.Manager_Approval__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Performance_Review__c.Overall_Rating__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Performance_Review__c.Review_Period__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Performance_Review__c.Status__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4166,6 +4226,9 @@
         <layout>Global-Global Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Goal_Tracker__c-Goal Tracker Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Health_Portal__c-Health Portal Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4219,6 +4282,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Payment__c-Payment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Performance_Review__c-Performance Review Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Pricebook2-Price Book Layout</layout>
@@ -4530,6 +4596,10 @@
         <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Goal_Tracker__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Inventory__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -4543,6 +4613,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Payment__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Performance_Review__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
