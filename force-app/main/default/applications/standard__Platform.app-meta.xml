@@ -14,4 +14,5 @@
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <tabs>Student_Portal__c</tabs>
+    <tabs>Service_Catalog__c</tabs>
 </CustomApplication>

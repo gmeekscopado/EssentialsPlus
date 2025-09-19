@@ -9,8 +9,12 @@
     <navType>Console</navType>
     <tabs>standard-ApprovalsHome</tabs>
     <tabs>Student_Portal__c</tabs>
+    <tabs>Service_Catalog__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
+        <mappings>
+            <tab>Service_Catalog__c</tab>
+        </mappings>
         <mappings>
             <tab>Student_Portal__c</tab>
         </mappings>

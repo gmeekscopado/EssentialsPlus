@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pricing_Unit__c</fullName>
+    <label>Pricing Unit</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Per Square Foot</fullName>
+                <default>false</default>
+                <label>Per Square Foot</label>
+            </value>
+            <value>
+                <fullName>Per Month</fullName>
+                <default>false</default>
+                <label>Per Month</label>
+            </value>
+            <value>
+                <fullName>Per Visit</fullName>
+                <default>false</default>
+                <label>Per Visit</label>
+            </value>
+            <value>
+                <fullName>Flat Rate</fullName>
+                <default>false</default>
+                <label>Flat Rate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

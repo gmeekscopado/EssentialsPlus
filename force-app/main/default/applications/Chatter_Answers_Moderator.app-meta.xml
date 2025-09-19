@@ -181,7 +181,11 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Knowledge</tabs>
     <tabs>Student_Portal__c</tabs>
+    <tabs>Service_Catalog__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Service_Catalog__c</tab>
+        </mappings>
         <mappings>
             <tab>Student_Portal__c</tab>
         </mappings>
