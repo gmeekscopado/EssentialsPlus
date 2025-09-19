@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Service Categoty --></label>
+    <name>Service_Categoty__c</name>
+    <picklistValues>
+        <masterLabel>Capital Projects</masterLabel>
+        <translation><!-- Capital Projects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exterior</masterLabel>
+        <translation><!-- Exterior --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interior</masterLabel>
+        <translation><!-- Interior --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
