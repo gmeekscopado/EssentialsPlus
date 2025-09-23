@@ -5,10 +5,12 @@
     <complianceGroup>GDPR</complianceGroup>
     <description>When was the company founded?</description>
     <externalId>false</externalId>
+    <inlineHelpText>For example, 1989.</inlineHelpText>
     <label>Year Founded</label>
     <precision>18</precision>
     <required>false</required>
     <scale>0</scale>
+    <securityClassification>Public</securityClassification>
     <trackTrending>false</trackTrending>
     <type>Number</type>
     <unique>false</unique>
