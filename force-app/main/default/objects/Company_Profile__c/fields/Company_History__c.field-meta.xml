@@ -2,8 +2,9 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Company_History__c</fullName>
     <businessStatus>Active</businessStatus>
-    <complianceGroup>GDPR</complianceGroup>
+    <complianceGroup>PII;GDPR</complianceGroup>
     <description>Tell us a little about the company.</description>
+    <inlineHelpText>Please include information on their industry and founders.</inlineHelpText>
     <label>Company History</label>
     <length>32768</length>
     <trackTrending>false</trackTrending>
