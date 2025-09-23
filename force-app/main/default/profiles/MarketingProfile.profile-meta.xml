@@ -1203,6 +1203,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Company_Profile__c.Company_Email_Domain__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Company_Profile__c.Company_History__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1213,7 +1218,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Company_Profile__c.Test__c</field>
+        <field>Company_Profile__c.Fax_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Company_Profile__c.Salesforce_Partner__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
