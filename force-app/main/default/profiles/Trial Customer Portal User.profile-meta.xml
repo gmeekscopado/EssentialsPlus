@@ -702,6 +702,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Budget__c.Allocated_Budget__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Budget__c.Approval_Granted__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Budget__c.Fiscal_Year__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>BusinessBrand.Brand_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1113,6 +1128,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Client_Engagement__c.Client_Industry__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Client_Engagement__c.Client_Location__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Client_Engagement__c.Client_Mobile_Number__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2012,6 +2037,31 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Deal_Management__c.Deal_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Deal_Management__c.Deal_Stage__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Deal_Management__c.Deal_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Deal_Management__c.Deal_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Deal_Management__c.Investment_Amount__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Email__c.Credit_Card__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2559,6 +2609,31 @@
         <editable>true</editable>
         <field>License__c.License_Number__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Loan_Application__c.Application_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Loan_Application__c.Interest_Rate_Override__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Loan_Application__c.Interest_Rate__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Loan_Application__c.Loan_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Loan_Application__c.Requested_Amount__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -4114,6 +4189,9 @@
         <layout>Broker__c-Broker Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Budget__c-Budget Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>BusinessBrand-Business Brand Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4187,6 +4265,9 @@
         <layout>DataUsePurpose-Data Use Purpose Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Deal_Management__c-Deal Management Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4252,6 +4333,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>License__c-License Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Loan_Application__c-Loan Application Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Macro-Macro Layout</layout>
@@ -4581,7 +4665,15 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
+        <tab>Budget__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Customer_Testimonial__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Deal_Management__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -4598,6 +4690,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Invoice__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Loan_Application__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
