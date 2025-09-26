@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Deal Type --></label>
+    <name>Deal_Type__c</name>
+    <picklistValues>
+        <masterLabel>Add-on Acquisition</masterLabel>
+        <translation><!-- Add-on Acquisition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Buyout</masterLabel>
+        <translation><!-- Buyout --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Growth Equity</masterLabel>
+        <translation><!-- Growth Equity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recapitalization</masterLabel>
+        <translation><!-- Recapitalization --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

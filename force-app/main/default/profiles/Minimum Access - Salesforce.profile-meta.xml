@@ -2058,6 +2058,31 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Deal_Management__c.Deal_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Deal_Management__c.Deal_Stage__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Deal_Management__c.Deal_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Deal_Management__c.Deal_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Deal_Management__c.Investment_Amount__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Email__c.Credit_Card__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2630,6 +2655,31 @@
         <editable>true</editable>
         <field>License__c.License_Number__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Loan_Application__c.Application_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Loan_Application__c.Interest_Rate_Override__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Loan_Application__c.Interest_Rate__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Loan_Application__c.Loan_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Loan_Application__c.Requested_Amount__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -4217,6 +4267,9 @@
         <layout>Customer_Testimonial__c-Customer Testimonial Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Deal_Management__c-Deal Management Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Email__c-Email Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4248,6 +4301,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>License__c-License Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Loan_Application__c-Loan Application Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Operation__c-Operation Layout</layout>
@@ -4405,6 +4461,10 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Deal_Management__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Film__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -4422,6 +4482,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Invoice__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Loan_Application__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
