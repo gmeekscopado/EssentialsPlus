@@ -2068,17 +2068,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Deal_Management__c.Deal_Status__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Deal_Management__c.Deal_Type__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Deal_Management__c.Investment_Amount__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
