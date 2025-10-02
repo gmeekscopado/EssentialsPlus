@@ -4221,6 +4221,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>DML_Statement_In_A_Loop_Fixed</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Missing_Error_Handler_Fixed</flow>
     </flowAccesses>
     <flowAccesses>
