@@ -2648,31 +2648,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Loan_Application__c.Application_Number__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Loan_Application__c.Interest_Rate_Override__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Loan_Application__c.Interest_Rate__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Loan_Application__c.Loan_Type__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Loan_Application__c.Requested_Amount__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Location.CloseDate</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3788,6 +3763,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Supplier__c.Active_Contract__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Supplier__c.Certification_Level__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3804,6 +3784,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Supplier__c.Safety_Certification_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Supplier__c.Website__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4225,6 +4210,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Hardcoded_Id_Fixed</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Missing_Error_Handler_Fixed</flow>
     </flowAccesses>
     <flowAccesses>
@@ -4409,9 +4398,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>License__c-License Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Loan_Application__c-Loan Application Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Macro-Macro Layout</layout>
@@ -5092,10 +5078,6 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Invoice__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Loan_Application__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
