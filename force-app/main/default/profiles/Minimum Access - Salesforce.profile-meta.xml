@@ -3163,6 +3163,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Project__c.Active_User__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Project__c.Base_URL__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Project__c.Description__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3174,6 +3184,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Project__c.Project_Start_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Project__c.Website_Launch_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4231,6 +4246,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>SOQL_Query_In_A_Loop_Fixed</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Update_Account_Last_Opportunity_Date</flow>
     </flowAccesses>
     <layoutAssignments>
@@ -4347,6 +4366,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Service_Request__c-Service Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Solar_Project_Management__c-Solar Project Management Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Student_Portal__c-Student Portal Layout</layout>
