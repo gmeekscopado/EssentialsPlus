@@ -2,10 +2,9 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Year_Founded__c</fullName>
     <businessStatus>Active</businessStatus>
-    <complianceGroup>GDPR</complianceGroup>
+    <complianceGroup>HIPAA;GDPR</complianceGroup>
     <description>When was the company founded?</description>
     <externalId>false</externalId>
-    <inlineHelpText>For example, 1989.</inlineHelpText>
     <label>Year Founded</label>
     <precision>18</precision>
     <required>false</required>
