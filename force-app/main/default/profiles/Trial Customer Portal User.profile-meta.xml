@@ -4351,6 +4351,9 @@
         <layout>SocialPost-Social Post Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Solar_Project_Management__c-Solar Project Management Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Solution-Solution Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
