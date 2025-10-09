@@ -8,6 +8,13 @@
         <plural>true</plural>
         <value>Forms</value>
     </caseValues>
+    <layouts>
+        <layout>Form Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage><!-- Please list the creator of this form. --></errorMessage>
