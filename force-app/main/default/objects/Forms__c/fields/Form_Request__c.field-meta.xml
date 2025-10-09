@@ -30,6 +30,11 @@
                 <default>false</default>
                 <label>Not listed</label>
             </value>
+            <value>
+                <fullName>1099-C</fullName>
+                <default>false</default>
+                <label>1099-C</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
