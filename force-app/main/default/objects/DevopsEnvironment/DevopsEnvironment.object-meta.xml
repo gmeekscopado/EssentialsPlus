@@ -29,20 +29,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>CreateCase</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CreateCase</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CreateCase</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -71,20 +57,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Ignore</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Ignore</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Ignore</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -95,34 +67,6 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>List</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>MassCreateCase</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>MassCreateCase</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>MassCreateCase</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>MassIgnore</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>MassIgnore</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>MassIgnore</actionName>
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
@@ -184,21 +128,32 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
     <externalSharingModel>Private</externalSharingModel>
     <searchLayouts>
-        <customTabListAdditionalFields>Persona</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Content</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Posted</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Parent</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ReviewedStatus</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Notes</customTabListAdditionalFields>
-        <searchResultsAdditionalFields>Persona</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Content</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Posted</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Parent</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ReviewedStatus</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Notes</searchResultsAdditionalFields>
+        <customTabListAdditionalFields>CanTrackChanges</customTabListAdditionalFields>
+        <customTabListAdditionalFields>IsExpired</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LastRevisionCounter</customTabListAdditionalFields>
+        <customTabListAdditionalFields>NamedCredential</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OrgIdentifier</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RefreshDate</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RefreshSource</customTabListAdditionalFields>
+        <customTabListAdditionalFields>IsTestEnvironment</customTabListAdditionalFields>
+        <customTabListAdditionalFields>IsDevEnvironment</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OrgType</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OrgUrl</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Replaces</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>CanTrackChanges</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>IsExpired</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LastRevisionCounter</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>NamedCredential</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OrgIdentifier</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RefreshDate</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RefreshSource</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>IsTestEnvironment</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>IsDevEnvironment</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OrgType</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OrgUrl</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Replaces</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>Private</sharingModel>
 </CustomObject>

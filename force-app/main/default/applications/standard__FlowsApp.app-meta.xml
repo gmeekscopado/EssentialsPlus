@@ -12,6 +12,7 @@
     <tabs>standard-Monitor</tabs>
     <tabs>Performance_Review__c</tabs>
     <tabs>Goal_Tracker__c</tabs>
+    <tabs>standard-ActionHub</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>FlowsApp_UtilityBar</utilityBar>
 </CustomApplication>
