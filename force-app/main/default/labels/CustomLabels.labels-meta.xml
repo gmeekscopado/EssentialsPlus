@@ -3,37 +3,43 @@
     <labels>
         <fullName>Hot_Lead_Notification</fullName>
         <language>en_US</language>
-        <protected>false</protected>
-        <value>Hot lead alert: {0} from {1} requires immediate attention. Lead Score: {2}</value>
+        <protected>true</protected>
+        <shortDescription>Hot Lead Notification Message</shortDescription>
+        <value>Hot lead requires immediate attention: {0} from {1}</value>
     </labels>
     <labels>
         <fullName>New_Opportunity_Notification</fullName>
         <language>en_US</language>
-        <protected>false</protected>
-        <value>New opportunity created: {0} with potential value of {1}. Product interest: {2}</value>
+        <protected>true</protected>
+        <shortDescription>New Opportunity Notification Message</shortDescription>
+        <value>New high-value opportunity created: {0} - Amount: {1}</value>
     </labels>
     <labels>
         <fullName>Case_Escalation_Level_1</fullName>
         <language>en_US</language>
-        <protected>false</protected>
-        <value>Case {0} has been escalated to Level 1 due to: {1}</value>
+        <protected>true</protected>
+        <shortDescription>Case Escalation Level 1 Label</shortDescription>
+        <value>Level 1 - Manager Review</value>
     </labels>
     <labels>
         <fullName>Case_Escalation_Level_2</fullName>
         <language>en_US</language>
-        <protected>false</protected>
-        <value>Case {0} has been escalated to Level 2 due to: {1}. Manager attention required.</value>
+        <protected>true</protected>
+        <shortDescription>Case Escalation Level 2 Label</shortDescription>
+        <value>Level 2 - Senior Manager Review</value>
     </labels>
     <labels>
         <fullName>Case_Escalation_Level_3</fullName>
         <language>en_US</language>
-        <protected>false</protected>
-        <value>URGENT: Case {0} has been escalated to Level 3 due to: {1}. Executive intervention required.</value>
+        <protected>true</protected>
+        <shortDescription>Case Escalation Level 3 Label</shortDescription>
+        <value>Level 3 - Executive Review</value>
     </labels>
     <labels>
         <fullName>SLA_Violation_Alert</fullName>
         <language>en_US</language>
-        <protected>false</protected>
-        <value>SLA violation detected for Case {0}. Immediate action required to maintain service standards.</value>
+        <protected>true</protected>
+        <shortDescription>SLA Violation Alert Message</shortDescription>
+        <value>SLA Violation Alert: This case has exceeded the expected resolution time.</value>
     </labels>
 </CustomLabels>
