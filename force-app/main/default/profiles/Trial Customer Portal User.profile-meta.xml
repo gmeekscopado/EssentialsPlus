@@ -1162,6 +1162,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Client_Engagement__c.Location__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Client_Engagement__c.Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1193,6 +1198,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Client_Engagement__c.Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Client_Engagement__c.Under_Contract__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
