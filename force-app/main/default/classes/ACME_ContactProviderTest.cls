@@ -59,13 +59,15 @@ private class ACME_ContactProviderTest {
     @IsTest
     static void testFindExistingContact() {
         Account testAccount = [SELECT Id FROM Account LIMIT 1];
+        // Create lead with SEPARATE fields instead of trying to set Lead.Name
         Lead testLead = new Lead(
-            Name = 'Existing Contact',
+            FirstName = 'Existing',
+            LastName = 'Contact',
+            Company = 'Test Company',
             Email = 'existing.contact@test.com',
             Phone = '555-123-0000',
             Title = 'VP Sales',
-            LeadSource = 'Web',
-            OwnerId = UserInfo.getUserId()
+            Status = 'Open - Not Contacted'
         );
         
         Test.startTest();
@@ -81,7 +83,7 @@ private class ACME_ContactProviderTest {
     @IsTest
     static void testCreateNewContact() {
         Account testAccount = [SELECT Id FROM Account LIMIT 1];
-        Lead testLead = [SELECT Id, Name, Email, Phone, Title, LeadSource, OwnerId FROM Lead LIMIT 1];
+        Lead testLead = [SELECT Id, FirstName, LastName, Email, Phone, Title, Company, Status FROM Lead LIMIT 1];
         
         Test.startTest();
         Id contactId = ACME_ContactProvider.findOrCreateContact(testLead, testAccount.Id);
@@ -133,12 +135,13 @@ private class ACME_ContactProviderTest {
     static void testContactNameParsing() {
         Account testAccount = [SELECT Id FROM Account LIMIT 1];
         Lead testLead = new Lead(
-            Name = 'John Smith',
+            FirstName = 'John',
+            LastName = 'Smith',
+            Company = 'Test Company',
             Email = 'john.smith@test.com',
             Phone = '555-999-0000',
             Title = 'Sales Director',
-            LeadSource = 'Web',
-            OwnerId = UserInfo.getUserId()
+            Status = 'Open - Not Contacted'
         );
         
         Test.startTest();
@@ -157,12 +160,13 @@ private class ACME_ContactProviderTest {
         
         for (Integer i = 0; i < 5; i++) {
             testLeads.add(new Lead(
-                Name = 'Bulk Lead ' + i,
+                FirstName = 'Bulk',
+                LastName = 'Lead ' + i,
+                Company = 'Test Company',
                 Email = 'bulk.lead' + i + '@test.com',
                 Phone = '555-888-000' + i,
                 Title = 'Manager ' + i,
-                LeadSource = 'Web',
-                OwnerId = UserInfo.getUserId()
+                Status = 'Open - Not Contacted'
             ));
         }
         
