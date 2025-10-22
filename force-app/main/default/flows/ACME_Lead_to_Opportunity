@@ -1,0 +1,396 @@
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <description>Version 1: Basic Lead to Opportunity automation. Simple lead qualification check and opportunity creation.</description>
+    <label>ACME Lead to Opportunity v1</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Lead_Qualification</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <description>The lead record that triggers this flow</description>
+        <name>var_InputLead</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Lead</objectType>
+    </variables>
+    <variables>
+        <description>Created opportunity record</description>
+        <name>var_NewOpportunity</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <description>Account to associate with opportunity</description>
+        <name>var_TargetAccount</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <decisions>
+        <description>Check if lead meets basic qualification criteria</description>
+        <name>Check_Lead_Qualification</name>
+        <label>Check Lead Qualification</label>
+        <locationX>182</locationX>
+        <locationY>158</locationY>
+        <defaultConnector>
+            <targetReference>End_Not_Qualified</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Qualified</defaultConnectorLabel>
+        <rules>
+            <name>Lead_Is_Qualified</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>var_InputLead.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Qualified</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>var_InputLead.Company</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>var_InputLead.Email</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Find_or_Create_Account</targetReference>
+            </connector>
+            <label>Lead Is Qualified</label>
+        </rules>
+    </decisions>
+    <recordLookups>
+        <description>Look for existing account by company name</description>
+        <name>Find_or_Create_Account</name>
+        <label>Find or Create Account</label>
+        <locationX>50</locationX>
+        <locationY>278</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Account_Found_Decision</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_InputLead.Company</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <decisions>
+        <description>Check if account was found or needs to be created</description>
+        <name>Account_Found_Decision</name>
+        <label>Account Found?</label>
+        <locationX>182</locationX>
+        <locationY>398</locationY>
+        <defaultConnector>
+            <targetReference>Create_New_Account</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Create New Account</defaultConnectorLabel>
+        <rules>
+            <name>Account_Exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Find_or_Create_Account</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Existing_Account</targetReference>
+            </connector>
+            <label>Account Exists</label>
+        </rules>
+    </decisions>
+    <assignments>
+        <description>Assign the found account to variable</description>
+        <name>Set_Existing_Account</name>
+        <label>Set Existing Account</label>
+        <locationX>50</locationX>
+        <locationY>518</locationY>
+        <assignmentItems>
+            <assignToReference>var_TargetAccount</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Find_or_Create_Account</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Opportunity</targetReference>
+        </connector>
+    </assignments>
+    <recordCreates>
+        <description>Create new account for the lead company</description>
+        <name>Create_New_Account</name>
+        <label>Create New Account</label>
+        <locationX>314</locationX>
+        <locationY>518</locationY>
+        <connector>
+            <targetReference>Get_Created_Account</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>var_InputLead.Company</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Phone</field>
+            <value>
+                <elementReference>var_InputLead.Phone</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Website</field>
+            <value>
+                <elementReference>var_InputLead.Website</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Industry</field>
+            <value>
+                <elementReference>var_InputLead.Industry</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingStreet</field>
+            <value>
+                <elementReference>var_InputLead.Street</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingCity</field>
+            <value>
+                <elementReference>var_InputLead.City</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingState</field>
+            <value>
+                <elementReference>var_InputLead.State</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingPostalCode</field>
+            <value>
+                <elementReference>var_InputLead.PostalCode</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingCountry</field>
+            <value>
+                <elementReference>var_InputLead.Country</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>Get the newly created account record</description>
+        <name>Get_Created_Account</name>
+        <label>Get Created Account</label>
+        <locationX>314</locationX>
+        <locationY>638</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_New_Account</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Create_New_Account</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <assignments>
+        <description>Assign the newly created account to variable</description>
+        <name>Set_New_Account</name>
+        <label>Set New Account</label>
+        <locationX>314</locationX>
+        <locationY>758</locationY>
+        <assignmentItems>
+            <assignToReference>var_TargetAccount</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Created_Account</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Opportunity</targetReference>
+        </connector>
+    </assignments>
+    <recordCreates>
+        <description>Create opportunity from qualified lead</description>
+        <name>Create_Opportunity</name>
+        <label>Create Opportunity</label>
+        <locationX>182</locationX>
+        <locationY>878</locationY>
+        <connector>
+            <targetReference>Get_Created_Opportunity</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>var_InputLead.Company</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>var_TargetAccount.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StageName</field>
+            <value>
+                <stringValue>Prospecting</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CloseDate</field>
+            <value>
+                <elementReference>formula_CloseDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Amount</field>
+            <value>
+                <numberValue>10000.0</numberValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LeadSource</field>
+            <value>
+                <elementReference>var_InputLead.LeadSource</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <stringValue>Opportunity created from qualified lead: {!var_InputLead.FirstName} {!var_InputLead.LastName}</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>Get the newly created opportunity</description>
+        <name>Get_Created_Opportunity</name>
+        <label>Get Created Opportunity</label>
+        <locationX>182</locationX>
+        <locationY>998</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Output_Opportunity</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Create_Opportunity</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <assignments>
+        <description>Set the output opportunity variable</description>
+        <name>Set_Output_Opportunity</name>
+        <label>Set Output Opportunity</label>
+        <locationX>182</locationX>
+        <locationY>1118</locationY>
+        <assignmentItems>
+            <assignToReference>var_NewOpportunity</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Created_Opportunity</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>End_Success</targetReference>
+        </connector>
+    </assignments>
+    <formulas>
+        <description>Calculate close date as 90 days from today</description>
+        <name>formula_CloseDate</name>
+        <dataType>Date</dataType>
+        <expression>TODAY() + 90</expression>
+    </formulas>
+    <screens>
+        <description>End screen for successful automation</description>
+        <name>End_Success</name>
+        <label>Automation Complete</label>
+        <locationX>182</locationX>
+        <locationY>1238</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Success_Message</name>
+            <fieldText>&lt;p&gt;&lt;strong style="color: rgb(68, 133, 0);"&gt;✅ Lead to Opportunity Automation Complete!&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Successfully created opportunity: &lt;strong&gt;{!var_NewOpportunity.Name}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Account: &lt;strong&gt;{!var_TargetAccount.Name}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Amount: &lt;strong&gt;${!var_NewOpportunity.Amount}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Close Date: &lt;strong&gt;{!var_NewOpportunity.CloseDate}&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <description>End screen for non-qualified leads</description>
+        <name>End_Not_Qualified</name>
+        <label>Lead Not Qualified</label>
+        <locationX>314</locationX>
+        <locationY>278</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Not_Qualified_Message</name>
+            <fieldText>&lt;p&gt;&lt;strong style="color: rgb(194, 87, 0);"&gt;⚠️ Lead Not Qualified for Automation&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;This lead does not meet the basic qualification criteria:&lt;/p&gt;&lt;p&gt;• Status must be "Qualified"&lt;/p&gt;&lt;p&gt;• Company name is required&lt;/p&gt;&lt;p&gt;• Email address is required&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please update the lead record and try again.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+</Flow>
