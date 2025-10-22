@@ -1077,6 +1077,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Charity__c.Branch_Locations__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Charity__c.Budget__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1108,6 +1113,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Charity__c.Mission_Statement__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Charity__c.Program_Cost__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Charity__c.Programs__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2082,7 +2097,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Deal_Management__c.Deal_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Deal_Management__c.Deal_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Deal_Management__c.Investment_Amount__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
