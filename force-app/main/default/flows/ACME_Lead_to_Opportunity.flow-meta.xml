@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>58.0</apiVersion>
-    <label>ACME Lead to Opportunity v2.1 (Simplified)</label>
+    <label>ACME Lead to Opportunity v2.2 (Copado Fixed)</label>
     <assignments>
         <name>Initialize_Score</name>
         <label>Initialize Score</label>
@@ -869,10 +869,4 @@
         <text>Lead successfully qualified and converted to opportunity. 
 
 Priority: {!var_Priority}
-Score: {!var_LeadScore}
-Opportunity Amount: ${!var_OpportunityAmount}
-Account: {!var_AccountName}
-
-{!var_QualificationNotes}</text>
-    </textTemplates>
-</Flow>
+Score: {!var_LeadScore
