@@ -53,6 +53,14 @@
         <isOutput>false</isOutput>
         <objectType>Account</objectType>
     </variables>
+    <variables>
+        <description>Success message for debugging</description>
+        <name>var_SuccessMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
     
     <!-- Formulas -->
     <formulas>
@@ -70,7 +78,7 @@
         <locationX>182</locationX>
         <locationY>158</locationY>
         <defaultConnector>
-            <targetReference>End_Not_Qualified</targetReference>
+            <targetReference>Set_Not_Qualified_Message</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Not Qualified</defaultConnectorLabel>
         <rules>
@@ -186,7 +194,7 @@
         <locationY>998</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Set_Output_Opportunity</targetReference>
+            <targetReference>Set_Success_Message</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -239,9 +247,9 @@
     </assignments>
     
     <assignments>
-        <description>Set the output opportunity variable</description>
-        <name>Set_Output_Opportunity</name>
-        <label>Set Output Opportunity</label>
+        <description>Set the output opportunity variable and success message</description>
+        <name>Set_Success_Message</name>
+        <label>Set Success Message</label>
         <locationX>182</locationX>
         <locationY>1118</locationY>
         <assignmentItems>
@@ -251,9 +259,28 @@
                 <elementReference>Get_Created_Opportunity</elementReference>
             </value>
         </assignmentItems>
-        <connector>
-            <targetReference>End_Success</targetReference>
-        </connector>
+        <assignmentItems>
+            <assignToReference>var_SuccessMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Successfully created opportunity for {!var_TargetAccount.Name} with amount $10,000</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    
+    <assignments>
+        <description>Set message for non-qualified leads</description>
+        <name>Set_Not_Qualified_Message</name>
+        <label>Set Not Qualified Message</label>
+        <locationX>314</locationX>
+        <locationY>278</locationY>
+        <assignmentItems>
+            <assignToReference>var_SuccessMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Lead not qualified: Status must be 'Qualified', Company and Email are required</stringValue>
+            </value>
+        </assignmentItems>
     </assignments>
     
     <!-- Record Creates -->
@@ -378,41 +405,4 @@
         <object>Opportunity</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
-    
-    <!-- Screens -->
-    <screens>
-        <description>End screen for successful automation</description>
-        <name>End_Success</name>
-        <label>Automation Complete</label>
-        <locationX>182</locationX>
-        <locationY>1238</locationY>
-        <allowBack>false</allowBack>
-        <allowFinish>true</allowFinish>
-        <allowPause>false</allowPause>
-        <fields>
-            <name>Success_Message</name>
-            <fieldText>&lt;p&gt;&lt;strong style="color: rgb(68, 133, 0);"&gt;✅ Lead to Opportunity Automation Complete!&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Successfully created opportunity: &lt;strong&gt;{!var_NewOpportunity.Name}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Account: &lt;strong&gt;{!var_TargetAccount.Name}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Amount: &lt;strong&gt;${!var_NewOpportunity.Amount}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Close Date: &lt;strong&gt;{!var_NewOpportunity.CloseDate}&lt;/strong&gt;&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-        </fields>
-        <showFooter>true</showFooter>
-        <showHeader>false</showHeader>
-    </screens>
-    
-    <screens>
-        <description>End screen for non-qualified leads</description>
-        <name>End_Not_Qualified</name>
-        <label>Lead Not Qualified</label>
-        <locationX>314</locationX>
-        <locationY>278</locationY>
-        <allowBack>false</allowBack>
-        <allowFinish>true</allowFinish>
-        <allowPause>false</allowPause>
-        <fields>
-            <name>Not_Qualified_Message</name>
-            <fieldText>&lt;p&gt;&lt;strong style="color: rgb(194, 87, 0);"&gt;⚠️ Lead Not Qualified for Automation&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;This lead does not meet the basic qualification criteria:&lt;/p&gt;&lt;p&gt;• Status must be "Qualified"&lt;/p&gt;&lt;p&gt;• Company name is required&lt;/p&gt;&lt;p&gt;• Email address is required&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please update the lead record and try again.&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-        </fields>
-        <showFooter>true</showFooter>
-        <showHeader>false</showHeader>
-    </screens>
 </Flow>
