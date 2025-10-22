@@ -24,6 +24,8 @@
         </connector>
     </start>
     <status>Draft</status>
+    
+    <!-- Variables -->
     <variables>
         <description>The lead record that triggers this flow</description>
         <name>var_InputLead</name>
@@ -51,6 +53,16 @@
         <isOutput>false</isOutput>
         <objectType>Account</objectType>
     </variables>
+    
+    <!-- Formulas -->
+    <formulas>
+        <description>Calculate close date as 90 days from today</description>
+        <name>formula_CloseDate</name>
+        <dataType>Date</dataType>
+        <expression>TODAY() + 90</expression>
+    </formulas>
+    
+    <!-- Decisions -->
     <decisions>
         <description>Check if lead meets basic qualification criteria</description>
         <name>Check_Lead_Qualification</name>
@@ -91,28 +103,7 @@
             <label>Lead Is Qualified</label>
         </rules>
     </decisions>
-    <recordLookups>
-        <description>Look for existing account by company name</description>
-        <name>Find_or_Create_Account</name>
-        <label>Find or Create Account</label>
-        <locationX>50</locationX>
-        <locationY>278</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Account_Found_Decision</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Name</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>var_InputLead.Company</elementReference>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>Account</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
+    
     <decisions>
         <description>Check if account was found or needs to be created</description>
         <name>Account_Found_Decision</name>
@@ -139,6 +130,78 @@
             <label>Account Exists</label>
         </rules>
     </decisions>
+    
+    <!-- Record Lookups -->
+    <recordLookups>
+        <description>Look for existing account by company name</description>
+        <name>Find_or_Create_Account</name>
+        <label>Find or Create Account</label>
+        <locationX>50</locationX>
+        <locationY>278</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Account_Found_Decision</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_InputLead.Company</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    
+    <recordLookups>
+        <description>Get the newly created account record</description>
+        <name>Get_Created_Account</name>
+        <label>Get Created Account</label>
+        <locationX>314</locationX>
+        <locationY>638</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_New_Account</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Create_New_Account</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    
+    <recordLookups>
+        <description>Get the newly created opportunity</description>
+        <name>Get_Created_Opportunity</name>
+        <label>Get Created Opportunity</label>
+        <locationX>182</locationX>
+        <locationY>998</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Output_Opportunity</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Create_Opportunity</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    
+    <!-- Assignments -->
     <assignments>
         <description>Assign the found account to variable</description>
         <name>Set_Existing_Account</name>
@@ -156,6 +219,44 @@
             <targetReference>Create_Opportunity</targetReference>
         </connector>
     </assignments>
+    
+    <assignments>
+        <description>Assign the newly created account to variable</description>
+        <name>Set_New_Account</name>
+        <label>Set New Account</label>
+        <locationX>314</locationX>
+        <locationY>758</locationY>
+        <assignmentItems>
+            <assignToReference>var_TargetAccount</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Created_Account</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Opportunity</targetReference>
+        </connector>
+    </assignments>
+    
+    <assignments>
+        <description>Set the output opportunity variable</description>
+        <name>Set_Output_Opportunity</name>
+        <label>Set Output Opportunity</label>
+        <locationX>182</locationX>
+        <locationY>1118</locationY>
+        <assignmentItems>
+            <assignToReference>var_NewOpportunity</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Created_Opportunity</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>End_Success</targetReference>
+        </connector>
+    </assignments>
+    
+    <!-- Record Creates -->
     <recordCreates>
         <description>Create new account for the lead company</description>
         <name>Create_New_Account</name>
@@ -222,45 +323,7 @@
         <object>Account</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
-    <recordLookups>
-        <description>Get the newly created account record</description>
-        <name>Get_Created_Account</name>
-        <label>Get Created Account</label>
-        <locationX>314</locationX>
-        <locationY>638</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Set_New_Account</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>Create_New_Account</elementReference>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>Account</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <assignments>
-        <description>Assign the newly created account to variable</description>
-        <name>Set_New_Account</name>
-        <label>Set New Account</label>
-        <locationX>314</locationX>
-        <locationY>758</locationY>
-        <assignmentItems>
-            <assignToReference>var_TargetAccount</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>Get_Created_Account</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Create_Opportunity</targetReference>
-        </connector>
-    </assignments>
+    
     <recordCreates>
         <description>Create opportunity from qualified lead</description>
         <name>Create_Opportunity</name>
@@ -315,51 +378,8 @@
         <object>Opportunity</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
-    <recordLookups>
-        <description>Get the newly created opportunity</description>
-        <name>Get_Created_Opportunity</name>
-        <label>Get Created Opportunity</label>
-        <locationX>182</locationX>
-        <locationY>998</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Set_Output_Opportunity</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>Create_Opportunity</elementReference>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>Opportunity</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <assignments>
-        <description>Set the output opportunity variable</description>
-        <name>Set_Output_Opportunity</name>
-        <label>Set Output Opportunity</label>
-        <locationX>182</locationX>
-        <locationY>1118</locationY>
-        <assignmentItems>
-            <assignToReference>var_NewOpportunity</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>Get_Created_Opportunity</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>End_Success</targetReference>
-        </connector>
-    </assignments>
-    <formulas>
-        <description>Calculate close date as 90 days from today</description>
-        <name>formula_CloseDate</name>
-        <dataType>Date</dataType>
-        <expression>TODAY() + 90</expression>
-    </formulas>
+    
+    <!-- Screens -->
     <screens>
         <description>End screen for successful automation</description>
         <name>End_Success</name>
@@ -377,6 +397,7 @@
         <showFooter>true</showFooter>
         <showHeader>false</showHeader>
     </screens>
+    
     <screens>
         <description>End screen for non-qualified leads</description>
         <name>End_Not_Qualified</name>
