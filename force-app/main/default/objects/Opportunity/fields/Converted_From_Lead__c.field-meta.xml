@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Converted_From_Lead__c</fullName>
-    <label>Converted From Lead</label>
-    <type>Lookup</type>
-    <referenceTo>Lead</referenceTo>
-    <relationshipName>ConvertedOpportunities</relationshipName>
-    <relationshipLabel>Converted Opportunities</relationshipLabel>
-</CustomField>
