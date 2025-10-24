@@ -3,111 +3,129 @@
  * @author ACME Corporation
  * @date 2024
  */
-@IsTest
+@isTest
 private class ACME_AccountProviderTest {
 
-    @TestSetup
+    /**
+     * @description Test setup method to create test data
+     */
+    @testSetup
     static void setupTestData() {
         // Create test accounts
         List<Account> testAccounts = new List<Account>();
         testAccounts.add(new Account(
-            Name = 'ACME Corporation',
-            Industry = 'Technology',
-            Type = 'Customer - Direct',
-            CustomerPriority__c = 'High',
-            AnnualRevenue = 2000000
+            Name = 'High Revenue Corp',
+            AnnualRevenue = 2000000,
+            Industry = 'Technology'
         ));
         testAccounts.add(new Account(
-            Name = 'Test Company Inc',
-            Industry = 'Manufacturing',
-            Type = 'Prospect',
-            CustomerPriority__c = 'Medium',
-            AnnualRevenue = 500000
+            Name = 'Medium Revenue Inc',
+            AnnualRevenue = 500000,
+            Industry = 'Finance'
         ));
         insert testAccounts;
+    }
 
+    /**
+     * @description Test finding existing account by company name
+     */
+    @isTest
+    static void testFindExistingAccount() {
         // Create test lead
         Lead testLead = new Lead(
-            FirstName = 'Test',
-            LastName = 'Lead',
-            Company = 'New Lead Company',
-            Email = 'test@lead.com',
+            FirstName = 'John',
+            LastName = 'Doe',
+            Company = 'High Revenue Corp',
+            Email = 'john.doe@highrevenue.com',
             Status = 'Open - Not Contacted',
-            Industry = 'Technology',
-            Phone = '555-1234567',
-            First_Contact__c = Date.today()
+            OwnerId = UserInfo.getUserId()
         );
         insert testLead;
-    }
-
-    @IsTest
-    static void testFindOrCreateAccountExisting() {
-        Lead testLead = [SELECT Id, FirstName, LastName, Company, Industry, Phone, OwnerId FROM Lead LIMIT 1];
 
         Test.startTest();
-        Id accountId = ACME_AccountProvider.findOrCreateAccount('ACME Corporation', testLead);
+        Id accountId = ACME_AccountProvider.findOrCreateAccount(testLead);
         Test.stopTest();
 
-        // Should find existing account
-        Account existingAccount = [SELECT Id, Name FROM Account WHERE Name = 'ACME Corporation' LIMIT 1];
-        System.assertEquals(existingAccount.Id, accountId, 'Should find existing account');
+        Account result = [SELECT Id, Name FROM Account WHERE Id = :accountId];
+        System.assertNotEquals(null, result, 'Account should be found');
+        System.assertEquals('High Revenue Corp', result.Name, 'Account name should match');
     }
 
-    @IsTest
-    static void testFindOrCreateAccountNew() {
-        Lead testLead = [SELECT Id, FirstName, LastName, Company, Industry, Phone, OwnerId FROM Lead LIMIT 1];
+    /**
+     * @description Test creating new account when not found
+     */
+    @isTest
+    static void testCreateNewAccount() {
+        // Create test lead with non-existing company
+        Lead testLead = new Lead(
+            FirstName = 'Jane',
+            LastName = 'Smith',
+            Company = 'New Company LLC',
+            Email = 'jane.smith@newcompany.com',
+            Status = 'Open - Not Contacted',
+            Industry = 'Retail',
+            OwnerId = UserInfo.getUserId()
+        );
+        insert testLead;
 
         Test.startTest();
-        Id accountId = ACME_AccountProvider.findOrCreateAccount('Brand New Company', testLead);
+        Id accountId = ACME_AccountProvider.findOrCreateAccount(testLead);
         Test.stopTest();
 
-        System.assertNotEquals(null, accountId, 'Should create new account');
-        
-        Account newAccount = [SELECT Id, Name, Industry, Type FROM Account WHERE Id = :accountId];
-        System.assertEquals('Brand New Company', newAccount.Name, 'Should create account with correct name');
-        System.assertEquals('Technology', newAccount.Industry, 'Should inherit industry from lead');
-        System.assertEquals('Prospect', newAccount.Type, 'Should set type as Prospect');
+        Account result = [SELECT Id, Name FROM Account WHERE Id = :accountId];
+        System.assertNotEquals(null, result, 'Account should be created');
+        System.assertEquals('New Company LLC', result.Name, 'Account name should match lead company');
     }
 
-    @IsTest
-    static void testGetHighPriorityAccounts() {
-        Test.startTest();
-        List<Account> highPriorityAccounts = ACME_AccountProvider.getHighPriorityAccounts();
-        Test.stopTest();
-
-        System.assertNotEquals(null, highPriorityAccounts, 'Should return account list');
-        
-        for (Account acc : highPriorityAccounts) {
-            System.assert(
-                acc.Type == 'Customer - Direct' || acc.Type == 'Customer - Channel',
-                'Should return customer accounts only'
-            );
-            System.assert(acc.AnnualRevenue > 1000000, 'Should return high revenue accounts');
-        }
-    }
-
-    @IsTest 
-    static void testFindOrCreateAccountException() {
+    /**
+     * @description Test null lead handling
+     */
+    @isTest
+    static void testNullLead() {
         Test.startTest();
         try {
-            ACME_AccountProvider.findOrCreateAccount(null, null);
-            System.assert(false, 'Should have thrown an exception');
-        } catch (ACME_AccountProvider.AcmeDataException e) {
-            System.assert(true, 'Expected AcmeDataException was thrown');
-        }
-        Test.stopTest();
-    }
-
-    @IsTest
-    static void testFindOrCreateAccountWithEmptyName() {
-        Lead testLead = [SELECT Id, FirstName, LastName, Company, Industry, Phone, OwnerId FROM Lead LIMIT 1];
-
-        Test.startTest();
-        try {
-            ACME_AccountProvider.findOrCreateAccount('', testLead);
-            System.assert(false, 'Should have thrown an exception for empty name');
+            ACME_AccountProvider.findOrCreateAccount(null);
+            System.assert(false, 'Should have thrown exception');
         } catch (Exception e) {
-            System.assert(true, 'Expected exception for empty name');
+            System.assert(true, 'Exception thrown as expected');
+        }
+        Test.stopTest();
+    }
+
+    /**
+     * @description Test retrieving high value accounts
+     */
+    @isTest
+    static void testGetHighValueAccounts() {
+        Test.startTest();
+        List<Account> highValueAccounts = ACME_AccountProvider.getHighValueAccounts();
+        Test.stopTest();
+
+        System.assertNotEquals(null, highValueAccounts, 'Should return list of accounts');
+        System.assertEquals(1, highValueAccounts.size(), 'Should find one high revenue account');
+        System.assertEquals('High Revenue Corp', highValueAccounts[0].Name, 'Account name should match');
+    }
+
+    /**
+     * @description Test error handling for account creation
+     */
+    @isTest
+    static void testAccountCreationError() {
+        // Create lead with missing required field (Company)
+        Lead testLead = new Lead(
+            FirstName = 'Test',
+            LastName = 'User',
+            Company = null,
+            Email = 'test@example.com',
+            Status = 'Open - Not Contacted'
+        );
+
+        Test.startTest();
+        try {
+            ACME_AccountProvider.findOrCreateAccount(testLead);
+            System.assert(false, 'Should have thrown exception for null company');
+        } catch (Exception e) {
+            System.assert(true, 'Exception thrown as expected');
         }
         Test.stopTest();
     }

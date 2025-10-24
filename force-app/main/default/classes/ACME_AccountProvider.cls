@@ -7,35 +7,56 @@ public with sharing class ACME_AccountProvider {
     
     /**
      * @description Finds or creates account for lead conversion
-     * @param companyName Company name from lead
      * @param leadData Lead information for account creation
      * @return Account ID
      */
-    public static Id findOrCreateAccount(String companyName, Lead leadData) {
+    public static Id findOrCreateAccount(Lead leadData) {
         try {
-            // First, try to find existing account
+            // Try to find existing account - WITH CRUD/FLS CHECK
             List<Account> existingAccounts = [
-                SELECT Id, Name 
+                SELECT Id, Name, Website
                 FROM Account 
-                WHERE Name = :companyName 
+                WHERE Name = :leadData.Company 
                 LIMIT 1
             ];
             
-            if (!existingAccounts.isEmpty()) {
-                return existingAccounts[0].Id;
+            // Strip inaccessible fields based on user permissions
+            SObjectAccessDecision securityDecision = Security.stripInaccessible(
+                AccessType.READABLE,
+                existingAccounts
+            );
+            
+            List<Account> accessibleAccounts = securityDecision.getRecords();
+            
+            if (!accessibleAccounts.isEmpty()) {
+                return accessibleAccounts[0].Id;
             }
             
-            // Create new account if not found
+            // Create new account if not found - WITH CRUD/FLS CHECK
             Account newAccount = new Account(
-                Name = companyName,
-                Industry = leadData.Industry,
+                Name = leadData.Company,
+                Website = leadData.Website,
                 Phone = leadData.Phone,
-                Type = 'Prospect',
+                Industry = leadData.Industry,
+                AnnualRevenue = leadData.AnnualRevenue,
+                NumberOfEmployees = leadData.NumberOfEmployees,
                 OwnerId = leadData.OwnerId
             );
             
-            insert newAccount;
-            return newAccount.Id;
+            // Check if user has create permission
+            if (!Schema.sObjectType.Account.isCreateable()) {
+                throw new AcmeDataException('Insufficient permissions to create Account');
+            }
+            
+            // Strip inaccessible fields before insert
+            SObjectAccessDecision createDecision = Security.stripInaccessible(
+                AccessType.CREATABLE,
+                new List<Account>{ newAccount }
+            );
+            
+            insert createDecision.getRecords();
+            return createDecision.getRecords()[0].Id;
+            
         } catch (Exception e) {
             System.debug(LoggingLevel.ERROR, 'Error finding/creating account: ' + e.getMessage());
             throw new AcmeDataException('Failed to find or create account: ' + e.getMessage());
@@ -43,28 +64,36 @@ public with sharing class ACME_AccountProvider {
     }
     
     /**
-     * @description Gets high-priority accounts for sales focus
-     * @return List of high-priority accounts
+     * @description Gets high-value accounts for reporting
+     * @return List of high-value accounts
      */
-    public static List<Account> getHighPriorityAccounts() {
+    public static List<Account> getHighValueAccounts() {
         try {
-            return [
-                SELECT Id, Name, Industry, AnnualRevenue, Type,
-                       Owner.Name, Owner.Email
+            // Query with CRUD/FLS check
+            List<Account> accounts = [
+                SELECT Id, Name, AnnualRevenue, Industry, Owner.Name, Owner.Email
                 FROM Account 
-                WHERE Type IN ('Customer - Direct', 'Customer - Channel')
-                AND AnnualRevenue > 1000000
+                WHERE AnnualRevenue > 1000000
                 ORDER BY AnnualRevenue DESC
-                LIMIT 25
+                LIMIT 50
             ];
+            
+            // Strip inaccessible fields
+            SObjectAccessDecision securityDecision = Security.stripInaccessible(
+                AccessType.READABLE,
+                accounts
+            );
+            
+            return securityDecision.getRecords();
+            
         } catch (Exception e) {
-            System.debug(LoggingLevel.ERROR, 'Error retrieving high-priority accounts: ' + e.getMessage());
+            System.debug(LoggingLevel.ERROR, 'Error retrieving high-value accounts: ' + e.getMessage());
             throw new AcmeDataException('Failed to retrieve accounts: ' + e.getMessage());
         }
     }
     
     /**
-     * Custom exception for data access errors
+     * @description Custom exception for data access errors
      */
     public class AcmeDataException extends Exception {}
 }

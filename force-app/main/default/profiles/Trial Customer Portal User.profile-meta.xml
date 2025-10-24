@@ -152,18 +152,6 @@
         <apexClass>ACME_UserProviderTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
-    <classAccesses>
-        <apexClass>AccountAutomations</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>AccountAutomationsTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>AccountValidationTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
     <custom>true</custom>
     <fieldPermissions>
         <editable>false</editable>
@@ -1438,6 +1426,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.Fax</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.First_Contact__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4308,14 +4301,6 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>ACME_Lead_to_Opportunity</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>ACME_Lead_to_Opportunity_v2_1</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>ACME_Lead_to_Opportunity_v2_2_Fixed</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
