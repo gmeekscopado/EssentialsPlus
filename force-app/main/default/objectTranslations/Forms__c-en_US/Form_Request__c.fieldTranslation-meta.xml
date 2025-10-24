@@ -4,6 +4,10 @@
     <label><!-- Form Request --></label>
     <name>Form_Request__c</name>
     <picklistValues>
+        <masterLabel>1099-C</masterLabel>
+        <translation><!-- 1099-C --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Insurance</masterLabel>
         <translation><!-- Insurance --></translation>
     </picklistValues>
