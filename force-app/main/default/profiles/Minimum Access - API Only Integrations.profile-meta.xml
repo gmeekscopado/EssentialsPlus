@@ -878,11 +878,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Case.ACME_Escalation_Level__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Case.AccountId</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -929,16 +924,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.EntitlementId</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Escalation_History__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Escalation_Reason__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1009,11 +994,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.Reason</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.SLA_Violation__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2828,11 +2808,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.Converted_From_Lead__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Opportunity.CurrentGenerators__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2873,16 +2848,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.Lead_Score__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Lead_Source_Details__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Opportunity.MainCompetitors__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2899,11 +2864,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Probability</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Restricted_Access__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
