@@ -1,34 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>58.0</apiVersion>
+    <apiVersion>61.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
-        <description>Handle account creation failure with detailed error message</description>
-        <name>Set_Account_Creation_Error</name>
-        <label>Set Account Creation Error</label>
-        <locationX>446</locationX>
+        <description>Handle account creation errors</description>
+        <name>Handle_Account_Creation_Error</name>
+        <label>Handle Account Creation Error</label>
+        <locationX>50</locationX>
         <locationY>758</locationY>
+        <assignmentItems>
+            <assignToReference>var_ProcessStatus</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Error</stringValue>
+            </value>
+        </assignmentItems>
         <assignmentItems>
             <assignToReference>var_ErrorMessage</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>Failed to create account for company. Please verify company name and try again.</stringValue>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>var_ProcessSuccess</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>false</booleanValue>
+                <stringValue>Failed to create new account: {!$Flow.FaultMessage}</stringValue>
             </value>
         </assignmentItems>
     </assignments>
     <assignments>
-        <description>Set target account to the found existing account and mark success</description>
+        <description>Handle account lookup errors</description>
+        <name>Handle_Account_Lookup_Error</name>
+        <label>Handle Account Lookup Error</label>
+        <locationX>578</locationX>
+        <locationY>398</locationY>
+        <assignmentItems>
+            <assignToReference>var_ProcessStatus</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Error</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_ErrorMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Failed to lookup existing account: {!$Flow.FaultMessage}</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Handle general account processing errors</description>
+        <name>Handle_General_Account_Error</name>
+        <label>Handle General Account Error</label>
+        <locationX>578</locationX>
+        <locationY>758</locationY>
+        <assignmentItems>
+            <assignToReference>var_ProcessStatus</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Error</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_ErrorMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Account processing failed - unable to proceed with opportunity creation</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Handle opportunity creation errors</description>
+        <name>Handle_Opportunity_Creation_Error</name>
+        <label>Handle Opportunity Creation Error</label>
+        <locationX>578</locationX>
+        <locationY>878</locationY>
+        <assignmentItems>
+            <assignToReference>var_ProcessStatus</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Error</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_ErrorMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Failed to create opportunity: {!$Flow.FaultMessage}</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Set target account to existing found account</description>
         <name>Set_Existing_Account_Success</name>
         <label>Set Existing Account Success</label>
-        <locationX>50</locationX>
-        <locationY>638</locationY>
+        <locationX>578</locationX>
+        <locationY>518</locationY>
         <assignmentItems>
             <assignToReference>var_TargetAccountId</assignToReference>
             <operator>Assign</operator>
@@ -37,22 +100,22 @@
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>var_AccountCreationSuccess</assignToReference>
+            <assignToReference>var_ProcessStatus</assignToReference>
             <operator>Assign</operator>
             <value>
-                <booleanValue>true</booleanValue>
+                <stringValue>Account Found</stringValue>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Create_Opportunity_Record</targetReference>
+            <targetReference>Decision_Account_Success</targetReference>
         </connector>
     </assignments>
     <assignments>
-        <description>Set target account to newly created account and mark success</description>
+        <description>Set target account to newly created account</description>
         <name>Set_New_Account_Success</name>
         <label>Set New Account Success</label>
-        <locationX>314</locationX>
-        <locationY>758</locationY>
+        <locationX>50</locationX>
+        <locationY>638</locationY>
         <assignmentItems>
             <assignToReference>var_TargetAccountId</assignToReference>
             <operator>Assign</operator>
@@ -61,43 +124,29 @@
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>var_AccountCreationSuccess</assignToReference>
+            <assignToReference>var_ProcessStatus</assignToReference>
             <operator>Assign</operator>
             <value>
-                <booleanValue>true</booleanValue>
+                <stringValue>Account Created</stringValue>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Create_Opportunity_Record</targetReference>
+            <targetReference>Decision_Account_Success</targetReference>
         </connector>
     </assignments>
     <assignments>
-        <description>Handle opportunity creation failure with error details</description>
-        <name>Set_Opportunity_Creation_Error</name>
-        <label>Set Opportunity Creation Error</label>
-        <locationX>446</locationX>
-        <locationY>1118</locationY>
-        <assignmentItems>
-            <assignToReference>var_ErrorMessage</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <stringValue>Failed to create opportunity. Please check account setup and try again.</stringValue>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>var_ProcessSuccess</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </assignmentItems>
-    </assignments>
-    <assignments>
-        <description>Set final success message and output variables for successful process completion</description>
+        <description>Set success status and output variables after opportunity creation</description>
         <name>Set_Process_Success</name>
         <label>Set Process Success</label>
-        <locationX>182</locationX>
-        <locationY>1118</locationY>
+        <locationX>314</locationX>
+        <locationY>878</locationY>
+        <assignmentItems>
+            <assignToReference>var_ProcessStatus</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Success</stringValue>
+            </value>
+        </assignmentItems>
         <assignmentItems>
             <assignToReference>var_CreatedOpportunityId</assignToReference>
             <operator>Assign</operator>
@@ -106,53 +155,25 @@
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>var_SuccessMessage</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <stringValue>Successfully created opportunity with $10,000 amount and 90-day close date.</stringValue>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>var_ProcessSuccess</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </assignmentItems>
-    </assignments>
-    <assignments>
-        <description>Set qualification failure message with specific requirements</description>
-        <name>Set_Qualification_Error</name>
-        <label>Set Qualification Error</label>
-        <locationX>314</locationX>
-        <locationY>278</locationY>
-        <assignmentItems>
             <assignToReference>var_ErrorMessage</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>Lead qualification failed: Status must be Qualified and Company name and Email address are required fields.</stringValue>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>var_ProcessSuccess</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>false</booleanValue>
+                <stringValue></stringValue>
             </value>
         </assignmentItems>
     </assignments>
     <decisions>
-        <description>Determine if existing account was found or if new account creation is required</description>
+        <description>Determine if an existing account was found for the company</description>
         <name>Decision_Account_Found</name>
-        <label>Account Found Decision</label>
-        <locationX>182</locationX>
-        <locationY>518</locationY>
+        <label>Decision: Account Found?</label>
+        <locationX>314</locationX>
+        <locationY>398</locationY>
         <defaultConnector>
             <targetReference>Create_Account_Record</targetReference>
         </defaultConnector>
-        <defaultConnectorLabel>Create New Account</defaultConnectorLabel>
+        <defaultConnectorLabel>No Account Found</defaultConnectorLabel>
         <rules>
-            <name>Outcome_Account_Exists</name>
+            <name>Account_Found</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>Get_Existing_Account</leftValueReference>
@@ -164,29 +185,22 @@
             <connector>
                 <targetReference>Set_Existing_Account_Success</targetReference>
             </connector>
-            <label>Account Exists</label>
+            <label>Account Found</label>
         </rules>
     </decisions>
     <decisions>
-        <description>Check if account creation or lookup was successful before proceeding to opportunity creation</description>
+        <description>Check if account was successfully identified or created before proceeding to opportunity creation</description>
         <name>Decision_Account_Success</name>
-        <label>Account Success Decision</label>
-        <locationX>182</locationX>
-        <locationY>878</locationY>
+        <label>Decision: Account Success?</label>
+        <locationX>314</locationX>
+        <locationY>638</locationY>
         <defaultConnector>
-            <targetReference>Set_Opportunity_Creation_Error</targetReference>
+            <targetReference>Handle_General_Account_Error</targetReference>
         </defaultConnector>
-        <defaultConnectorLabel>Account Failed</defaultConnectorLabel>
+        <defaultConnectorLabel>Account Process Failed</defaultConnectorLabel>
         <rules>
-            <name>Outcome_Account_Success</name>
+            <name>Account_Ready</name>
             <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>var_AccountCreationSuccess</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
             <conditions>
                 <leftValueReference>var_TargetAccountId</leftValueReference>
                 <operator>IsNull</operator>
@@ -197,82 +211,56 @@
             <connector>
                 <targetReference>Create_Opportunity_Record</targetReference>
             </connector>
-            <label>Account Success</label>
+            <label>Account Ready</label>
         </rules>
     </decisions>
-    <decisions>
-        <description>Comprehensive lead qualification check including status, company name, and email validation</description>
-        <name>Decision_Lead_Qualification</name>
-        <label>Lead Qualification Decision</label>
-        <locationX>182</locationX>
-        <locationY>158</locationY>
-        <defaultConnector>
-            <targetReference>Set_Qualification_Error</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Not Qualified</defaultConnectorLabel>
-        <rules>
-            <name>Outcome_Lead_Qualified</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>var_InputLead.Status</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Qualified</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>var_InputLead.Company</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>var_InputLead.Email</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Get_Existing_Account</targetReference>
-            </connector>
-            <label>Lead Qualified</label>
-        </rules>
-    </decisions>
-    <description>Version 2: Enhanced Lead to Opportunity automation with comprehensive error handling, defensive coding practices, and ACME Corporation development standards compliance. Includes robust validation, detailed error messages, and proper variable management.</description>
+    <description>Automated flow to convert qualified leads to opportunities with account association. Supports both existing account lookup and new account creation based on company information.</description>
     <formulas>
-        <description>Calculate opportunity close date as 90 days from current date</description>
-        <name>Formula_Close_Date</name>
+        <description>Set opportunity close date to 30 days from today</description>
+        <name>formula_CloseDate</name>
         <dataType>Date</dataType>
-        <expression>TODAY() + 90</expression>
+        <expression>TODAY() + 30</expression>
     </formulas>
-    <label>ACME Lead to Opportunity v2</label>
+    <formulas>
+        <description>Generate opportunity description with lead information</description>
+        <name>formula_OpportunityDescription</name>
+        <dataType>String</dataType>
+        <expression>&quot;Opportunity created from lead: &quot; + {!var_InputLead.FirstName} + &quot; &quot; + {!var_InputLead.LastName} + 
+IF(NOT(ISBLANK({!var_InputLead.Email})), &quot; (&quot; + {!var_InputLead.Email} + &quot;)&quot;, &quot;&quot;) + 
+IF(NOT(ISBLANK({!var_InputLead.Title})), &quot;, Title: &quot; + {!var_InputLead.Title}, &quot;&quot;)</expression>
+    </formulas>
+    <formulas>
+        <description>Generate opportunity name based on company and current date</description>
+        <name>formula_OpportunityName</name>
+        <dataType>String</dataType>
+        <expression>{!var_InputLead.Company} + &quot; - &quot; + TEXT(TODAY())</expression>
+    </formulas>
+    <label>ACME Lead to Opportunity Automation</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
             <stringValue>LightningFlowBuilder</stringValue>
         </value>
     </processMetadataValues>
-    <processMetadataValues>
-        <name>CanvasMode</name>
-        <value>
-            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
-        </value>
-    </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordCreates>
-        <description>Create new account record with comprehensive field mapping from lead data</description>
+        <description>Create new account record when no existing account found</description>
         <name>Create_Account_Record</name>
         <label>Create Account Record</label>
-        <locationX>314</locationX>
-        <locationY>638</locationY>
+        <locationX>50</locationX>
+        <locationY>518</locationY>
         <connector>
             <targetReference>Set_New_Account_Success</targetReference>
         </connector>
         <faultConnector>
-            <targetReference>Set_Account_Creation_Error</targetReference>
+            <targetReference>Handle_Account_Creation_Error</targetReference>
         </faultConnector>
+        <inputAssignments>
+            <field>AnnualRevenue</field>
+            <value>
+                <elementReference>var_InputLead.AnnualRevenue</elementReference>
+            </value>
+        </inputAssignments>
         <inputAssignments>
             <field>BillingCity</field>
             <value>
@@ -316,9 +304,21 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>NumberOfEmployees</field>
+            <value>
+                <elementReference>var_InputLead.NumberOfEmployees</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>Phone</field>
             <value>
                 <elementReference>var_InputLead.Phone</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type</field>
+            <value>
+                <stringValue>Prospect</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -331,16 +331,16 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
-        <description>Create opportunity record with professional naming and proper field assignments</description>
+        <description>Create opportunity record linked to target account</description>
         <name>Create_Opportunity_Record</name>
         <label>Create Opportunity Record</label>
-        <locationX>182</locationX>
-        <locationY>998</locationY>
+        <locationX>314</locationX>
+        <locationY>758</locationY>
         <connector>
             <targetReference>Set_Process_Success</targetReference>
         </connector>
         <faultConnector>
-            <targetReference>Set_Opportunity_Creation_Error</targetReference>
+            <targetReference>Handle_Opportunity_Creation_Error</targetReference>
         </faultConnector>
         <inputAssignments>
             <field>AccountId</field>
@@ -349,21 +349,15 @@
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>Amount</field>
-            <value>
-                <numberValue>10000.0</numberValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
             <field>CloseDate</field>
             <value>
-                <elementReference>Formula_Close_Date</elementReference>
+                <elementReference>formula_CloseDate</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Description</field>
             <value>
-                <stringValue>Opportunity automatically created from qualified lead through ACME Lead to Opportunity automation process.</stringValue>
+                <elementReference>formula_OpportunityDescription</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -375,28 +369,31 @@
         <inputAssignments>
             <field>Name</field>
             <value>
-                <stringValue>New Business Opportunity</stringValue>
+                <elementReference>formula_OpportunityName</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>StageName</field>
             <value>
-                <stringValue>Prospecting</stringValue>
+                <stringValue>Qualification</stringValue>
             </value>
         </inputAssignments>
         <object>Opportunity</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordLookups>
-        <description>Search for existing account by exact company name match to avoid duplicate account creation</description>
+        <description>Lookup existing account by company name to avoid duplicates</description>
         <name>Get_Existing_Account</name>
         <label>Get Existing Account</label>
-        <locationX>50</locationX>
+        <locationX>314</locationX>
         <locationY>278</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Decision_Account_Found</targetReference>
         </connector>
+        <faultConnector>
+            <targetReference>Handle_Account_Lookup_Error</targetReference>
+        </faultConnector>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Name</field>
@@ -410,24 +407,13 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <start>
-        <locationX>50</locationX>
+        <locationX>188</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Decision_Lead_Qualification</targetReference>
+            <targetReference>Get_Existing_Account</targetReference>
         </connector>
     </start>
-    <status>Active</status>
-    <variables>
-        <description>Boolean flag to track successful account creation or lookup for defensive coding</description>
-        <name>var_AccountCreationSuccess</name>
-        <dataType>Boolean</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <booleanValue>false</booleanValue>
-        </value>
-    </variables>
+    <status>Draft</status>
     <variables>
         <description>Output variable containing the ID of the successfully created opportunity record</description>
         <name>var_CreatedOpportunityId</name>
@@ -437,7 +423,7 @@
         <isOutput>true</isOutput>
     </variables>
     <variables>
-        <description>Detailed error message for troubleshooting failed automation processes</description>
+        <description>Error message details for troubleshooting failed executions</description>
         <name>var_ErrorMessage</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
@@ -445,7 +431,7 @@
         <isOutput>true</isOutput>
     </variables>
     <variables>
-        <description>Input lead record that triggers the automation process - must be qualified status</description>
+        <description>Input lead record to be processed for opportunity conversion</description>
         <name>var_InputLead</name>
         <dataType>SObject</dataType>
         <isCollection>false</isCollection>
@@ -454,19 +440,8 @@
         <objectType>Lead</objectType>
     </variables>
     <variables>
-        <description>Boolean flag indicating overall process success or failure for integration purposes</description>
-        <name>var_ProcessSuccess</name>
-        <dataType>Boolean</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>true</isOutput>
-        <value>
-            <booleanValue>false</booleanValue>
-        </value>
-    </variables>
-    <variables>
-        <description>Success message confirming successful completion of lead to opportunity conversion</description>
-        <name>var_SuccessMessage</name>
+        <description>Process status indicator for monitoring and debugging</description>
+        <name>var_ProcessStatus</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
