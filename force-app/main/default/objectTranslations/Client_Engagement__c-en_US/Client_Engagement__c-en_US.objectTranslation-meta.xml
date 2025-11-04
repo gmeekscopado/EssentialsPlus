@@ -8,5 +8,16 @@
         <plural>true</plural>
         <value>Client Engagements</value>
     </caseValues>
+    <layouts>
+        <layout>Client Engagement Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
