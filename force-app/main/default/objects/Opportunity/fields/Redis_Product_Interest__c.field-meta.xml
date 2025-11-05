@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Field 1: Redis_Product_Interest__c - Picklist Field -->
+<!-- File: force-app/main/default/objects/Opportunity/fields/Redis_Product_Interest__c.field-meta.xml -->
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Redis_Product_Interest__c</fullName>
+    <label>Redis Product Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Redis Enterprise Cloud</fullName>
+                <default>false</default>
+                <label>Redis Enterprise Cloud</label>
+            </value>
+            <value>
+                <fullName>Redis Enterprise Software</fullName>
+                <default>false</default>
+                <label>Redis Enterprise Software</label>
+            </value>
+            <value>
+                <fullName>Redis Insight</fullName>
+                <default>false</default>
+                <label>Redis Insight</label>
+            </value>
+            <value>
+                <fullName>Redis Data Integration</fullName>
+                <default>false</default>
+                <label>Redis Data Integration</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
