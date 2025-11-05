@@ -1,0 +1,11 @@
+<!-- Field 2: Deal_Size_Category__c - Formula Field -->
+<!-- File: force-app/main/default/objects/Opportunity/fields/Deal_Size_Category__c.field-meta.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Size_Category__c</fullName>
+    <label>Deal Size Category</label>
+    <formula>IF(Amount >= 50000, "High-Value", "Standard")</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
