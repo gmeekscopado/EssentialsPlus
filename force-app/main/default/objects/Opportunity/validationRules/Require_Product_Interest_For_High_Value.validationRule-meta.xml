@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Validation Rule: Require_Product_Interest_For_High_Value -->
+<!-- File: force-app/main/default/objects/Opportunity/validationRules/Require_Product_Interest_For_High_Value.validationRule-meta.xml -->
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Product_Interest_For_High_Value</fullName>
+    <active>true</active>
+    <description>Requires Redis Product Interest to be selected for opportunities with amount greater than or equal to $50,000</description>
+    <errorConditionFormula>AND(
+    Amount >= 50000,
+    ISBLANK(TEXT(Redis_Product_Interest__c))
+)</errorConditionFormula>
+    <errorDisplayField>Redis_Product_Interest__c</errorDisplayField>
+    <errorMessage>Please select a Redis Product Interest for opportunities over $50K</errorMessage>
+</ValidationRule>
