@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Field 1: Redis_Product_Interest__c - Picklist Field -->
-<!-- File: force-app/main/default/objects/Opportunity/fields/Redis_Product_Interest__c.field-meta.xml -->
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Redis_Product_Interest__c</fullName>
     <label>Redis Product Interest</label>
