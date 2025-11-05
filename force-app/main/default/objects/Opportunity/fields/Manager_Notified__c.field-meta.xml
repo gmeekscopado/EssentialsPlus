@@ -1,0 +1,10 @@
+<!-- Field 3: Manager_Notified__c - Checkbox Field -->
+<!-- File: force-app/main/default/objects/Opportunity/fields/Manager_Notified__c.field-meta.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manager_Notified__c</fullName>
+    <label>Manager Notified</label>
+    <defaultValue>false</defaultValue>
+    <description>Indicates whether the sales manager has been notified about this high-value opportunity</description>
+    <type>Checkbox</type>
+</CustomField>
