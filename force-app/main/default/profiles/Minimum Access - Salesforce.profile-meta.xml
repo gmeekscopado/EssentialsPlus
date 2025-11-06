@@ -2808,6 +2808,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Deal_Size_Category__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.DeliveryInstallationStatus__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2858,6 +2863,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Manager_Notified__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.NextStep</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2869,6 +2879,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Probability</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Redis_Product_Interest__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4290,6 +4305,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Hardcoded_Id_Fixed</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>High_Value_Opportunity_Slack_Alert</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
