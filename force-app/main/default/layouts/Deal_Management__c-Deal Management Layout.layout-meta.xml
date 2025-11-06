@@ -14,6 +14,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Deal_Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Deal_Stage__c</field>
             </layoutItems>
         </layoutColumns>
@@ -25,6 +29,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Deal_Type__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Investment_Amount__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

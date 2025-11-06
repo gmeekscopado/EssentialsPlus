@@ -6,7 +6,7 @@
     <description>Use to document the date of first contact.</description>
     <inlineHelpText>When did you first talk with this customer?</inlineHelpText>
     <label>First Contact</label>
-    <required>true</required>
+    <required>false</required>
     <securityClassification>Internal</securityClassification>
     <trackFeedHistory>false</trackFeedHistory>
     <type>Date</type>

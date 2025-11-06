@@ -1,83 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Flow: High_Value_Opportunity_Slack_Alert -->
-<!-- File: force-app/main/default/flows/High_Value_Opportunity_Slack_Alert.flow-meta.xml -->
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>60.0</apiVersion>
-    <description>Sends email notification and creates task when high-value opportunity (over $50K) is created or reaches Proposal/Price Quote stage</description>
-    <environments>Default</environments>
-    <interviewLabel>High Value Opportunity Alert {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>High Value Opportunity Slack Alert</label>
-    <processMetadataValues>
-        <name>BuilderType</name>
-        <value>
-            <stringValue>LightningFlowBuilder</stringValue>
-        </value>
-    </processMetadataValues>
-    <processMetadataValues>
-        <name>CanvasMode</name>
-        <value>
-            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
-        </value>
-    </processMetadataValues>
-    <processMetadataValues>
-        <name>OriginBuilderType</name>
-        <value>
-            <stringValue>LightningFlowBuilder</stringValue>
-        </value>
-    </processMetadataValues>
-    <processType>AutoLaunchedFlow</processType>
-    
-    <!-- Start: Record-Triggered Flow on Opportunity -->
-    <start>
-        <locationX>254</locationX>
-        <locationY>0</locationY>
-        <connector>
-            <targetReference>Check_High_Value_Criteria</targetReference>
-        </connector>
-        <object>Opportunity</object>
-        <recordTriggerType>CreateAndUpdate</recordTriggerType>
-        <triggerType>RecordAfterSave</triggerType>
-    </start>
-    
-    <!-- Decision: Check if opportunity meets high-value criteria -->
-    <decisions>
-        <name>Check_High_Value_Criteria</name>
-        <label>Check High Value Criteria</label>
-        <locationX>380</locationX>
-        <locationY>215</locationY>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Is_High_Value_And_Not_Notified</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Amount</leftValueReference>
-                <operator>GreaterThanOrEqualTo</operator>
-                <rightValue>
-                    <numberValue>50000.0</numberValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Manager_Notified__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.StageName</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Proposal/Price Quote</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Send_Email_Alert</targetReference>
-            </connector>
-            <label>Is High-Value And Not Notified</label>
-        </rules>
-    </decisions>
-    
-    <!-- Action: Send Email to Sales Manager -->
     <actionCalls>
         <name>Send_Email_Alert</name>
         <label>Send Email Alert</label>
@@ -117,10 +39,68 @@ Please review and provide strategic guidance to the Account Executive.</stringVa
             </value>
         </inputParameters>
         <nameSegment>emailSimple</nameSegment>
-        <versionSegment>1</versionSegment>
     </actionCalls>
-    
-    <!-- Action: Create Follow-Up Task for Manager -->
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Check_High_Value_Criteria</name>
+        <label>Check High Value Criteria</label>
+        <locationX>380</locationX>
+        <locationY>215</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_High_Value_And_Not_Notified</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Amount</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>50000.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Manager_Notified__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Proposal/Price Quote</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_Alert</targetReference>
+            </connector>
+            <label>Is High-Value And Not Notified</label>
+        </rules>
+    </decisions>
+    <description>Sends email notification and creates task when high-value opportunity (over $50K) is created or reaches Proposal/Price Quote stage</description>
+    <environments>Default</environments>
+    <interviewLabel>High Value Opportunity Alert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>High Value Opportunity Slack Alert</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
     <recordCreates>
         <name>Create_Follow_Up_Task</name>
         <label>Create Follow-Up Task</label>
@@ -130,15 +110,9 @@ Please review and provide strategic guidance to the Account Executive.</stringVa
             <targetReference>Update_Manager_Notified</targetReference>
         </connector>
         <inputAssignments>
-            <field>Subject</field>
+            <field>ActivityDate</field>
             <value>
-                <stringValue>Review high-value opportunity: {!$Record.Name}</stringValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>WhatId</field>
-            <value>
-                <elementReference>$Record.Id</elementReference>
+                <elementReference>$Flow.CurrentDate</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -154,15 +128,19 @@ Please review and provide strategic guidance to the Account Executive.</stringVa
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>ActivityDate</field>
+            <field>Subject</field>
             <value>
-                <elementReference>$Flow.CurrentDate</elementReference>
+                <stringValue>Review high-value opportunity: {!$Record.Name}</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
             </value>
         </inputAssignments>
         <object>Task</object>
     </recordCreates>
-    
-    <!-- Action: Update Manager Notified Flag -->
     <recordUpdates>
         <name>Update_Manager_Notified</name>
         <label>Update Manager Notified</label>
@@ -176,6 +154,15 @@ Please review and provide strategic guidance to the Account Executive.</stringVa
         </inputAssignments>
         <inputReference>$Record</inputReference>
     </recordUpdates>
-    
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_High_Value_Criteria</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
     <status>Active</status>
 </Flow>
