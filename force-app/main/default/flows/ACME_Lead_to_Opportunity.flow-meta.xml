@@ -241,13 +241,15 @@
         </rules>
     </decisions>
     <description>Version 2: Enhanced Lead to Opportunity automation with comprehensive error handling, defensive coding practices, and ACME Corporation development standards compliance. Includes robust validation, detailed error messages, and proper variable management.</description>
+    <environments>Default</environments>
     <formulas>
         <description>Calculate opportunity close date as 90 days from current date</description>
         <name>Formula_Close_Date</name>
         <dataType>Date</dataType>
         <expression>TODAY() + 90</expression>
     </formulas>
-    <label>ACME Lead to Opportunity v2</label>
+    <interviewLabel>ACME Lead to Opportunity {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ACME Lead to Opportunity</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -257,7 +259,7 @@
     <processMetadataValues>
         <name>CanvasMode</name>
         <value>
-            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
@@ -388,7 +390,7 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordLookups>
-        <description>Search for existing account by exact company name match to avoid duplicate account creation</description>
+        <description>Search for existing account by exact company name match to avoid duplicate account creation. Update record later.</description>
         <name>Get_Existing_Account</name>
         <label>Get Existing Account</label>
         <locationX>50</locationX>
