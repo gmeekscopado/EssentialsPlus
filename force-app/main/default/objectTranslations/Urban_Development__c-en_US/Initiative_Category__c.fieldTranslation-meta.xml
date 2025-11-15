@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Initiative Category --></label>
+    <name>Initiative_Category__c</name>
+    <picklistValues>
+        <masterLabel>City Planning</masterLabel>
+        <translation><!-- City Planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fleet and Buses</masterLabel>
+        <translation><!-- Fleet and Buses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parking Operators</masterLabel>
+        <translation><!-- Parking Operators --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Transport</masterLabel>
+        <translation><!-- Public Transport --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
