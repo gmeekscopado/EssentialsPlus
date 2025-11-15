@@ -663,6 +663,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Bicycle__c.Urban_Development_Initiative__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Broker__c.Contract_Value__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -688,7 +693,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Budget__c.Approved__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Budget__c.Fiscal_Year__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Budget__c.Project__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3978,6 +3993,26 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Urban_Development__c.In_Progress__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Urban_Development__c.Initiative_Category__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Urban_Development__c.Initiative_Owner__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Urban_Development__c.Start_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Warehouse__c.Active__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4610,6 +4645,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Therapeutic_Area__c-Therapeutic Area Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Urban_Development__c-Urban Development Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>User-User Layout</layout>
