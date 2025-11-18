@@ -1183,6 +1183,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Client_Engagement__c.In_Progress__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Client_Engagement__c.Last_Contact_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1214,6 +1219,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Client_Engagement__c.Resources_Assigned__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Client_Engagement__c.Rootstock_Implementation_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2529,6 +2539,21 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Inventory__c.Subcategory__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Investment__c.Company_Industry__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Investment__c.Primary_Investor__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Investment__c.Specialty_Category__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4408,6 +4433,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Inventory__c-Inventory Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Investment__c-Investment Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Investor__c-Investor Layout</layout>
