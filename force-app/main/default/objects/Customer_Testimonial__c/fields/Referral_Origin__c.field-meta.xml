@@ -37,6 +37,7 @@
             <value>
                 <fullName>Facebook</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Facebook</label>
             </value>
         </valueSetDefinition>
