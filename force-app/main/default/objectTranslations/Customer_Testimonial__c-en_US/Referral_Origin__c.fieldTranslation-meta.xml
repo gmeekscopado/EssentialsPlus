@@ -7,10 +7,6 @@
         <translation><!-- Email --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Facebook</masterLabel>
-        <translation><!-- Facebook --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>Friend</masterLabel>
         <translation><!-- Friend --></translation>
     </picklistValues>
