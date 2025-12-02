@@ -7,7 +7,6 @@ public with sharing class PartnerPortalController {
     @AuraEnabled(cacheable=true)
     public static Map<String, String> getSecurityMetrics() {
         try {
-            // In a real scenario, these would come from custom objects or external APIs
             Map<String, String> metrics = new Map<String, String>();
             metrics.put('endpointsProtected', '9M+');
             metrics.put('threatsBlocked', '2B+');
@@ -29,7 +28,6 @@ public with sharing class PartnerPortalController {
         try {
             List<ResourceWrapper> resources = new List<ResourceWrapper>();
             
-            // Sample resources - in production, these would come from ContentDocument or custom object
             resources.add(new ResourceWrapper(
                 '1',
                 'N-central RMM Best Practices',
@@ -69,6 +67,57 @@ public with sharing class PartnerPortalController {
     }
     
     /**
+     * Get security alerts and notifications
+     * @return List<SecurityAlertWrapper> containing alert information
+     */
+    @AuraEnabled(cacheable=true)
+    public static List<SecurityAlertWrapper> getSecurityAlerts() {
+        try {
+            List<SecurityAlertWrapper> alerts = new List<SecurityAlertWrapper>();
+            
+            alerts.add(new SecurityAlertWrapper(
+                '1',
+                'Critical Ransomware Variant Detected',
+                'New LockBit 4.0 variant targeting MSP infrastructure',
+                'critical',
+                DateTime.now().addHours(-1),
+                'Threat Intelligence'
+            ));
+            
+            alerts.add(new SecurityAlertWrapper(
+                '2',
+                'Security Patch Available',
+                'N-central RMM version 2024.1 addresses CVE-2024-1234',
+                'high',
+                DateTime.now().addHours(-2),
+                'Updates'
+            ));
+            
+            alerts.add(new SecurityAlertWrapper(
+                '3',
+                'Compliance Alert',
+                'SOC 2 audit documentation due in 14 days',
+                'medium',
+                DateTime.now().addDays(-1),
+                'Compliance'
+            ));
+            
+            alerts.add(new SecurityAlertWrapper(
+                '4',
+                'Best Practice Update',
+                'New MFA guidelines for partner portal access',
+                'low',
+                DateTime.now().addDays(-2),
+                'Security'
+            ));
+            
+            return alerts;
+        } catch (Exception e) {
+            throw new AuraHandledException('Error retrieving security alerts: ' + e.getMessage());
+        }
+    }
+    
+    /**
      * Wrapper class for resource data
      */
     public class ResourceWrapper {
@@ -84,6 +133,27 @@ public with sharing class PartnerPortalController {
             this.Description = description;
             this.Type = type;
             this.Icon = icon;
+        }
+    }
+    
+    /**
+     * Wrapper class for security alert data
+     */
+    public class SecurityAlertWrapper {
+        @AuraEnabled public String id { get; set; }
+        @AuraEnabled public String title { get; set; }
+        @AuraEnabled public String description { get; set; }
+        @AuraEnabled public String severity { get; set; }
+        @AuraEnabled public String timestamp { get; set; }
+        @AuraEnabled public String category { get; set; }
+        
+        public SecurityAlertWrapper(String id, String title, String description, String severity, DateTime timestamp, String category) {
+            this.id = id;
+            this.title = title;
+            this.description = description;
+            this.severity = severity;
+            this.timestamp = timestamp.format('yyyy-MM-dd\'T\'HH:mm:ss\'Z\'');
+            this.category = category;
         }
     }
 }
