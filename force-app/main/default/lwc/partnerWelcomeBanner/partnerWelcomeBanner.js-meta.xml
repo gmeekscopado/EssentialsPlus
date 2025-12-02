@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="partnerName" type="String" default="N-Able Partner Portal" 
+                      label="Portal Name" description="Name of the partner portal"/>
+            <property name="tagline" type="String" default="Empowering MSPs with Relentless Cyber Resilience" 
+                      label="Tagline" description="Portal tagline"/>
+            <property name="partnerTier" type="String" default="Elite" 
+                      label="Partner Tier" description="Partner tier level (Elite, Premier, Partner)"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
