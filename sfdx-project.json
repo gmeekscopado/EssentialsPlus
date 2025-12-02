@@ -5,8 +5,8 @@
       "default": true
     }
   ],
-  "name": "27277-115417-1649193717695",
+  "name": "n-able-partner-portal",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "63.0"
+  "sourceApiVersion": "62.0"
 }
