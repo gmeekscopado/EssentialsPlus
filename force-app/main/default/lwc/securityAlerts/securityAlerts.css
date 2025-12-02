@@ -1,0 +1,97 @@
+.alerts-container {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.alert-card {
+    background: white;
+    border-left: 4px solid transparent;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.alert-card:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.severity-critical {
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: #ffebee;
+}
+
+.severity-critical .severity-icon {
+    color: #d32f2f;
+}
+
+.alert-card:has(.severity-critical) {
+    border-left-color: #d32f2f;
+    background: #fff5f5;
+}
+
+.severity-high {
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: #fff3e0;
+}
+
+.severity-high .severity-icon {
+    color: #f57c00;
+}
+
+.alert-card:has(.severity-high) {
+    border-left-color: #f57c00;
+    background: #fffbf5;
+}
+
+.severity-medium {
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: #e3f2fd;
+}
+
+.severity-medium .severity-icon {
+    color: #1976d2;
+}
+
+.alert-card:has(.severity-medium) {
+    border-left-color: #1976d2;
+}
+
+.severity-low {
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: #f1f8e9;
+}
+
+.severity-low .severity-icon {
+    color: #689f38;
+}
+
+.alert-card:has(.severity-low) {
+    border-left-color: #689f38;
+}
+
+.alert-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a237e;
+    margin-bottom: 0.25rem;
+}
+
+.alert-description {
+    font-size: 0.875rem;
+    color: #546e7a;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.alert-time {
+    font-size: 0.75rem;
+    color: #90a4ae;
+}
