@@ -1,0 +1,82 @@
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.banner-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-title {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.banner-tagline {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pulse-icon {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.icon-container {
+    display: inline-block;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+}
+
+.tier-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-right: 1rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.tier-elite {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    color: #1a237e;
+}
+
+.tier-premier {
+    background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 100%);
+    color: #1a237e;
+}
+
+.tier-partner {
+    background: linear-gradient(135deg, #cd7f32 0%, #e8a87c 100%);
+    color: white;
+}
+
+.tier-icon {
+    margin-right: 0.5rem;
+}
+
+.tier-text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
