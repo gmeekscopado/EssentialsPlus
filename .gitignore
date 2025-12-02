@@ -1,0 +1,22 @@
+# Salesforce cache
+.sf/
+.sfdx/
+.localdevserver/
+
+# LWC VSCode autocomplete
+**/lwc/**/*.d.ts
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Org credentials
+.org-config.json
