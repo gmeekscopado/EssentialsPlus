@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Specialty_Category__c</fullName>
+    <label>Specialty Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>De novo startup</fullName>
+                <default>false</default>
+                <label>De novo startup</label>
+            </value>
+            <value>
+                <fullName>Controlling positions in closely held businesses</fullName>
+                <default>false</default>
+                <label>Controlling positions in closely held businesses</label>
+            </value>
+            <value>
+                <fullName>Non-controlling investments</fullName>
+                <default>false</default>
+                <label>Non-controlling investments</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
