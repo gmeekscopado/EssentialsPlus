@@ -694,6 +694,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Budget__c.Approved__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Budget__c.Fiscal_Year__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2324,6 +2329,26 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Fitness_Club__c.Equipment_Available__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Fitness_Club__c.Member__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Fitness_Club__c.Membership_Fee__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Fitness_Club__c.Opening_Day__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Forms__c.Form_Category__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2529,6 +2554,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Investment__c.Primary_Investor__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Investor__c.Contact__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2565,6 +2595,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Invoice__c.Invoice_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Invoice__c.Net_30_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3999,6 +4034,41 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Vendor__c.BillCom_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Vendor__c.Email__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Vendor__c.Last_Sync_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Vendor__c.Payment_Terms__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Vendor__c.Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Vendor__c.Sync_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Vendor__c.Tax_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Warehouse__c.Active__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4313,6 +4383,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Calculate_Opportunity_Close_Date</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Copado_Test</flow>
     </flowAccesses>
     <flowAccesses>
@@ -4483,6 +4557,9 @@
         <layout>Film__c-Film Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Fitness_Club__c-Fitness Club Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Forms__c-Form Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4509,6 +4586,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Inventory__c-Inventory Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Investment__c-Investment Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Investor__c-Investor Layout</layout>
@@ -4655,6 +4735,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>UserProvisioningRequest-User Provisioning Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Vendor__c-Vendor Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Warehouse__c-Warehouse Layout</layout>
