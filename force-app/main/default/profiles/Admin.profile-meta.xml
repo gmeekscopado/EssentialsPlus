@@ -103,6 +103,16 @@
     <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Investment__c.Banking_Partner__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Investment__c.Goal__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Investment__c.Investment_Account_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
