@@ -13,6 +13,7 @@
     <tabs>Performance_Review__c</tabs>
     <tabs>Goal_Tracker__c</tabs>
     <tabs>standard-ActionHub</tabs>
+    <tabs>Enrollment__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>FlowsApp_UtilityBar</utilityBar>
 </CustomApplication>

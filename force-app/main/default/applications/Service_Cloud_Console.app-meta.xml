@@ -187,7 +187,11 @@
     <tabs>standard-report</tabs>
     <tabs>Performance_Review__c</tabs>
     <tabs>Goal_Tracker__c</tabs>
+    <tabs>Enrollment__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Enrollment__c</tab>
+        </mappings>
         <mappings>
             <tab>Getting_Started</tab>
         </mappings>

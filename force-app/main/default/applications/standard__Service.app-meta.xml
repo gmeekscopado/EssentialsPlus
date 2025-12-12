@@ -18,4 +18,5 @@
     <tabs>standard-Dashboard</tabs>
     <tabs>Performance_Review__c</tabs>
     <tabs>Goal_Tracker__c</tabs>
+    <tabs>Enrollment__c</tabs>
 </CustomApplication>
