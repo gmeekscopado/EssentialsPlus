@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Class Selection --></label>
+    <name>Class_Selection__c</name>
+    <picklistValues>
+        <masterLabel>Algebra</masterLabel>
+        <translation><!-- Algebra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biology</masterLabel>
+        <translation><!-- Biology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chemistry</masterLabel>
+        <translation><!-- Chemistry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drama</masterLabel>
+        <translation><!-- Drama --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental Science</masterLabel>
+        <translation><!-- Environmental Science --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Forestry</masterLabel>
+        <translation><!-- Forestry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geography</masterLabel>
+        <translation><!-- Geography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geology</masterLabel>
+        <translation><!-- Geology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>History</masterLabel>
+        <translation><!-- History --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
