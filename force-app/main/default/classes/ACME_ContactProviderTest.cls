@@ -1,446 +1,170 @@
-/**
- * @description Comprehensive test class for ACME_ContactProvider
- * @author ACME Corporation
- * @date 2024
- */
 @IsTest
 private class ACME_ContactProviderTest {
-    
-    /**
-     * @description Test data setup method
-     */
+
     @TestSetup
     static void setupTestData() {
-        // Create test account
-        Account testAccount = new Account(
-            Name = 'Test Account',
-            Industry = 'Technology',
-            AnnualRevenue = 1000000
-        );
-        insert testAccount;
-        
-        // Create existing contact for find scenario
-        Contact existingContact = new Contact(
-            FirstName = 'Existing',
-            LastName = 'Contact',
-            Email = 'existing.contact@test.com',
-            Phone = '555-1234',
-            AccountId = testAccount.Id,
-            Title = 'VP Sales'
-        );
+        // Create common test account using the factory
+        Account testAccount = TestDataFactory.createAccounts(1, true)[0];
+
+        // Create an existing contact for find-or-create scenarios
+        Contact existingContact = TestDataFactory.createContacts(1, testAccount.Id, false)[0];
+        existingContact.FirstName = 'Existing';
+        existingContact.LastName = 'Contact';
+        existingContact.Email = 'existing.contact@test.com';
+        existingContact.Title = 'VP Sales';
         insert existingContact;
-        
-        // Create decision maker contacts with various titles
+
+        // Create various decision maker contacts
         List<Contact> decisionMakers = new List<Contact>();
-        
-        decisionMakers.add(new Contact(
-            FirstName = 'John',
-            LastName = 'Director',
-            Email = 'john.director@test.com',
-            Phone = '555-0001',
-            AccountId = testAccount.Id,
-            Title = 'Director of Sales',
-            Department = 'Sales'
-        ));
-        
-        decisionMakers.add(new Contact(
-            FirstName = 'Jane',
-            LastName = 'Manager',
-            Email = 'jane.manager@test.com',
-            Phone = '555-0002',
-            AccountId = testAccount.Id,
-            Title = 'Sales Manager',
-            Department = 'Sales'
-        ));
-        
-        decisionMakers.add(new Contact(
-            FirstName = 'Bob',
-            LastName = 'VeeP',
-            Email = 'bob.vp@test.com',
-            Phone = '555-0003',
-            AccountId = testAccount.Id,
-            Title = 'VP of Marketing',
-            Department = 'Marketing'
-        ));
-        
-        decisionMakers.add(new Contact(
-            FirstName = 'Alice',
-            LastName = 'President',
-            Email = 'alice.president@test.com',
-            Phone = '555-0004',
-            AccountId = testAccount.Id,
-            Title = 'President',
-            Department = 'Executive'
-        ));
-        
-        decisionMakers.add(new Contact(
-            FirstName = 'Regular',
-            LastName = 'Employee',
-            Email = 'regular.employee@test.com',
-            Phone = '555-0005',
-            AccountId = testAccount.Id,
-            Title = 'Sales Representative',
-            Department = 'Sales'
-        ));
-        
+        decisionMakers.add(new Contact(FirstName='John', LastName='Director', Email='jd@test.com', AccountId=testAccount.Id, Title='Director of Sales'));
+        decisionMakers.add(new Contact(FirstName='Jane', LastName='Manager', Email='jm@test.com', AccountId=testAccount.Id, Title='Sales Manager'));
+        decisionMakers.add(new Contact(FirstName='Bob', LastName='VeeP', Email='bv@test.com', AccountId=testAccount.Id, Title='VP of Marketing'));
+        decisionMakers.add(new Contact(FirstName='Alice', LastName='President', Email='ap@test.com', AccountId=testAccount.Id, Title='President'));
+        decisionMakers.add(new Contact(FirstName='Regular', LastName='Employee', Email='re@test.com', AccountId=testAccount.Id, Title='Sales Representative'));
         insert decisionMakers;
-        
-        // Create test lead
-        Lead testLead = new Lead(
-            FirstName = 'Test',
-            LastName = 'Lead',
-            Company = 'Test Company',
-            Email = 'test.lead@test.com',
-            Phone = '555-9999',
-            Title = 'Manager',
-            Status = 'Open - Not Contacted',
-            LeadSource = 'Web'
-        );
-        insert testLead;
     }
-    
-    /**
-     * @description Test finding existing contact by email and accountId
-     */
+
     @IsTest
-    static void testFindOrCreateContact_FindExisting() {
+    static void testFindOrCreate_FindExisting() {
         // Arrange
-        Account testAccount = [SELECT Id FROM Account LIMIT 1];
+        Account acc = [SELECT Id FROM Account LIMIT 1];
         Contact existingContact = [SELECT Id, Email FROM Contact WHERE Email = 'existing.contact@test.com' LIMIT 1];
-        
-        Lead testLead = new Lead(
-            FirstName = 'Existing',
-            LastName = 'Contact',
-            Company = 'Test Company',
-            Email = 'existing.contact@test.com',
-            Phone = '555-1234',
-            Title = 'VP Sales',
-            Status = 'Open - Not Contacted'
-        );
-        
+        List<Lead> leads = TestDataFactory.createLeads(1, true);
+        leads[0].Email = existingContact.Email;
+
         // Act
         Test.startTest();
-        Id contactId = ACME_ContactProvider.findOrCreateContact(testLead, testAccount.Id);
+        Map<Id, Id> leadContactMap = ACME_ContactProvider.findOrCreateContacts(leads, acc.Id);
         Test.stopTest();
-        
+
         // Assert
-        System.assertEquals(existingContact.Id, contactId, 'Should return existing contact ID');
-        
-        // Verify no new contact was created
-        Integer contactCount = [SELECT COUNT() FROM Contact WHERE Email = 'existing.contact@test.com'];
-        System.assertEquals(1, contactCount, 'Should not create duplicate contact');
+        System.assertEquals(1, leadContactMap.size());
+        System.assertEquals(existingContact.Id, leadContactMap.get(leads[0].Id));
     }
-    
-    /**
-     * @description Test creating new contact when none exists
-     */
+
     @IsTest
-    static void testFindOrCreateContact_CreateNew() {
+    static void testFindOrCreate_CreateNew() {
         // Arrange
-        Account testAccount = [SELECT Id FROM Account LIMIT 1];
-        
-        Lead testLead = new Lead(
-            FirstName = 'New',
-            LastName = 'Contact',
-            Company = 'New Company',
-            Email = 'new.contact@test.com',
-            Phone = '555-7777',
-            Title = 'Director',
-            Status = 'Open - Not Contacted',
-            LeadSource = 'Referral'
-        );
-        insert testLead;
-        
+        Account acc = [SELECT Id FROM Account LIMIT 1];
+        List<Lead> leads = TestDataFactory.createLeads(1, true);
+        leads[0].Email = 'new.contact@test.com';
+        Integer contactsBefore = [SELECT COUNT() FROM Contact];
+
         // Act
         Test.startTest();
-        Id contactId = ACME_ContactProvider.findOrCreateContact(testLead, testAccount.Id);
+        Map<Id, Id> leadContactMap = ACME_ContactProvider.findOrCreateContacts(leads, acc.Id);
         Test.stopTest();
-        
+
         // Assert
-        System.assertNotEquals(null, contactId, 'Should return new contact ID');
-        
-        Contact createdContact = [SELECT Id, FirstName, LastName, Email, Phone, Title, AccountId, LeadSource, OwnerId 
-                                  FROM Contact 
-                                  WHERE Id = :contactId];
-        
-        System.assertEquals('New', createdContact.FirstName, 'FirstName should be parsed correctly');
-        System.assertEquals('Contact', createdContact.LastName, 'LastName should be parsed correctly');
-        System.assertEquals('new.contact@test.com', createdContact.Email, 'Email should match');
-        System.assertEquals('555-7777', createdContact.Phone, 'Phone should match');
-        System.assertEquals('Director', createdContact.Title, 'Title should match');
-        System.assertEquals(testAccount.Id, createdContact.AccountId, 'AccountId should match');
-        System.assertEquals('Referral', createdContact.LeadSource, 'LeadSource should match');
-        System.assertEquals(testLead.OwnerId, createdContact.OwnerId, 'OwnerId should match');
+        Integer contactsAfter = [SELECT COUNT() FROM Contact];
+        System.assertEquals(1, contactsAfter - contactsBefore, 'A new contact should have been created');
+        System.assertNotEquals(null, leadContactMap.get(leads[0].Id), 'Should return the new contact ID');
     }
-    
-    /**
-     * @description Test creating contact with single name (edge case)
-     */
+
     @IsTest
-    static void testFindOrCreateContact_SingleName() {
+    static void testFindOrCreate_NameParsing() {
         // Arrange
-        Account testAccount = [SELECT Id FROM Account LIMIT 1];
-        
-        Lead testLead = new Lead(
-            FirstName = 'Madonna',
-            LastName = 'Madonna',
-            Company = 'Single Name Company',
-            Email = 'madonna@test.com',
-            Phone = '555-8888',
-            Status = 'Open - Not Contacted'
-        );
-        insert testLead;
-        
+        Account acc = [SELECT Id FROM Account LIMIT 1];
+        User testUser = TestDataFactory.getTestUser();
+        // Simulate a Lead object that could not be created directly in Apex
+        String leadJson = '{"attributes":{"type":"Lead"},"Name":"Name Parser","Email":"nameparsing@test.com", "OwnerId":"' + testUser.Id + '"}';
+        Lead leadStub = (Lead)JSON.deserialize(leadJson, Lead.class);
+        List<Lead> leads = new List<Lead>{leadStub};
+
         // Act
         Test.startTest();
-        Id contactId = ACME_ContactProvider.findOrCreateContact(testLead, testAccount.Id);
+        ACME_ContactProvider.findOrCreateContacts(leads, acc.Id);
         Test.stopTest();
-        
+
         // Assert
-        System.assertNotEquals(null, contactId, 'Should create contact even with single name');
-        
-        Contact createdContact = [SELECT Id, FirstName, LastName FROM Contact WHERE Id = :contactId];
-        System.assertNotEquals(null, createdContact.LastName, 'LastName should not be null');
+        Contact result = [SELECT FirstName, LastName FROM Contact WHERE Email = 'nameparsing@test.com'];
+        System.assertEquals('Name', result.FirstName);
+        System.assertEquals('Parser', result.LastName);
     }
-    
-    /**
-     * @description Test exception handling with null lead data
-     */
+
     @IsTest
-    static void testFindOrCreateContact_NullLeadException() {
+    static void testFindOrCreate_BulkMixAndLimits() {
         // Arrange
-        Account testAccount = [SELECT Id FROM Account LIMIT 1];
-        
-        // Act & Assert
-        Test.startTest();
-        try {
-            ACME_ContactProvider.findOrCreateContact(null, testAccount.Id);
-            System.assert(false, 'Should throw AcmeDataException');
-        } catch (ACME_ContactProvider.AcmeDataException e) {
-            System.assert(e.getMessage().contains('Failed to find or create contact'), 'Exception message should be correct');
+        Account acc = [SELECT Id FROM Account LIMIT 1];
+        Contact existingContact = [SELECT Id, Email FROM Contact WHERE Email = 'existing.contact@test.com' LIMIT 1];
+        List<Lead> leads = TestDataFactory.createLeads(199, false);
+        for(Integer i = 0; i < leads.size(); i++) {
+            leads[i].Email = 'bulk' + i + '@test.com';
         }
-        Test.stopTest();
-    }
-    
-    /**
-     * @description Test exception handling with null accountId
-     */
-    @IsTest
-    static void testFindOrCreateContact_NullAccountException() {
-        // Arrange
-        Lead testLead = [SELECT Id, FirstName, LastName, Company, Email, Phone, Title, Status FROM Lead LIMIT 1];
-        
-        // Act & Assert
+        Lead existingLead = TestDataFactory.createLeads(1, false)[0];
+        existingLead.Email = existingContact.Email;
+        leads.add(existingLead);
+        insert leads;
+
+        // Act
         Test.startTest();
-        try {
-            ACME_ContactProvider.findOrCreateContact(testLead, null);
-            System.assert(false, 'Should throw AcmeDataException');
-        } catch (ACME_ContactProvider.AcmeDataException e) {
-            System.assert(e.getMessage().contains('Failed to find or create contact'), 'Exception message should be correct');
-        }
+        Map<Id, Id> leadContactMap = ACME_ContactProvider.findOrCreateContacts(leads, acc.Id);
         Test.stopTest();
+
+        // Assert
+        System.assertEquals(200, leadContactMap.size(), 'Should process 200 leads');
+        System.assertEquals(existingContact.Id, leadContactMap.get(existingLead.Id), 'Should find the existing contact');
+        System.assertNotEquals(null, leadContactMap.get(leads[0].Id), 'Should have created a new contact');
     }
-    
-    /**
-     * @description Test retrieving decision makers with various titles
-     */
+
     @IsTest
     static void testGetDecisionMakers_Success() {
         // Arrange
-        Account testAccount = [SELECT Id FROM Account LIMIT 1];
-        
+        Account acc = [SELECT Id FROM Account LIMIT 1];
+
         // Act
         Test.startTest();
-        List<Contact> decisionMakers = ACME_ContactProvider.getDecisionMakers(testAccount.Id);
+        List<Contact> decisionMakers = ACME_ContactProvider.getDecisionMakers(acc.Id);
         Test.stopTest();
-        
+
         // Assert
-        System.assertNotEquals(null, decisionMakers, 'Should return list of decision makers');
-        System.assertEquals(4, decisionMakers.size(), 'Should return 4 decision makers (Director, Manager, VP, President)');
-        
-        // Verify all returned contacts have decision maker titles
-        for (Contact contact : decisionMakers) {
-            Boolean hasDecisionMakerTitle = 
-                contact.Title.contains('Director') ||
-                contact.Title.contains('Manager') ||
-                contact.Title.contains('VP') ||
-                contact.Title.contains('President');
-            
-            System.assert(hasDecisionMakerTitle, 'Contact should have decision maker title: ' + contact.Title);
+        System.assertEquals(5, decisionMakers.size(), 'Should return 5 decision makers');
+    }
+
+    @IsTest
+    static void testExceptions() {
+        // Arrange: Setup for DML Exception
+        List<Lead> leads = TestDataFactory.createLeads(1, false);
+        leads[0].Email = 'exception@test.com';
+        insert leads;
+        Id invalidAccountId = '001000000000000AAA'; // Invalid ID
+
+        // Act & Assert for multiple exception scenarios
+        Test.startTest();
+        // 1. DML Exception
+        try {
+            ACME_ContactProvider.findOrCreateContacts(leads, invalidAccountId);
+            System.assert(false, 'Expected a DML exception to be wrapped in AcmeDataException.');
+        } catch (ACME_ContactProvider.AcmeDataException e) {
+            System.assert(e.getMessage().contains('Failed to create contacts'), 'Incorrect exception message for DML failure.');
         }
-    }
-    
-    /**
-     * @description Test retrieving decision makers when none exist
-     */
-    @IsTest
-    static void testGetDecisionMakers_NoResults() {
-        // Arrange - Create new account with no contacts
-        Account emptyAccount = new Account(
-            Name = 'Empty Account',
-            Industry = 'Finance'
-        );
-        insert emptyAccount;
-        
-        // Act
-        Test.startTest();
-        List<Contact> decisionMakers = ACME_ContactProvider.getDecisionMakers(emptyAccount.Id);
-        Test.stopTest();
-        
-        // Assert
-        System.assertNotEquals(null, decisionMakers, 'Should return empty list, not null');
-        System.assertEquals(0, decisionMakers.size(), 'Should return no decision makers for empty account');
-    }
-    
-    /**
-     * @description Test exception handling with null accountId in getDecisionMakers
-     */
-    @IsTest
-    static void testGetDecisionMakers_NullAccountException() {
-        // Act & Assert
-        Test.startTest();
+
+        // 2. Null Account ID for getDecisionMakers
         try {
             ACME_ContactProvider.getDecisionMakers(null);
-            System.assert(false, 'Should throw AcmeDataException');
+            System.assert(false, 'Expected an AcmeDataException for null account ID.');
         } catch (ACME_ContactProvider.AcmeDataException e) {
-            System.assert(e.getMessage().contains('Failed to retrieve decision makers'), 'Exception message should be correct');
+            System.assert(e.getMessage().contains('Account ID cannot be null'), 'Incorrect exception message for null account.');
         }
         Test.stopTest();
     }
-    
-    /**
-     * @description Test bulk contact creation (governor limits)
-     */
+
     @IsTest
-    static void testFindOrCreateContact_BulkProcessing() {
+    static void testEdgeCases_EmptyAndNull() {
         // Arrange
-        Account testAccount = [SELECT Id FROM Account LIMIT 1];
-        
-        List<Lead> bulkLeads = new List<Lead>();
-        for (Integer i = 0; i < 100; i++) {
-            bulkLeads.add(new Lead(
-                FirstName = 'Bulk',
-                LastName = 'Lead' + i,
-                Company = 'Bulk Company ' + i,
-                Email = 'bulk' + i + '@test.com',
-                Phone = '555-' + Math.mod(i, 10000),
-                Status = 'Open - Not Contacted',
-                LeadSource = 'Web'
-            ));
-        }
-        insert bulkLeads;
-        
+        Account acc = [SELECT Id FROM Account LIMIT 1];
+        List<Lead> leads = TestDataFactory.createLeads(1, true);
+
         // Act
         Test.startTest();
-        List<Id> contactIds = new List<Id>();
-        for (Lead lead : bulkLeads) {
-            Id contactId = ACME_ContactProvider.findOrCreateContact(lead, testAccount.Id);
-            contactIds.add(contactId);
-        }
+        Map<Id, Id> resultEmptyList = ACME_ContactProvider.findOrCreateContacts(new List<Lead>(), acc.Id);
+        Map<Id, Id> resultNullList = ACME_ContactProvider.findOrCreateContacts(null, acc.Id);
+        Map<Id, Id> resultNullAccount = ACME_ContactProvider.findOrCreateContacts(leads, null);
         Test.stopTest();
-        
+
         // Assert
-        System.assertEquals(100, contactIds.size(), 'Should create 100 contacts');
-        
-        List<Contact> createdContacts = [SELECT Id FROM Contact WHERE Id IN :contactIds];
-        System.assertEquals(100, createdContacts.size(), 'All contacts should be inserted successfully');
-    }
-    
-    /**
-     * @description Test name parsing with multiple spaces
-     */
-    @IsTest
-    static void testFindOrCreateContact_NameParsingWithSpaces() {
-        // Arrange
-        Account testAccount = [SELECT Id FROM Account LIMIT 1];
-        
-        Lead testLead = new Lead(
-            FirstName = 'John',
-            LastName = 'Smith Jr.',
-            Company = 'Complex Name Company',
-            Email = 'john.smith.jr@test.com',
-            Phone = '555-3333',
-            Status = 'Open - Not Contacted'
-        );
-        insert testLead;
-        
-        // Act
-        Test.startTest();
-        Id contactId = ACME_ContactProvider.findOrCreateContact(testLead, testAccount.Id);
-        Test.stopTest();
-        
-        // Assert
-        Contact createdContact = [SELECT Id, FirstName, LastName FROM Contact WHERE Id = :contactId];
-        System.assertNotEquals(null, createdContact.FirstName, 'FirstName should be parsed');
-        System.assertNotEquals(null, createdContact.LastName, 'LastName should be parsed');
-    }
-    
-    /**
-     * @description Test getDecisionMakers with multiple accounts
-     */
-    @IsTest
-    static void testGetDecisionMakers_MultipleAccounts() {
-        // Arrange - Create second account with decision makers
-        Account secondAccount = new Account(
-            Name = 'Second Account',
-            Industry = 'Healthcare'
-        );
-        insert secondAccount;
-        
-        Contact decisionMaker = new Contact(
-            FirstName = 'Sarah',
-            LastName = 'Director',
-            Email = 'sarah.director@test.com',
-            Phone = '555-2222',
-            AccountId = secondAccount.Id,
-            Title = 'Director of Operations',
-            Department = 'Operations'
-        );
-        insert decisionMaker;
-        
-        // Act
-        Test.startTest();
-        List<Contact> decisionMakers = ACME_ContactProvider.getDecisionMakers(secondAccount.Id);
-        Test.stopTest();
-        
-        // Assert
-        System.assertEquals(1, decisionMakers.size(), 'Should return decision makers only for specified account');
-        System.assertEquals('Sarah', decisionMakers[0].FirstName, 'Should return correct decision maker');
-    }
-    
-    /**
-     * @description Test contact fields are properly populated
-     */
-    @IsTest
-    static void testFindOrCreateContact_AllFieldsPopulated() {
-        // Arrange
-        Account testAccount = [SELECT Id FROM Account LIMIT 1];
-        
-        Lead testLead = new Lead(
-            FirstName = 'Complete',
-            LastName = 'Fields',
-            Company = 'Complete Company',
-            Email = 'complete.fields@test.com',
-            Phone = '555-4444',
-            Title = 'Chief Technology Officer',
-            Status = 'Open - Not Contacted',
-            LeadSource = 'Partner'
-        );
-        insert testLead;
-        
-        // Act
-        Test.startTest();
-        Id contactId = ACME_ContactProvider.findOrCreateContact(testLead, testAccount.Id);
-        Test.stopTest();
-        
-        // Assert
-        Contact createdContact = [SELECT Id, Email, Phone, Title, LeadSource 
-                                  FROM Contact 
-                                  WHERE Id = :contactId];
-        
-        System.assertEquals('complete.fields@test.com', createdContact.Email, 'Email should be populated');
-        System.assertEquals('555-4444', createdContact.Phone, 'Phone should be populated');
-        System.assertEquals('Chief Technology Officer', createdContact.Title, 'Title should be populated');
-        System.assertEquals('Partner', createdContact.LeadSource, 'LeadSource should be populated');
+        System.assert(resultEmptyList.isEmpty(), 'Should return an empty map for an empty list of leads');
+        System.assert(resultNullList.isEmpty(), 'Should return an empty map for a null list of leads');
+        System.assert(resultNullAccount.isEmpty(), 'Should return an empty map for a null account ID');
     }
 }

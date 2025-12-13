@@ -117,6 +117,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>ACME_Security</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ACME_SecurityTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>BillComVendorHttpMock</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -126,6 +134,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>BillComVendorIntegrationService_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TestDataFactory</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <custom>false</custom>
