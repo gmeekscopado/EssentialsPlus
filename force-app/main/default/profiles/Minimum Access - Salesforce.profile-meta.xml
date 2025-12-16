@@ -2812,6 +2812,16 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead_Routing_Rule__mdt.Country__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead_Routing_Rule__mdt.Queue_Developer_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>License__c.License_Number__c</field>
         <readable>true</readable>
@@ -4456,6 +4466,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Lead_Assignment_Automation</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Missing_Error_Handler_Fixed</flow>
     </flowAccesses>
     <flowAccesses>
@@ -4547,6 +4561,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Invoice__c-Invoice Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead_Routing_Rule__mdt-Lead Routing Rule Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>License__c-License Layout</layout>

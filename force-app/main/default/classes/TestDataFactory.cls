@@ -1,42 +1,24 @@
-@isTest
+/**
+ * @description Centralized factory for creating test data for ACME applications.
+ * @author ACME Corporation
+ * @date 2025-12-15
+ */
+@IsTest
 public class TestDataFactory {
-    private static User testUser;
-
-    // Private constructor to prevent instantiation
-    private TestDataFactory() {}
 
     /**
-     * @description Creates a single, reusable test user to be used as the owner for all test records.
-     * @return A valid User record.
+     * @description Private constructor to prevent instantiation of the factory class.
      */
-    public static User getTestUser() {
-        if (testUser == null) {
-            testUser = new User(
-                ProfileId = [SELECT Id FROM Profile WHERE Name = 'Standard User'].Id,
-                FirstName = 'Test',
-                LastName = 'User',
-                Email = 'test.user@example.com',
-                Username = 'test.user' + System.currentTimeMillis() + '@example.com',
-                CompanyName = 'ACME',
-                Title = 'Tester',
-                Alias = 'tuser',
-                TimeZoneSidKey = 'America/Los_Angeles',
-                EmailEncodingKey = 'UTF-8',
-                LanguageLocaleKey = 'en_US',
-                LocaleSidKey = 'en_US'
-            );
-            insert testUser;
-        }
-        return testUser;
+    private TestDataFactory() {
+        // This class is not meant to be instantiated.
     }
 
     /**
-     * @description Creates a list of valid Account records.
+     * @description Creates and inserts a specified number of test accounts.
      * @param count The number of accounts to create.
-     * @param doInsert If true, the records will be inserted into the database.
-     * @return A list of Account records.
+     * @return A list of the newly created Account records.
      */
-    public static List<Account> createAccounts(Integer count, Boolean doInsert) {
+    public static List<Account> createTestAccounts(Integer count) {
         List<Account> accounts = new List<Account>();
         for (Integer i = 0; i < count; i++) {
             accounts.add(new Account(
@@ -45,28 +27,52 @@ public class TestDataFactory {
                 AnnualRevenue = 1000000
             ));
         }
-        if (doInsert) {
-            insert accounts;
-        }
+        insert accounts;
         return accounts;
     }
 
     /**
-     * @description Creates a list of valid Lead records.
-     * @param count The number of leads to create.
-     * @param doInsert If true, the records will be inserted into the database.
-     * @return A list of Lead records.
+     * @description Creates and inserts a specified number of test contacts associated with the first available test account.
+     * @param count The number of contacts to create.
+     * @return A list of the newly created Contact records.
      */
-    public static List<Lead> createLeads(Integer count, Boolean doInsert) {
-        User owner = getTestUser();
+    public static List<Contact> createTestContacts(Integer count) {
+        List<Account> accounts = [SELECT Id FROM Account LIMIT 1];
+        if (accounts.isEmpty()) {
+            throw new TestDataException('An account must exist to create contacts.');
+        }
+
+        List<Contact> contacts = new List<Contact>();
+        for (Integer i = 0; i < count; i++) {
+            String title = (Math.mod(i, 2) == 0) ? 'Test Manager ' + i : 'Test Director ' + i;
+            contacts.add(new Contact(
+                FirstName = 'Test',
+                LastName = 'Contact' + i,
+                Email = 'test.contact' + i + '@acme.com',
+                AccountId = accounts[0].Id,
+                Title = title
+            ));
+        }
+        insert contacts;
+        return contacts;
+    }
+
+    /**
+     * @description Creates a specified number of test leads.
+     * @param count The number of leads to create.
+     * @param doInsert A boolean indicating whether the records should be inserted.
+     * @return A list of the newly created Lead records.
+     */
+    public static List<Lead> createTestLeads(Integer count, Boolean doInsert) {
+        User testUser = [SELECT Id FROM User WHERE IsActive = true LIMIT 1];
         List<Lead> leads = new List<Lead>();
         for (Integer i = 0; i < count; i++) {
             leads.add(new Lead(
                 FirstName = 'Test',
                 LastName = 'Lead' + i,
-                Company = 'Test Corp',
-                Status = 'Open - Not Contacted',
-                OwnerId = owner.Id // Ensures a valid owner is always assigned
+                Company = 'ACME Corp',
+                Email = 'test.lead' + i + '@acme.com',
+                OwnerId = testUser.Id
             ));
         }
         if (doInsert) {
@@ -74,29 +80,18 @@ public class TestDataFactory {
         }
         return leads;
     }
+    
+    /**
+     * @description Overloaded method to create and insert leads by default.
+     */
+    public static List<Lead> createTestLeads(Integer count) {
+        return createTestLeads(count, true);
+    }
 
     /**
-     * @description Creates a list of valid Contact records for a given Account.
-     * @param count The number of contacts to create.
-     * @param accountId The ID of the parent Account.
-     * @param doInsert If true, the records will be inserted into the database.
-     * @return A list of Contact records.
+     * @description Custom exception for test data factory errors.
      */
-    public static List<Contact> createContacts(Integer count, Id accountId, Boolean doInsert) {
-        User owner = getTestUser();
-        List<Contact> contacts = new List<Contact>();
-        for (Integer i = 0; i < count; i++) {
-            contacts.add(new Contact(
-                FirstName = 'Test',
-                LastName = 'Contact' + i,
-                Email = 'test.contact' + i + '@example.com',
-                AccountId = accountId,
-                OwnerId = owner.Id
-            ));
-        }
-        if (doInsert) {
-            insert contacts;
-        }
-        return contacts;
+    public class TestDataException extends Exception {
+        // Intentionally left empty
     }
 }
