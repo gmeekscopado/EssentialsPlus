@@ -137,6 +137,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>HouseholdFinancialSummaryController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>HouseholdFinancialSummaryControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TestDataFactory</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -2364,6 +2372,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Film__c.Synopsis__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Financial_Account__c.Balance__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Financial_Account__c.Contact__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4621,6 +4639,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Film__c-Film Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Financial_Account__c-Financial Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Fitness_Club__c-Fitness Club Layout</layout>
