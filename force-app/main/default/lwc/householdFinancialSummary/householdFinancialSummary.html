@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Household Financial Summary" icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+            <template if:true={summary}>
+                <template if:true={hasData}>
+                    <lightning-formatted-number
+                        value={summary.totalAUM}
+                        format-style="currency"
+                        currency-code="USD"
+                        class="slds-text-heading_large slds-m-bottom_medium">
+                    </lightning-formatted-number>
+
+                    <p class="slds-text-heading_small slds-m-bottom_small">Household Members</p>
+                    <ul>
+                        <template for:each={summary.contacts} for:item="contact">
+                            <li key={contact.Id} class="slds-m-bottom_x-small">{contact.Name}</li>
+                        </template>
+                    </ul>
+                </template>
+                <template if:false={hasData}>
+                    <p>No financial accounts found for this household.</p>
+                </template>
+            </template>
+            <template if:true={error}>
+                <p>An error occurred while loading the summary.</p>
+            </template>
+            <template if:false={summary}>
+                 <lightning-spinner alternative-text="Loading..." size="small"></lightning-spinner>
+            </template>
+        </div>
+    </lightning-card>
+</template>
