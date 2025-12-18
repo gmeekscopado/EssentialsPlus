@@ -105,6 +105,14 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
+    <classAccesses>
+        <apexClass>HouseholdFinancialSummaryController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>HouseholdFinancialSummaryControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <custom>true</custom>
     <fieldPermissions>
         <editable>false</editable>
@@ -2358,6 +2366,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Financial_Account__c.Balance__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Financial_Account__c.Contact__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Forms__c.Form_Category__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4598,6 +4616,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Film__c-Film Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Financial_Account__c-Financial Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Forms__c-Form Layout</layout>
