@@ -207,27 +207,11 @@
             <name>Screen_Header</name>
             <fieldText>&lt;p&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;Income Information Collection&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please enter income information for this lead.&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <fields>
             <name>Current_Entries_Display</name>
             <fieldText>&lt;p&gt;&lt;b&gt;Current Entries: {!varIncomeCount}&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Total Income So Far: {!varTotalIncome}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
@@ -250,14 +234,6 @@
             <fieldText>Income Type</fieldText>
             <fieldType>DropdownBox</fieldType>
             <isRequired>true</isRequired>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <fields>
             <name>Income_Amount_Field</name>
@@ -269,14 +245,6 @@
             <fieldType>InputField</fieldType>
             <isRequired>true</isRequired>
             <scale>2</scale>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <fields>
             <name>Add_Another_Checkbox</name>
@@ -284,14 +252,6 @@
             <fieldText>Add another income source?</fieldText>
             <fieldType>InputField</fieldType>
             <isRequired>true</isRequired>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>

@@ -4544,6 +4544,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Lead_Income_Collection</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>SOQL_Query_In_A_Loop_Fixed</flow>
     </flowAccesses>
     <flowAccesses>
