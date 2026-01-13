@@ -13,6 +13,7 @@
     <tabs>Student_Portal__c</tabs>
     <tabs>Service_Catalog__c</tabs>
     <tabs>standard-ActionHub</tabs>
+    <tabs>Engagement_Request__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>FlowsApp_UtilityBar</utilityBar>
 </CustomApplication>

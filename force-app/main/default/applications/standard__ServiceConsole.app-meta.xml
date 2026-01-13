@@ -185,7 +185,11 @@
     <tabs>standard-Document</tabs>
     <tabs>Student_Portal__c</tabs>
     <tabs>Service_Catalog__c</tabs>
+    <tabs>Engagement_Request__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Engagement_Request__c</tab>
+        </mappings>
         <mappings>
             <tab>Service_Catalog__c</tab>
         </mappings>

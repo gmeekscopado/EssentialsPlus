@@ -13,5 +13,6 @@
     <tabs>standard-SalesforceProductCatalog</tabs>
     <tabs>Student_Portal__c</tabs>
     <tabs>Service_Catalog__c</tabs>
+    <tabs>Engagement_Request__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

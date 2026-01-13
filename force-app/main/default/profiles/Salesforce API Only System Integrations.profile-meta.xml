@@ -137,14 +137,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>HouseholdFinancialSummaryController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>HouseholdFinancialSummaryControllerTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>TestDataFactory</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -711,6 +703,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Bicycle__c.Urban_Development_Initiative__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Broker__c.Contract_Value__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1226,6 +1223,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Client_Engagement__c.In_Progress__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Client_Engagement__c.Last_Contact_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1257,6 +1259,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Client_Engagement__c.Resources_Assigned__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Client_Engagement__c.Rootstock_Implementation_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2076,6 +2083,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Customer_Testimonial__c.Customer_Location__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Customer_Testimonial__c.Customer_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2187,6 +2199,41 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Employee__c.PTO_Request__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Engagement_Request__c.Client_Phone_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Engagement_Request__c.Engagement_Start_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Engagement_Request__c.Engagement_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Enrollment__c.Class_Selection__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Enrollment__c.Continuing_Enrollment__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Enrollment__c.Starting_Term__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Enrollment__c.Student_Phone_Number__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2611,6 +2658,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Investment__c.Banking_Partner__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Investment__c.Check_Number__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2622,6 +2674,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Investment__c.Date_of_Investment__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Investment__c.Goal__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Investment__c.Investment_Account_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2677,6 +2739,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Invoice__c.Invoice_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Invoice__c.Net_30_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4111,6 +4178,26 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Urban_Development__c.In_Progress__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Urban_Development__c.Initiative_Category__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Urban_Development__c.Initiative_Owner__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Urban_Development__c.Start_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Vendor__c.BillCom_ID__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4628,6 +4715,12 @@
         <layout>Employee__c-Employee Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Engagement_Request__c-Engagement Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Enrollment__c-Enrollment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Entitlement-Entitlement Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4823,6 +4916,9 @@
         <layout>Therapeutic_Area__c-Therapeutic Area Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Urban_Development__c-Urban Development Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>User-User Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4932,6 +5028,14 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Deal_Management__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Engagement_Request__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Enrollment__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

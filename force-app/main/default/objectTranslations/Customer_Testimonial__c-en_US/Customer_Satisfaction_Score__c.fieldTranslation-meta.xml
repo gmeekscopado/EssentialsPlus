@@ -19,7 +19,15 @@
         <translation><!-- 4 --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>5</masterLabel>
-        <translation><!-- 5 --></translation>
+        <masterLabel>High</masterLabel>
+        <translation><!-- High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low</masterLabel>
+        <translation><!-- Low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medium</masterLabel>
+        <translation><!-- Medium --></translation>
     </picklistValues>
 </CustomFieldTranslation>
