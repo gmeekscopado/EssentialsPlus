@@ -129,6 +129,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>OpportunityComplianceTriggerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TestDataFactory</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -2879,6 +2883,26 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Lease__c.Lease_End_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lease__c.Property__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lease__c.Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lease__c.Tenant_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>License__c.License_Number__c</field>
         <readable>true</readable>
@@ -3411,6 +3435,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Project__c.Project_Start_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Property__c.Property_Manager__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4539,7 +4568,15 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Lead_Conversion_Reminder</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Lead_Income_Collection</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Lease_Renewal_Notification_Process</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -4744,6 +4781,9 @@
         <layout>Lead_Routing_Rule__mdt-Lead Routing Rule Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Lease__c-Lease Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>License__c-License Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4793,6 +4833,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Project__c-Project Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Property__c-Property Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>QuickText-Quick Text Layout</layout>
