@@ -4059,6 +4059,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Subcontract__c.Contract__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Supplier__c.Certification_Level__c</field>
         <readable>true</readable>
@@ -4880,6 +4885,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Student_Portal__c-Student Portal Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Subcontract__c-Subcontract Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Supplier__c-Supplier Layout</layout>
