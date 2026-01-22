@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Specialty Category --></label>
+    <name>Specialty_Category__c</name>
+    <picklistValues>
+        <masterLabel>Controlling positions in closely held businesses</masterLabel>
+        <translation><!-- Controlling positions in closely held businesses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>De novo startup</masterLabel>
+        <translation><!-- De novo startup --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-controlling investments</masterLabel>
+        <translation><!-- Non-controlling investments --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

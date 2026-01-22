@@ -124,13 +124,13 @@
         <description>Set qualification failure message with specific requirements</description>
         <name>Set_Qualification_Error</name>
         <label>Set Qualification Error</label>
-        <locationX>314</locationX>
-        <locationY>278</locationY>
+        <locationX>521</locationX>
+        <locationY>271</locationY>
         <assignmentItems>
             <assignToReference>var_ErrorMessage</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>Lead qualification failed: Status must be Qualified and Company name and Email address are required fields.</stringValue>
+                <stringValue>Lead qualification failed: Status must be Qualified and Company name and Email address are required fields. Consider creating a Contact first.</stringValue>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -418,7 +418,7 @@
             <targetReference>Decision_Lead_Qualification</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <description>Boolean flag to track successful account creation or lookup for defensive coding</description>
         <name>var_AccountCreationSuccess</name>

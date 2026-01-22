@@ -101,7 +101,27 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>ACME_ContactProvider</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ACME_ContactProviderTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ACME_Security</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ACME_SecurityTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>OpportunityComplianceTriggerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TestDataFactory</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <custom>false</custom>
@@ -703,6 +723,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Budget__c.Fiscal_Year__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Budget__c.Project__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2137,13 +2162,23 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Email__c.Credit_Card__c</field>
+        <field>Email__c.Email_Service__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Email__c.Email_Service__c</field>
-        <readable>false</readable>
+        <editable>true</editable>
+        <field>Engagement_Request__c.Client_Phone_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Engagement_Request__c.Engagement_Start_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Engagement_Request__c.Engagement_Type__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -2349,6 +2384,16 @@
         <editable>true</editable>
         <field>Film__c.Synopsis__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Financial_Account__c.Balance__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Financial_Account__c.Contact__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -2582,6 +2627,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Investment__c.Check_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Investment__c.Company_Industry__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Investment__c.Date_of_Investment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Investment__c.Goal__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2591,9 +2651,19 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Investment__c.PO_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Investment__c.Primary_Investor__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Investment__c.Specialty_Category__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -2789,6 +2859,11 @@
         <editable>true</editable>
         <field>Lead.Website</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead_Routing_Rule__mdt.Queue_Developer_Name__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -4470,7 +4545,15 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Lead_Assignment_Automation</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Lead_Conversion_Reminder</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Lead_Income_Collection</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -4607,6 +4690,9 @@
         <layout>Email__c-Email Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Engagement_Request__c-Engagement Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Enrollment__c-Enrollment Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4629,6 +4715,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Film__c-Film Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Financial_Account__c-Financial Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Fitness_Club__c-Fitness Club Layout</layout>
@@ -4672,6 +4761,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Lead-Lead Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead_Routing_Rule__mdt-Lead Routing Rule Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Lease__c-Lease Layout</layout>
@@ -5244,6 +5336,15 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
+        <object>Engagement_Request__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
         <object>Enrollment__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
@@ -5292,6 +5393,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>Film__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Financial_Account__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -5906,6 +6016,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Deal_Management__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Engagement_Request__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
