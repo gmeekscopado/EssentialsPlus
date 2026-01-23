@@ -4056,6 +4056,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Supplier__c.Supplier_Phone_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Support_Service_Outcome__c.Follow_Up_Required__c</field>
         <readable>false</readable>
