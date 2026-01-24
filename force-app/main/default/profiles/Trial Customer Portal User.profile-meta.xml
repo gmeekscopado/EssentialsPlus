@@ -2889,6 +2889,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Lead_Routing_Rule__mdt.Country__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Lead_Routing_Rule__mdt.Queue_Developer_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
