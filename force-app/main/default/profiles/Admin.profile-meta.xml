@@ -127,11 +127,6 @@
     <custom>false</custom>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Lead_Routing_Rule__mdt.Country__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2894,6 +2889,11 @@
         <editable>true</editable>
         <field>Lead.Website</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead_Routing_Rule__mdt.Country__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
