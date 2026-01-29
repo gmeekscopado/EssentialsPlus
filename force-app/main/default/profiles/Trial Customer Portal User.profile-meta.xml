@@ -4579,6 +4579,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Case_Automate_Grievance_and_Appeals_Assignment</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Copado_Test</flow>
     </flowAccesses>
     <flowAccesses>
