@@ -107,6 +107,21 @@
     <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>
+        <field>ERP_Order__c.Order_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ERP_Order__c.Order_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Supplier__c.Supplier_Phone_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Client_Engagement__c.Contract_End_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4610,6 +4625,9 @@
         <enabled>false</enabled>
         <flow>Update_Account_Last_Opportunity_Date</flow>
     </flowAccesses>
+    <layoutAssignments>
+        <layout>ERP_Order__c-ERP Order Layout</layout>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
