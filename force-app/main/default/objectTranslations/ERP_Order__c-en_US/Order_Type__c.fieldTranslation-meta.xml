@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label><!-- Policy Type --></label>
-    <name>Policy_Type__c</name>
+    <label><!-- Order Type --></label>
+    <name>Order_Type__c</name>
     <picklistValues>
-        <masterLabel>Contract</masterLabel>
-        <translation><!-- Contract --></translation>
+        <masterLabel>Purchase</masterLabel>
+        <translation><!-- Purchase --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Insurance</masterLabel>
-        <translation><!-- Insurance --></translation>
+        <masterLabel>Sales</masterLabel>
+        <translation><!-- Sales --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Professional Services</masterLabel>
-        <translation><!-- Professional Services --></translation>
+        <masterLabel>Transfer</masterLabel>
+        <translation><!-- Transfer --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Work</masterLabel>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Policy_Type__c</fullName>
-    <label>Policy Type</label>
+    <fullName>Order_Type__c</fullName>
+    <label>Order Type</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -10,14 +10,14 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Insurance</fullName>
+                <fullName>Sales</fullName>
                 <default>false</default>
-                <label>Insurance</label>
+                <label>Sales</label>
             </value>
             <value>
-                <fullName>Contract</fullName>
+                <fullName>Purchase</fullName>
                 <default>false</default>
-                <label>Contract</label>
+                <label>Purchase</label>
             </value>
             <value>
                 <fullName>Work</fullName>
@@ -25,9 +25,9 @@
                 <label>Work</label>
             </value>
             <value>
-                <fullName>Professional Services</fullName>
+                <fullName>Transfer</fullName>
                 <default>false</default>
-                <label>Professional Services</label>
+                <label>Transfer</label>
             </value>
         </valueSetDefinition>
     </valueSet>

@@ -1186,6 +1186,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Client_Engagement__c.Contract_End_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Client_Engagement__c.End_Date__c</field>
         <readable>false</readable>
@@ -1233,6 +1238,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Client_Engagement__c.Policy_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Client_Engagement__c.Project_Budget__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2158,6 +2168,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Deal_Management__c.Investment_Amount__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ERP_Order__c.Order_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ERP_Order__c.Order_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4689,6 +4709,9 @@
         <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>ERP_Order__c-ERP Order Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>EmailMessage-Email Message Layout - Email-to-Case</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -5314,6 +5337,15 @@
         <modifyAllRecords>true</modifyAllRecords>
         <object>DuplicateRecordSet</object>
         <viewAllFields>false</viewAllFields>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>ERP_Order__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
