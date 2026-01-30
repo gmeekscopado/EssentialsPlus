@@ -173,21 +173,21 @@
             </value>
         </filters>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Income_Details__c</field>
             <value>
-                <elementReference>varTotalIncome</elementReference>
+                <elementReference>varIncomeDetailsText</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Number_of_Income_Sources__c</field>
             <value>
                 <elementReference>varIncomeCount</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Total_Income__c</field>
             <value>
-                <elementReference>varIncomeDetailsText</elementReference>
+                <elementReference>varTotalIncome</elementReference>
             </value>
         </inputAssignments>
         <object>Lead</object>
@@ -263,7 +263,7 @@
             <targetReference>Get_Lead_Record</targetReference>
         </connector>
     </start>
-    <status>InvalidDraft</status>
+    <status>Draft</status>
     <variables>
         <name>recordId</name>
         <dataType>String</dataType>
