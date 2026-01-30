@@ -1171,6 +1171,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Client_Engagement__c.Contract_End_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Client_Engagement__c.End_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1217,6 +1222,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Client_Engagement__c.Policy_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Client_Engagement__c.Project_Budget__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2157,6 +2167,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Deal_Management__c.Investment_Amount__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ERP_Order__c.Order_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ERP_Order__c.Order_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3246,12 +3266,27 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Patient__c.Current_Patient__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Patient__c.Date_of_Birth__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Patient__c.Language_Assistance_Required__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Patient__c.Last_Interpreter_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Patient__c.Pre_Existing_Conditions__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4540,6 +4575,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Deal_Management__c-Deal Management Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ERP_Order__c-ERP Order Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Email__c-Email Layout</layout>
