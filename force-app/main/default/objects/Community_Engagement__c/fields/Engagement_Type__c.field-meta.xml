@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Engagement_Type__c</fullName>
+    <label>Engagement Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Food Pantry</fullName>
+                <default>false</default>
+                <label>Food Pantry</label>
+            </value>
+            <value>
+                <fullName>Help the Homeless</fullName>
+                <default>false</default>
+                <label>Help the Homeless</label>
+            </value>
+            <value>
+                <fullName>Clothing Drive</fullName>
+                <default>false</default>
+                <label>Clothing Drive</label>
+            </value>
+            <value>
+                <fullName>Tutoring</fullName>
+                <default>false</default>
+                <label>Tutoring</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
