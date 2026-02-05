@@ -1306,6 +1306,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Community_Engagement__c.Date_of_Engagement__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Community_Engagement__c.Engagement_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Community_Engagement__c.Volunteers__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Company_Profile__c.Annual_Budget__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4695,6 +4710,9 @@
         <layout>CommunityMemberLayout-Community Member Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Community_Engagement__c-Community Engagement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Company_Profile__c-Company Profile Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -5520,6 +5538,10 @@
     </recordTypeVisibilities>
     <tabVisibilities>
         <tab>Budget__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Community_Engagement__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
