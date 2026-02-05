@@ -19,4 +19,5 @@
     <tabs>Performance_Review__c</tabs>
     <tabs>Goal_Tracker__c</tabs>
     <tabs>Enrollment__c</tabs>
+    <tabs>Community_Engagement__c</tabs>
 </CustomApplication>

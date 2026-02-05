@@ -11,8 +11,12 @@
     <tabs>Performance_Review__c</tabs>
     <tabs>Goal_Tracker__c</tabs>
     <tabs>Enrollment__c</tabs>
+    <tabs>Community_Engagement__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
+        <mappings>
+            <tab>Community_Engagement__c</tab>
+        </mappings>
         <mappings>
             <tab>Enrollment__c</tab>
         </mappings>
