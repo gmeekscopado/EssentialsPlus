@@ -173,21 +173,21 @@
             </value>
         </filters>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Income_Details__c</field>
             <value>
-                <elementReference>varTotalIncome</elementReference>
+                <elementReference>varIncomeDetailsText</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Number_of_Income_Sources__c</field>
             <value>
                 <elementReference>varIncomeCount</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Total_Income__c</field>
             <value>
-                <elementReference>varIncomeDetailsText</elementReference>
+                <elementReference>varTotalIncome</elementReference>
             </value>
         </inputAssignments>
         <object>Lead</object>
@@ -207,11 +207,27 @@
             <name>Screen_Header</name>
             <fieldText>&lt;p&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;Income Information Collection&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please enter income information for this lead.&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
         </fields>
         <fields>
             <name>Current_Entries_Display</name>
             <fieldText>&lt;p&gt;&lt;b&gt;Current Entries: {!varIncomeCount}&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Total Income So Far: {!varTotalIncome}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
@@ -234,6 +250,14 @@
             <fieldText>Income Type</fieldText>
             <fieldType>DropdownBox</fieldType>
             <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
         </fields>
         <fields>
             <name>Income_Amount_Field</name>
@@ -245,6 +269,14 @@
             <fieldType>InputField</fieldType>
             <isRequired>true</isRequired>
             <scale>2</scale>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
         </fields>
         <fields>
             <name>Add_Another_Checkbox</name>
@@ -252,6 +284,14 @@
             <fieldText>Add another income source?</fieldText>
             <fieldType>InputField</fieldType>
             <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
@@ -263,7 +303,7 @@
             <targetReference>Get_Lead_Record</targetReference>
         </connector>
     </start>
-    <status>InvalidDraft</status>
+    <status>Draft</status>
     <variables>
         <name>recordId</name>
         <dataType>String</dataType>
