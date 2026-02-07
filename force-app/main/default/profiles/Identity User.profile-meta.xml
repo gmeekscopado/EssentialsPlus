@@ -2785,6 +2785,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.Income_Details__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Industry</field>
         <readable>true</readable>
@@ -2813,6 +2818,11 @@
         <editable>true</editable>
         <field>Lead.NumberOfEmployees</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.Number_of_Income_Sources__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -2853,6 +2863,11 @@
         <editable>true</editable>
         <field>Lead.Title</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.Total_Income__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -4519,38 +4534,6 @@
         <field>WorkOrderLineItem.UnitPrice</field>
         <readable>true</readable>
     </fieldPermissions>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>ACME_Lead_to_Opportunity</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>Calculate_Opportunity_Close_Date</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>Case_Automate_Grievance_and_Appeals_Assignment</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>Copado_Test</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>DML_Statement_In_A_Loop_Fixed</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>High_Value_Opportunity_Slack_Alert</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>SOQL_Query_In_A_Loop_Fixed</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>Update_Account_Last_Opportunity_Date</flow>
-    </flowAccesses>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
