@@ -3088,6 +3088,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Opportunity_Score__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.OrderNumber__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4603,6 +4608,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Missing_Error_Handler_Fixed</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Opportunity_Scoring_and_Routing</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
