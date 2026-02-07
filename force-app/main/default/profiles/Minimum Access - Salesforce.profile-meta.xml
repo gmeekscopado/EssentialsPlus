@@ -2825,6 +2825,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Lead.Income_Details__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Lead.Industry</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2851,6 +2856,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.NumberOfEmployees</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.Number_of_Income_Sources__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2891,6 +2901,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.Title</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.Total_Income__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
