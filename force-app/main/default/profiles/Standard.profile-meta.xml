@@ -101,11 +101,34 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>OrderItemTriggerHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TestOrderItemTriggerHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>OpportunityComplianceTriggerTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <custom>false</custom>
     <description>Test</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.EVO_Viva_Certification_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Order.Contains_EVO_Viva_Product__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Order.Surgeon__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.AccountNumber</field>
