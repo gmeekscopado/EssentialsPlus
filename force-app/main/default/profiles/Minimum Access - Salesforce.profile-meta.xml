@@ -137,7 +137,15 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>OrderItemTriggerHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TestDataFactory</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TestOrderItemTriggerHandler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <custom>false</custom>
@@ -1459,6 +1467,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Contact.DoNotCall</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.EVO_Viva_Certification_Status__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3198,6 +3211,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Order.Contains_EVO_Viva_Product__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Order.ContractEndDate</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3254,6 +3272,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Order.ShippingAddress</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Order.Surgeon__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
