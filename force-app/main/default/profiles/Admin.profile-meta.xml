@@ -123,6 +123,11 @@
     <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Environmental_Impact__c.Impact_Category__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Inventory__c.Item_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4695,6 +4700,17 @@
         <flow>Update_Account_Last_Opportunity_Date</flow>
     </flowAccesses>
     <layoutAssignments>
+        <layout>Environmental_Impact__c-Environmental Impact Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Environmental_Impact__c-Environmental Impact Layout</layout>
+        <recordType>Environmental_Impact__c.End_User</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Environmental_Impact__c-Environmental Impact Layout</layout>
+        <recordType>Environmental_Impact__c.Manager</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -5055,6 +5071,15 @@
     <layoutAssignments>
         <layout>WorkOrderLineItem-Work Order Line Item Layout</layout>
     </layoutAssignments>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Environmental_Impact__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -6153,6 +6178,16 @@
         <enabled>true</enabled>
     </pageAccesses>
     <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Environmental_Impact__c.End_User</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Environmental_Impact__c.Manager</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <default>false</default>
         <recordType>Charity__c.Relationship_Manager</recordType>
         <visible>false</visible>
@@ -6177,6 +6212,10 @@
         <recordType>Supplier__c.Supplier</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>Environmental_Impact__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>Budget__c</tab>
         <visibility>Hidden</visibility>
