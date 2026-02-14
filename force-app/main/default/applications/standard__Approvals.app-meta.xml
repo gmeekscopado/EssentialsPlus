@@ -11,10 +11,14 @@
     <tabs>Student_Portal__c</tabs>
     <tabs>Service_Catalog__c</tabs>
     <tabs>Engagement_Request__c</tabs>
+    <tabs>Environmental_Impact__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
         <mappings>
             <tab>Engagement_Request__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Environmental_Impact__c</tab>
         </mappings>
         <mappings>
             <tab>Service_Catalog__c</tab>

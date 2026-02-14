@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Engagement Type --></label>
+    <name>Engagement_Type__c</name>
+    <picklistValues>
+        <masterLabel>Clothing Drive</masterLabel>
+        <translation><!-- Clothing Drive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Pantry</masterLabel>
+        <translation><!-- Food Pantry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Help the Homeless</masterLabel>
+        <translation><!-- Help the Homeless --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tutoring</masterLabel>
+        <translation><!-- Tutoring --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

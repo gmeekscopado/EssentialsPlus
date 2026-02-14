@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Environmental Impact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Environmental Impacts</value>
+    </caseValues>
+    <recordTypes>
+        <label><!-- End User --></label>
+        <name>End_User</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Manager --></label>
+        <name>Manager</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
