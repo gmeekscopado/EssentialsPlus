@@ -115,6 +115,16 @@
     <custom>false</custom>
     <description>Test</description>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Financial_Account__c.Client_Time_Zone__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Financial_Account__c.Current_Client__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
