@@ -2341,11 +2341,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Environmental_Impact__c.Impact_Category__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Event.Description</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4854,17 +4849,6 @@
         <layout>EntityMilestone-Object Milestone Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Environmental_Impact__c-Environmental Impact Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Environmental_Impact__c-Environmental Impact Layout</layout>
-        <recordType>Environmental_Impact__c.End_User</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Environmental_Impact__c-Environmental Impact Layout</layout>
-        <recordType>Environmental_Impact__c.Manager</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Event-Event Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -5600,16 +5584,6 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>true</default>
-        <recordType>Environmental_Impact__c.End_User</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Environmental_Impact__c.Manager</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
         <visible>false</visible>
@@ -5652,10 +5626,6 @@
     <tabVisibilities>
         <tab>Enrollment__c</tab>
         <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Environmental_Impact__c</tab>
-        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Film__c</tab>
