@@ -46,6 +46,11 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
+        <application>standard__Integration</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>standard__LightningBolt</application>
         <default>false</default>
         <visible>false</visible>
@@ -5470,6 +5475,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-StreamingChannel</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-UserDevopsPreference</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
