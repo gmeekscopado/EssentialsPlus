@@ -15,6 +15,7 @@
     <tabs>standard-ActionHub</tabs>
     <tabs>Engagement_Request__c</tabs>
     <tabs>Environmental_Impact__c</tabs>
+    <tabs>standard-FlowLogs</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>FlowsApp_UtilityBar</utilityBar>
 </CustomApplication>
