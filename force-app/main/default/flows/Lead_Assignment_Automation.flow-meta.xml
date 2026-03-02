@@ -123,7 +123,7 @@
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>Country__c</field>
+            <field>null__NotFound</field>
             <operator>EqualTo</operator>
             <value>
                 <elementReference>$Record.Country</elementReference>
@@ -143,5 +143,5 @@
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>InvalidDraft</status>
 </Flow>
