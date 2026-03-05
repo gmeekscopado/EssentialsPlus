@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_High_Value_Owner</name>
+        <label>Assign High-Value Owner</label>
+        <locationX>50</locationX>
+        <locationY>695</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>High_Value_Opportunities</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Opportunity_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Score</name>
+        <label>Assign Score</label>
+        <locationX>248</locationX>
+        <locationY>455</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Opportunity_Score__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>OpportunityScore</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_High_Value</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Is_High_Value</name>
+        <label>Is High-Value?</label>
+        <locationX>248</locationX>
+        <locationY>575</locationY>
+        <defaultConnector>
+            <targetReference>Update_Opportunity_Record</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default</defaultConnectorLabel>
+        <rules>
+            <name>Yes_High_Value</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Opportunity_Score__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>75.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_High_Value_Owner</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Calculates an opportunity score and routes high-value opportunities to a dedicated queue.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>AmountScore</name>
+        <dataType>Number</dataType>
+        <expression>IF({!$Record.Amount} &gt; 75000, 30, IF({!$Record.Amount} &gt; 25000, 20, 10))</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>BrandTierScore</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!$Record.Brand_Tier__c}, &quot;1&quot;, 30, &quot;2&quot;, 20, &quot;3&quot;, 10, 0)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>LeadSourceScore</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!$Record.LeadSource}, &quot;Partner Referral&quot;, 20, &quot;Web&quot;, 10, 5)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>OpportunityScore</name>
+        <dataType>Number</dataType>
+        <expression>{!AmountScore} + {!BrandTierScore} + {!LeadSourceScore} + {!RedisProductInterestScore}</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>RedisProductInterestScore</name>
+        <dataType>Number</dataType>
+        <expression>IF(CONTAINS(TEXT({!$Record.Redis_Product_Interest__c}), &quot;Redis Enterprise Cloud&quot;), 20, IF(CONTAINS(TEXT({!$Record.Redis_Product_Interest__c}), &quot;Redis Enterprise Software&quot;), 15, 5))</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Opportunity Scoring and Routing {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity Scoring and Routing</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Opportunity_Record</name>
+        <label>Update Opportunity Record</label>
+        <locationX>248</locationX>
+        <locationY>911</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>122</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assign_Score</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
