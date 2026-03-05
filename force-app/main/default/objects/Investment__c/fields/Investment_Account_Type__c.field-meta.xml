@@ -35,11 +35,6 @@
                 <label>HSA</label>
             </value>
             <value>
-                <fullName>FSA</fullName>
-                <default>false</default>
-                <label>FSA</label>
-            </value>
-            <value>
                 <fullName>HYSA</fullName>
                 <default>false</default>
                 <label>HYSA</label>
@@ -48,6 +43,12 @@
                 <fullName>Other</fullName>
                 <default>false</default>
                 <label>Other</label>
+            </value>
+            <value>
+                <fullName>FSA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FSA</label>
             </value>
         </valueSetDefinition>
     </valueSet>
