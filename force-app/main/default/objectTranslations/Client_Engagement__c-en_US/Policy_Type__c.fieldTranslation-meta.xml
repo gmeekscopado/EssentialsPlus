@@ -11,10 +11,6 @@
         <translation><!-- Insurance --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Professional Services</masterLabel>
-        <translation><!-- Professional Services --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>Work</masterLabel>
         <translation><!-- Work --></translation>
     </picklistValues>

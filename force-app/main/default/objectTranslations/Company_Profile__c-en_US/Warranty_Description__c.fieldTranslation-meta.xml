@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field outlines the type of coverage a customer has for a specified purchase. --></help>
     <label><!-- Warranty Description --></label>
     <name>Warranty_Description__c</name>
 </CustomFieldTranslation>

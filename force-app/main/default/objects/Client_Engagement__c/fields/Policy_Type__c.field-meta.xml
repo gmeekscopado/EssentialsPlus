@@ -24,11 +24,6 @@
                 <default>false</default>
                 <label>Work</label>
             </value>
-            <value>
-                <fullName>Professional Services</fullName>
-                <default>false</default>
-                <label>Professional Services</label>
-            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

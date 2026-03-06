@@ -8,24 +8,8 @@
     <label>Approvals</label>
     <navType>Console</navType>
     <tabs>standard-ApprovalsHome</tabs>
-    <tabs>Performance_Review__c</tabs>
-    <tabs>Goal_Tracker__c</tabs>
-    <tabs>Enrollment__c</tabs>
-    <tabs>Community_Engagement__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
-        <mappings>
-            <tab>Community_Engagement__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Enrollment__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Goal_Tracker__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Performance_Review__c</tab>
-        </mappings>
         <mappings>
             <tab>standard-ApprovalsHome</tab>
         </mappings>

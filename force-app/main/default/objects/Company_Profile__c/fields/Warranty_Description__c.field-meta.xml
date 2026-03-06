@@ -3,6 +3,7 @@
     <fullName>Warranty_Description__c</fullName>
     <description>What type of coverage is needed?</description>
     <externalId>false</externalId>
+    <inlineHelpText>This field outlines the type of coverage a customer has for a specified purchase.</inlineHelpText>
     <label>Warranty Description</label>
     <length>255</length>
     <required>false</required>
