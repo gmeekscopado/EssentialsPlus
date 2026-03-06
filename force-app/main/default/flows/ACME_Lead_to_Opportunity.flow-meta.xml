@@ -124,13 +124,13 @@
         <description>Set qualification failure message with specific requirements</description>
         <name>Set_Qualification_Error</name>
         <label>Set Qualification Error</label>
-        <locationX>521</locationX>
-        <locationY>271</locationY>
+        <locationX>314</locationX>
+        <locationY>278</locationY>
         <assignmentItems>
             <assignToReference>var_ErrorMessage</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>Lead qualification failed: Status must be Qualified and Company name and Email address are required fields. Consider creating a Contact first.</stringValue>
+                <stringValue>Lead qualification failed: Status must be Qualified and Company name and Email address are required fields.</stringValue>
             </value>
         </assignmentItems>
         <assignmentItems>
