@@ -11,10 +11,6 @@
         <translation><!-- 403B --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>FSA</masterLabel>
-        <translation><!-- FSA --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>HSA</masterLabel>
         <translation><!-- HSA --></translation>
     </picklistValues>

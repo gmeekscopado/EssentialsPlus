@@ -135,6 +135,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>OpportunityComplianceTriggerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TestDataFactory</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -2681,6 +2685,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Investment__c.Banking_Partner__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Investment__c.Check_Number__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2692,6 +2701,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Investment__c.Date_of_Investment__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Investment__c.Goal__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2917,6 +2931,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.Website</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead_Routing_Rule__mdt.Country__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead_Routing_Rule__mdt.Queue_Developer_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4715,6 +4739,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Invoice__c-Invoice Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead_Routing_Rule__mdt-Lead Routing Rule Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Loan_Application__c-Loan Application Layout</layout>
