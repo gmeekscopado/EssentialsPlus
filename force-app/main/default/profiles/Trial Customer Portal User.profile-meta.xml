@@ -4623,6 +4623,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Asset_Compliance_Flow</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Calculate_Opportunity_Close_Date</flow>
     </flowAccesses>
     <flowAccesses>
@@ -4665,6 +4669,10 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Asset-Asset Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Asset-Asset Layout</layout>
+        <recordType>Asset.Laboratory_Equipment</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>AssetRelationship-Asset Relationship Layout</layout>
@@ -5185,6 +5193,11 @@
         <apexPage>scc_tour_style</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Asset.Laboratory_Equipment</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Charity__c.Relationship_Manager</recordType>
