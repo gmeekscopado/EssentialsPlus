@@ -4615,6 +4615,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Asset_Compliance_Flow</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>Calculate_Opportunity_Close_Date</flow>
     </flowAccesses>
     <flowAccesses>
@@ -4657,6 +4661,10 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Asset-Asset Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Asset-Asset Layout</layout>
+        <recordType>Asset.Laboratory_Equipment</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>AssetRelationship-Asset Relationship Layout</layout>
