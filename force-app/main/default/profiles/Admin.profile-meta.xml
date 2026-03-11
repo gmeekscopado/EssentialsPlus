@@ -140,6 +140,16 @@
     <custom>false</custom>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Action_Audit__c.Action_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Action_Audit__c.Approval_Notes__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2914,16 +2924,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Lead_Routing_Rule__mdt.Country__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Lead_Routing_Rule__mdt.Queue_Developer_Name__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>License__c.License_Number__c</field>
         <readable>true</readable>
@@ -4633,6 +4633,9 @@
         <flow>Update_Account_Last_Opportunity_Date</flow>
     </flowAccesses>
     <layoutAssignments>
+        <layout>Action_Audit__c-Action Audit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4845,9 +4848,6 @@
         <layout>Lead-Lead Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lead_Routing_Rule__mdt-Lead Routing Rule Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>License__c-License Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4996,6 +4996,15 @@
     <layoutAssignments>
         <layout>WorkOrderLineItem-Work Order Line Item Layout</layout>
     </layoutAssignments>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Action_Audit__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
