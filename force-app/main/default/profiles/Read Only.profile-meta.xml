@@ -1225,11 +1225,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Client_Engagement__c.Location__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Client_Engagement__c.Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2680,11 +2675,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Investment__c.Banking_Partner__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Investment__c.Check_Number__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2701,11 +2691,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Investment__c.Goal__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Investment__c.Investment_Account_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3756,11 +3741,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Service_Request__c.Location__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Service_Request__c.Response_Time_Required__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
