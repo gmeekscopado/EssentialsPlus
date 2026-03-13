@@ -143,6 +143,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>For tracking device certification submissions within the Partner Community.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -155,7 +156,8 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Device Certification</label>
     <nameField>
-        <label>Certification ID</label>
+        <displayFormat>DC-{00000}</displayFormat>
+        <label>Device Certification Number</label>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Device Certifications</pluralLabel>
