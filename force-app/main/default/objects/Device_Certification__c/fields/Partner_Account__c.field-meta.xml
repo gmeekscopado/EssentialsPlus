@@ -4,7 +4,6 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <label>Partner Account</label>
     <referenceTo>Account</referenceTo>
-    <relationshipLabel>Device Certifications</relationshipLabel>
     <relationshipName>Device_Certifications</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>
