@@ -49,7 +49,7 @@
         <defaultConnector>
             <targetReference>Set_Tier_3</targetReference>
         </defaultConnector>
-        <defaultConnectorLabel>Tier 3</defaultConnectorLabel>
+        <defaultConnectorLabel>Default</defaultConnectorLabel>
         <rules>
             <name>Tier_1</name>
             <conditionLogic>and</conditionLogic>
