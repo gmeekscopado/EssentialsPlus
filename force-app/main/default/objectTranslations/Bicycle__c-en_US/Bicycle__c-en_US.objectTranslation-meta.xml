@@ -8,9 +8,9 @@
         <plural>true</plural>
         <value>Bicycles</value>
     </caseValues>
-    <sharingReasons>
-        <label><!-- Bicycle Access --></label>
-        <name>Bicycle_Access</name>
-    </sharingReasons>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Price cannot be $0. --></errorMessage>
+        <name>Price_Not_Zero</name>
+    </validationRules>
 </CustomObjectTranslation>
