@@ -145,21 +145,6 @@
     <custom>false</custom>
     <description>Test</description>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Venue_Reservation__c.Contact_Phone_Number__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Venue_Reservation__c.Quote__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Venue_Reservation__c.Reservation_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
@@ -4281,6 +4266,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Tire_Collection__c.Tire_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Vendor__c.BillCom_ID__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4313,6 +4303,21 @@
         <editable>false</editable>
         <field>Vendor__c.Tax_ID__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Venue_Reservation__c.Contact_Phone_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Venue_Reservation__c.Quote__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Venue_Reservation__c.Reservation_Date__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -4624,6 +4629,16 @@
         <field>WorkOrderLineItem.UnitPrice</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Work_Order__c.Date_of_Request__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Work_Order__c.Service_Requested__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <flowAccesses>
         <enabled>false</enabled>
         <flow>ACME_Lead_to_Opportunity</flow>
@@ -4668,9 +4683,6 @@
         <enabled>false</enabled>
         <flow>Update_Account_Last_Opportunity_Date</flow>
     </flowAccesses>
-    <layoutAssignments>
-        <layout>Venue_Reservation__c-Venue Reservation Layout</layout>
-    </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
@@ -5012,6 +5024,9 @@
         <layout>Therapeutic_Area__c-Therapeutic Area Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Tire_Collection__c-Tire Collection Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>User-User Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -5030,6 +5045,9 @@
         <layout>Vendor__c-Vendor Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Venue_Reservation__c-Venue Reservation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Warehouse__c-Warehouse Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -5037,6 +5055,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>WorkOrderLineItem-Work Order Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Work_Order__c-Work Order Layout</layout>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
@@ -5587,10 +5608,6 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
-        <tab>Venue_Reservation__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Budget__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -5668,6 +5685,18 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Therapeutic_Area__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Tire_Collection__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Venue_Reservation__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Work_Order__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
