@@ -11,4 +11,6 @@
     <tabs>standard-OtherUserProfile</tabs>
     <tabs>standard-CollaborationGroup</tabs>
     <tabs>standard-File</tabs>
+    <tabs>Tire_Collection__c</tabs>
+    <tabs>Venue_Reservation__c</tabs>
 </CustomApplication>

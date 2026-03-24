@@ -11,5 +11,7 @@
     <tabs>standard-SalesforceContract</tabs>
     <tabs>standard-SalesforceInvoice</tabs>
     <tabs>standard-SalesforceProductCatalog</tabs>
+    <tabs>Tire_Collection__c</tabs>
+    <tabs>Venue_Reservation__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

@@ -4264,6 +4264,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Tire_Collection__c.Tire_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Vendor__c.BillCom_ID__c</field>
         <readable>false</readable>
@@ -4297,6 +4302,21 @@
         <editable>false</editable>
         <field>Vendor__c.Tax_ID__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Venue_Reservation__c.Contact_Phone_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Venue_Reservation__c.Quote__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Venue_Reservation__c.Reservation_Date__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -4803,7 +4823,13 @@
         <layout>Therapeutic_Area__c-Therapeutic Area Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Tire_Collection__c-Tire Collection Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Vendor__c-Vendor Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Venue_Reservation__c-Venue Reservation Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Warehouse__c-Warehouse Layout</layout>
@@ -4974,6 +5000,14 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Therapeutic_Area__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Tire_Collection__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Venue_Reservation__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

@@ -185,9 +185,17 @@
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-Contact</tabs>
     <tabs>standard-report</tabs>
+    <tabs>Tire_Collection__c</tabs>
+    <tabs>Venue_Reservation__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Getting_Started</tab>
+        </mappings>
+        <mappings>
+            <tab>Tire_Collection__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Venue_Reservation__c</tab>
         </mappings>
         <mappings>
             <tab>standard-Case</tab>

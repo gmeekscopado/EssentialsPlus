@@ -6,4 +6,6 @@
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
     <tabs>standard-AppLauncher</tabs>
+    <tabs>Tire_Collection__c</tabs>
+    <tabs>Venue_Reservation__c</tabs>
 </CustomApplication>

@@ -180,7 +180,15 @@
     </preferences>
     <tabs>standard-Case</tabs>
     <tabs>standard-Knowledge</tabs>
+    <tabs>Tire_Collection__c</tabs>
+    <tabs>Venue_Reservation__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Tire_Collection__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Venue_Reservation__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Case</tab>
         </mappings>

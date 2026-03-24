@@ -183,7 +183,15 @@
     <tabs>standard-Lead</tabs>
     <tabs>standard-Knowledge</tabs>
     <tabs>standard-Document</tabs>
+    <tabs>Tire_Collection__c</tabs>
+    <tabs>Venue_Reservation__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Tire_Collection__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Venue_Reservation__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>
