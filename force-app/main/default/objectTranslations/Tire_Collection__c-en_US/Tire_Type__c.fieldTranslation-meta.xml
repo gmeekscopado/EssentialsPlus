@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tire Type --></label>
+    <name>Tire_Type__c</name>
+    <picklistValues>
+        <masterLabel>All Purpose</masterLabel>
+        <translation><!-- All Purpose --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bicycle</masterLabel>
+        <translation><!-- Bicycle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drift</masterLabel>
+        <translation><!-- Drift --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Off-Road</masterLabel>
+        <translation><!-- Off-Road --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Racing</masterLabel>
+        <translation><!-- Racing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scooter</masterLabel>
+        <translation><!-- Scooter --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
