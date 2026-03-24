@@ -180,7 +180,11 @@
     </preferences>
     <tabs>standard-Case</tabs>
     <tabs>standard-Knowledge</tabs>
+    <tabs>Work_Order__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Work_Order__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Case</tab>
         </mappings>

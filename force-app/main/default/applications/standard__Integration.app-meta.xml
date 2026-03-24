@@ -8,9 +8,13 @@
     <label>Integration App</label>
     <navType>Console</navType>
     <tabs>standard-IntegrationIntelligence</tabs>
+    <tabs>Work_Order__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Integration_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>Work_Order__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-IntegrationIntelligence</tab>
         </mappings>
