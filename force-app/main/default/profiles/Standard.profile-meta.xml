@@ -145,6 +145,21 @@
     <custom>false</custom>
     <description>Test</description>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Resource_Allocation__c.Assigned_Technician__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Resource_Allocation__c.Resource_Request_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Resource_Allocation__c.Technician_Route__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
@@ -4683,6 +4698,9 @@
         <enabled>false</enabled>
         <flow>Update_Account_Last_Opportunity_Date</flow>
     </flowAccesses>
+    <layoutAssignments>
+        <layout>Resource_Allocation__c-Resource Allocation Layout</layout>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
