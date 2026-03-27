@@ -145,21 +145,6 @@
     <custom>false</custom>
     <description>Test</description>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Resource_Allocation__c.Assigned_Technician__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Resource_Allocation__c.Resource_Request_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Resource_Allocation__c.Technician_Route__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
@@ -3545,6 +3530,21 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Resource_Allocation__c.Assigned_Technician__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Resource_Allocation__c.Resource_Request_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Resource_Allocation__c.Technician_Route__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Sales_Team_Access__c.Access_Level__c</field>
         <readable>false</readable>
@@ -4699,9 +4699,6 @@
         <flow>Update_Account_Last_Opportunity_Date</flow>
     </flowAccesses>
     <layoutAssignments>
-        <layout>Resource_Allocation__c-Resource Allocation Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4975,6 +4972,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Request__c-Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Resource_Allocation__c-Resource Allocation Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Sales_Team_Access__c-Sales Team Access Layout</layout>
