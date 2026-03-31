@@ -3515,6 +3515,31 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Resource_Allocation__c.Assigned_Technician__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Resource_Allocation__c.Resource_Request_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Resource_Allocation__c.Service_Requested__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Resource_Allocation__c.Technician_Phone_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Resource_Allocation__c.Technician_Route__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Sales_Team_Access__c.Access_Level__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4932,6 +4957,9 @@
         <layout>Request__c-Request Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Resource_Allocation__c-Resource Allocation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Sales_Team_Access__c-Sales Team Access Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -5841,6 +5869,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>Request__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Resource_Allocation__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
