@@ -8,12 +8,5 @@
         <plural>true</plural>
         <value>Resource Allocation</value>
     </caseValues>
-    <layouts>
-        <layout>Resource Allocation Layout</layout>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
