@@ -388,6 +388,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Apartment_Location__c.DFW_Apartment_Complex__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>ApprovalSubmission.Comments</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4738,6 +4743,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Action_Audit__c-Action Audit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Apartment_Location__c-Apartment Location Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Asset-Asset Layout</layout>
