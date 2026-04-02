@@ -136,6 +136,11 @@
     <description>Test</description>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Lead.Referenced_By__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Article_Artifact__c.Event_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
