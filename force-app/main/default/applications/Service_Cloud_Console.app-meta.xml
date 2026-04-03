@@ -186,7 +186,11 @@
     <tabs>standard-Contact</tabs>
     <tabs>standard-report</tabs>
     <tabs>Work_Order__c</tabs>
+    <tabs>Article_Artifact__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Article_Artifact__c</tab>
+        </mappings>
         <mappings>
             <tab>Getting_Started</tab>
         </mappings>

@@ -184,7 +184,11 @@
     <tabs>standard-Knowledge</tabs>
     <tabs>standard-Document</tabs>
     <tabs>Work_Order__c</tabs>
+    <tabs>Article_Artifact__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Article_Artifact__c</tab>
+        </mappings>
         <mappings>
             <tab>Work_Order__c</tab>
         </mappings>
