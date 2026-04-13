@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Resource_Request_Date__c</fullName>
+    <fullName>Response_Time_Required__c</fullName>
     <businessStatus>Active</businessStatus>
-    <description>This field is used to specify the date of service being requested.</description>
-    <label>Resource Request Date</label>
+    <externalId>false</externalId>
+    <label>Response Time Required</label>
+    <precision>18</precision>
     <required>false</required>
+    <scale>0</scale>
     <trackTrending>false</trackTrending>
-    <type>Date</type>
+    <type>Number</type>
+    <unique>false</unique>
 </CustomField>
