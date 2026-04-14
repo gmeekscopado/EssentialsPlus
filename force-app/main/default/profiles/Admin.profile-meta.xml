@@ -2777,6 +2777,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Investment__c.Investment_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Investment__c.PO_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
