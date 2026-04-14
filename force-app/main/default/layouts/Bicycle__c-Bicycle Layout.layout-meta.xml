@@ -8,7 +8,11 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Tires__c</field>
+                <field>Price__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Type__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -52,17 +56,12 @@
         <style>CustomLinks</style>
     </layoutSections>
     <miniLayout>
-        <fields>Tires__c</fields>
+        <fields>Price__c</fields>
+        <fields>Type__c</fields>
     </miniLayout>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
-    <summaryLayout>
-        <masterLabel>00h75000000FELq</masterLabel>
-        <sizeX>4</sizeX>
-        <sizeY>0</sizeY>
-        <summaryLayoutStyle>Default</summaryLayoutStyle>
-    </summaryLayout>
 </Layout>

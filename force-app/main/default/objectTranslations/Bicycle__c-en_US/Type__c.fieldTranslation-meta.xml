@@ -3,8 +3,8 @@
     <label><!-- Type --></label>
     <name>Type__c</name>
     <picklistValues>
-        <masterLabel>BMX</masterLabel>
-        <translation><!-- BMX --></translation>
+        <masterLabel>Hybrid</masterLabel>
+        <translation><!-- Hybrid --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Mountain</masterLabel>
