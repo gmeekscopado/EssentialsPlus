@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Investment Type --></label>
+    <name>Investment_Type__c</name>
+    <picklistValues>
+        <masterLabel>HSA</masterLabel>
+        <translation><!-- HSA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plan 529</masterLabel>
+        <translation><!-- Plan 529 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roth IRA</masterLabel>
+        <translation><!-- Roth IRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traditional IRA</masterLabel>
+        <translation><!-- Traditional IRA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

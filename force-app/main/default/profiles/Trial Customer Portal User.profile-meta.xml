@@ -2719,6 +2719,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Investment__c.Banking_Partner__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Investment__c.Check_Number__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2735,6 +2740,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Investment__c.Goal__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Investment__c.Investment_Account_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Investment__c.Investment_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3819,6 +3834,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Service_Request__c.Response_Time_Required__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Service_Request__c.Service_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4699,6 +4719,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Asset_Compliance_Flow</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Bicycle_Price_Tier_Flow</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
