@@ -4374,6 +4374,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Umbrella__c.Material__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Vendor__c.BillCom_ID__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -5145,6 +5150,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Tire_Collection__c-Tire Collection Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Umbrella__c-Umbrella Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>User-User Layout</layout>
