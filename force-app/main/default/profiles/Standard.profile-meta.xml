@@ -135,11 +135,6 @@
     <custom>false</custom>
     <description>Test</description>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Umbrella__c.Material__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
@@ -4350,6 +4345,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Umbrella__c.Material__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Vendor__c.BillCom_ID__c</field>
         <readable>false</readable>
@@ -4772,9 +4772,6 @@
         <flow>Update_Account_Last_Opportunity_Date</flow>
     </flowAccesses>
     <layoutAssignments>
-        <layout>Umbrella__c-Umbrella Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -5122,6 +5119,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Tire_Collection__c-Tire Collection Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Umbrella__c-Umbrella Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>User-User Layout</layout>
