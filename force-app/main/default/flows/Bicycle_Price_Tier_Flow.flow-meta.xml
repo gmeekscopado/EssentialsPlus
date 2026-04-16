@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>61.0</apiVersion>
+    <apiVersion>62.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <decisions>
         <name>Check_Price_Tier</name>
@@ -10,9 +10,9 @@
         <defaultConnector>
             <targetReference>Set_Tier_3</targetReference>
         </defaultConnector>
-        <defaultConnectorLabel>Price less than $500 (Tier 3)</defaultConnectorLabel>
+        <defaultConnectorLabel>Tier 3 (Under $500)</defaultConnectorLabel>
         <rules>
-            <name>Price_Tier_1</name>
+            <name>Is_Tier_1</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.Price__c</leftValueReference>
@@ -24,10 +24,10 @@
             <connector>
                 <targetReference>Set_Tier_1</targetReference>
             </connector>
-            <label>Price greater than or equal to $1000 (Tier 1)</label>
+            <label>Tier 1 ($1,000+)</label>
         </rules>
         <rules>
-            <name>Price_Tier_2</name>
+            <name>Is_Tier_2</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.Price__c</leftValueReference>
@@ -39,9 +39,11 @@
             <connector>
                 <targetReference>Set_Tier_2</targetReference>
             </connector>
-            <label>Price greater than or equal to $500 (Tier 2)</label>
+            <label>Tier 2 ($500–$999.99)</label>
         </rules>
     </decisions>
+    <description>Automatically sets the Price Tier field on a Bicycle record based on its Price.</description>
+    <interviewLabel>Bicycle Price Tier Flow {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Bicycle Price Tier Flow</label>
     <processMetadataValues>
         <name>BuilderType</name>
@@ -55,39 +57,63 @@
         <label>Set Tier 1</label>
         <locationX>0</locationX>
         <locationY>240</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
         <inputAssignments>
             <field>Price_Tier__c</field>
             <value>
                 <stringValue>Tier 1</stringValue>
             </value>
         </inputAssignments>
-        <inputReference>$Record</inputReference>
+        <object>Bicycle__c</object>
     </recordUpdates>
     <recordUpdates>
         <name>Set_Tier_2</name>
         <label>Set Tier 2</label>
         <locationX>176</locationX>
         <locationY>240</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
         <inputAssignments>
             <field>Price_Tier__c</field>
             <value>
                 <stringValue>Tier 2</stringValue>
             </value>
         </inputAssignments>
-        <inputReference>$Record</inputReference>
+        <object>Bicycle__c</object>
     </recordUpdates>
     <recordUpdates>
         <name>Set_Tier_3</name>
         <label>Set Tier 3</label>
         <locationX>352</locationX>
         <locationY>240</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
         <inputAssignments>
             <field>Price_Tier__c</field>
             <value>
                 <stringValue>Tier 3</stringValue>
             </value>
         </inputAssignments>
-        <inputReference>$Record</inputReference>
+        <object>Bicycle__c</object>
     </recordUpdates>
     <start>
         <locationX>176</locationX>
