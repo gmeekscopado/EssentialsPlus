@@ -742,6 +742,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Bicycle__c.Price_Tier__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Broker__c.Contract_Value__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4796,6 +4801,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Article_Artifact__c-Article Artifact Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Bicycle__c-Bicycle Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Broker__c-Broker Layout</layout>
