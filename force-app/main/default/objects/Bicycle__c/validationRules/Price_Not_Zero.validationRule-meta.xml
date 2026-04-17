@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Price_Not_Zero</fullName>
-    <active>true</active>
-    <description>Prevents a bicycle from being saved with a price of $0.</description>
-    <errorConditionFormula>Price__c = 0</errorConditionFormula>
-    <errorDisplayField>Price__c</errorDisplayField>
-    <errorMessage>Price cannot be $0.</errorMessage>
-</ValidationRule>
