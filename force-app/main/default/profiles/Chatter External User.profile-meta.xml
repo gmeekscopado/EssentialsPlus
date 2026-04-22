@@ -710,11 +710,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Bicycle__c.Price_Tier__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Broker__c.Contract_Value__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4843,10 +4838,6 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
-        <flow>Bicycle_Price_Tier_Flow</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
         <flow>Calculate_Opportunity_Close_Date</flow>
     </flowAccesses>
     <flowAccesses>
@@ -4914,9 +4905,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>AuthorizationFormText-Authorization Form Text Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Bicycle__c-Bicycle Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Broker__c-Broker Layout</layout>
