@@ -4729,10 +4729,6 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
-        <flow>Bicycle_Price_Tier_Flow</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
         <flow>Calculate_Opportunity_Close_Date</flow>
     </flowAccesses>
     <flowAccesses>
