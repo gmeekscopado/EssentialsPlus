@@ -4782,6 +4782,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Lead_Industry_Assignment_Flow</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>SOQL_Query_In_A_Loop_Fixed</flow>
     </flowAccesses>
     <flowAccesses>
@@ -4895,6 +4899,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Invoice__c-Invoice Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead_Industry_Assignment__mdt-Lead Industry Assignment Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Lead_Routing_Rule__mdt-Lead Routing Rule Layout</layout>
