@@ -2575,6 +2575,31 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Grocery_Store__c.Email__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Grocery_Store__c.Is_Active__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Grocery_Store__c.Opening_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Grocery_Store__c.Phone__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Grocery_Store__c.Website__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Health_Portal__c.ABO_Blood_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4780,6 +4805,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>Lead_Industry_Assignment_Flow</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>SOQL_Query_In_A_Loop_Fixed</flow>
     </flowAccesses>
     <flowAccesses>
@@ -4865,6 +4894,9 @@
         <layout>Goal_Tracker__c-Goal Tracker Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Grocery_Store__c-Grocery Store Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Health_Portal__c-Health Portal Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4881,6 +4913,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Invoice__c-Invoice Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead_Industry_Assignment__mdt-Lead Industry Assignment Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Loan_Application__c-Loan Application Layout</layout>
