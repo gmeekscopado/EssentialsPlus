@@ -464,6 +464,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>ApprovalWorkItem.ParentWorkItemId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>ApprovalWorkItem.RelatedRecordId</field>
         <readable>true</readable>
@@ -5473,6 +5478,18 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Macro</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-MeetingPlaybook</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-MeetingPlaybookStage</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-MeetingPlbkStageCapability</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
