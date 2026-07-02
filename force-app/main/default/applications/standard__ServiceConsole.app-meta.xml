@@ -185,9 +185,13 @@
     <tabs>standard-Document</tabs>
     <tabs>Work_Order__c</tabs>
     <tabs>Article_Artifact__c</tabs>
+    <tabs>Class_Catalogue__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Article_Artifact__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Class_Catalogue__c</tab>
         </mappings>
         <mappings>
             <tab>Work_Order__c</tab>

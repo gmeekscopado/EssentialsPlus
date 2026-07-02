@@ -8,4 +8,5 @@
     <tabs>standard-AppLauncher</tabs>
     <tabs>Work_Order__c</tabs>
     <tabs>Article_Artifact__c</tabs>
+    <tabs>Class_Catalogue__c</tabs>
 </CustomApplication>
