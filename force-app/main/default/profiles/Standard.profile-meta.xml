@@ -655,6 +655,16 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Audit__c.Last_Audit_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Audit__c.Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>AuthorizationForm.DefaultAuthFormTextId</field>
         <readable>true</readable>
@@ -4778,6 +4788,9 @@
         <layout>AssetRelationship-Asset Relationship Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Audit__c-Audit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>AuthorizationForm-Authorization Form Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -5691,6 +5704,10 @@
     <tabVisibilities>
         <tab>Article_Artifact__c</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Audit__c</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Budget__c</tab>
