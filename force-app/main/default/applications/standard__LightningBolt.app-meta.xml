@@ -10,5 +10,6 @@
     <tabs>standard-LightningBoltHome</tabs>
     <tabs>Tire_Collection__c</tabs>
     <tabs>Venue_Reservation__c</tabs>
+    <tabs>Audit__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

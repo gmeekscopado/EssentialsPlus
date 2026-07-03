@@ -15,4 +15,5 @@
     <tabs>standard-Dashboard</tabs>
     <tabs>Tire_Collection__c</tabs>
     <tabs>Venue_Reservation__c</tabs>
+    <tabs>Audit__c</tabs>
 </CustomApplication>

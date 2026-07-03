@@ -10,8 +10,12 @@
     <tabs>standard-ApprovalsHome</tabs>
     <tabs>Tire_Collection__c</tabs>
     <tabs>Venue_Reservation__c</tabs>
+    <tabs>Audit__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
+        <mappings>
+            <tab>Audit__c</tab>
+        </mappings>
         <mappings>
             <tab>Tire_Collection__c</tab>
         </mappings>

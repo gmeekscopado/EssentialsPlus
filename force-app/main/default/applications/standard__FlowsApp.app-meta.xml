@@ -15,6 +15,7 @@
     <tabs>Tire_Collection__c</tabs>
     <tabs>Venue_Reservation__c</tabs>
     <tabs>standard-GlobalFlowResources</tabs>
+    <tabs>Audit__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>FlowsApp_UtilityBar</utilityBar>
 </CustomApplication>
