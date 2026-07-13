@@ -8,6 +8,7 @@
     <label>Occupation</label>
     <length>32</length>
     <required>false</required>
+    <securityClassification>Public</securityClassification>
     <trackFeedHistory>false</trackFeedHistory>
     <type>Text</type>
     <unique>false</unique>
