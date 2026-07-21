@@ -1220,6 +1220,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Class_Catalogue__c.Available_Class__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Class_Catalogue__c.School_Year__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Client_Engagement__c.Account_Manager__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4920,6 +4930,9 @@
         <recordType>Charity__c.Relationship_Manager</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Class_Catalogue__c-Class Catalogue Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Client_Engagement__c-Client Engagement Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -5420,6 +5433,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>Charity__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Class_Catalogue__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>

@@ -1220,6 +1220,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Class_Catalogue__c.Available_Class__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Class_Catalogue__c.School_Year__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Client_Engagement__c.Account_Manager__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4918,6 +4928,9 @@
     <layoutAssignments>
         <layout>Charity__c-Charity Layout</layout>
         <recordType>Charity__c.Relationship_Manager</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Class_Catalogue__c-Class Catalogue Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Client_Engagement__c-Client Engagement Layout</layout>
