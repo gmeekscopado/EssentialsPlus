@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Material --></label>
+    <name>Material__c</name>
+    <picklistValues>
+        <masterLabel>Cloth</masterLabel>
+        <translation><!-- Cloth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nylon</masterLabel>
+        <translation><!-- Nylon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plasic</masterLabel>
+        <translation><!-- Plasic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vinyl</masterLabel>
+        <translation><!-- Vinyl --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
