@@ -128,16 +128,18 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
-    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <searchLayouts>
-        <customTabListAdditionalFields>Location</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Type</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ActiveFrom</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ActiveTo</customTabListAdditionalFields>
-        <searchResultsAdditionalFields>Location</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Type</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ActiveFrom</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ActiveTo</searchResultsAdditionalFields>
+        <customTabListAdditionalFields>Parent</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UserIdentifier</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ActiveFromDateTime</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>Parent</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UserIdentifier</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ActiveFromDateTime</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>ControlledByParent</sharingModel>
+    <sharingModel>Private</sharingModel>
 </CustomObject>
