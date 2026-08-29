@@ -16,6 +16,7 @@
     <tabs>Article_Artifact__c</tabs>
     <tabs>standard-GlobalFlowResources</tabs>
     <tabs>Class_Catalogue__c</tabs>
+    <tabs>standard-Tags</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>FlowsApp_UtilityBar</utilityBar>
 </CustomApplication>
