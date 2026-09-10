@@ -10,19 +10,19 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Tier 1</fullName>
+                <fullName>&lt;250</fullName>
                 <default>false</default>
-                <label>Tier 1</label>
+                <label>&lt;250</label>
             </value>
             <value>
-                <fullName>Tier 2</fullName>
+                <fullName>250-750</fullName>
                 <default>false</default>
-                <label>Tier 2</label>
+                <label>250-750</label>
             </value>
             <value>
-                <fullName>Tier 3</fullName>
+                <fullName>&gt;750</fullName>
                 <default>false</default>
-                <label>Tier 3</label>
+                <label>&gt;750</label>
             </value>
         </valueSetDefinition>
     </valueSet>
