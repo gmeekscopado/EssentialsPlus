@@ -9,8 +9,4 @@
         <value>Bicycles</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
-    <validationRules>
-        <errorMessage><!-- Price cannot be $0. --></errorMessage>
-        <name>Price_Not_Zero</name>
-    </validationRules>
 </CustomObjectTranslation>
