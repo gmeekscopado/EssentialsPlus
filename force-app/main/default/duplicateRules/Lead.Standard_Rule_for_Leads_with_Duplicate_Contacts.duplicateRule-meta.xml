@@ -11,6 +11,22 @@
         <objectMapping>
             <inputObject>Lead</inputObject>
             <mappingFields>
+                <inputField>Street</inputField>
+                <outputField>MailingStreet</outputField>
+            </mappingFields>
+            <mappingFields>
+                <inputField>PostalCode</inputField>
+                <outputField>MailingPostalCode</outputField>
+            </mappingFields>
+            <mappingFields>
+                <inputField>Title</inputField>
+                <outputField>Title</outputField>
+            </mappingFields>
+            <mappingFields>
+                <inputField>Company</inputField>
+                <outputField>AccountId</outputField>
+            </mappingFields>
+            <mappingFields>
                 <inputField>FirstName</inputField>
                 <outputField>FirstName</outputField>
             </mappingFields>
@@ -29,22 +45,6 @@
             <mappingFields>
                 <inputField>City</inputField>
                 <outputField>MailingCity</outputField>
-            </mappingFields>
-            <mappingFields>
-                <inputField>Street</inputField>
-                <outputField>MailingStreet</outputField>
-            </mappingFields>
-            <mappingFields>
-                <inputField>PostalCode</inputField>
-                <outputField>MailingPostalCode</outputField>
-            </mappingFields>
-            <mappingFields>
-                <inputField>Title</inputField>
-                <outputField>Title</outputField>
-            </mappingFields>
-            <mappingFields>
-                <inputField>Company</inputField>
-                <outputField>AccountId</outputField>
             </mappingFields>
             <outputObject>Contact</outputObject>
         </objectMapping>
