@@ -143,6 +143,11 @@
     <custom>false</custom>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Staff__c.Grocery_Store__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -5363,6 +5368,33 @@
     <layoutAssignments>
         <layout>Work_Order__c-Work Order Layout</layout>
     </layoutAssignments>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Department__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Staff__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Store_Location__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>

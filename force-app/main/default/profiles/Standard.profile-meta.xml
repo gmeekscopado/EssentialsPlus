@@ -144,6 +144,11 @@
     <description>Test</description>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Staff__c.Grocery_Store__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
     </fieldPermissions>
