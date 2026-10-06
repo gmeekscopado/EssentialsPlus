@@ -144,6 +144,36 @@
     <description>Test</description>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Grocery_Store__c.Email__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Grocery_Store__c.Is_Active__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Grocery_Store__c.Opening_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Grocery_Store__c.Phone__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Grocery_Store__c.Website__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Staff__c.Grocery_Store__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4900,6 +4930,18 @@
         <enabled>false</enabled>
         <flow>Update_Account_Last_Opportunity_Date</flow>
     </flowAccesses>
+    <layoutAssignments>
+        <layout>Department__c-Department Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Grocery_Store__c-Grocery Store Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Staff__c-Staff Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Store_Location__c-Store Location Layout</layout>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
