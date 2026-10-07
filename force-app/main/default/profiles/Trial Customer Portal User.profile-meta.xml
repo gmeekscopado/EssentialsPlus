@@ -4407,6 +4407,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Staff__c.Grocery_Store__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Student_Portal__c.Major__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -5096,6 +5101,9 @@
         <layout>Deal_Management__c-Deal Management Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Department__c-Department Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Device_Certification__c-Device Certification Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -5301,6 +5309,12 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Solution-Solution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Staff__c-Staff Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Store_Location__c-Store Location Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Student_Portal__c-Student Portal Layout</layout>
