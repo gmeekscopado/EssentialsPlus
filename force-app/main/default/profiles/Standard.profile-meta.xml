@@ -144,36 +144,6 @@
     <description>Test</description>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Grocery_Store__c.Email__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Grocery_Store__c.Is_Active__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Grocery_Store__c.Opening_Date__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Grocery_Store__c.Phone__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Grocery_Store__c.Website__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Staff__c.Grocery_Store__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2689,6 +2659,31 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Grocery_Store__c.Email__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Grocery_Store__c.Is_Active__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Grocery_Store__c.Opening_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Grocery_Store__c.Phone__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Grocery_Store__c.Website__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Health_Portal__c.ABO_Blood_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4374,6 +4369,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Staff__c.Grocery_Store__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Student_Portal__c.Major__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4931,18 +4931,6 @@
         <flow>Update_Account_Last_Opportunity_Date</flow>
     </flowAccesses>
     <layoutAssignments>
-        <layout>Department__c-Department Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Grocery_Store__c-Grocery Store Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Staff__c-Staff Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Store_Location__c-Store Location Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -5065,6 +5053,9 @@
         <layout>Deal_Management__c-Deal Management Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Department__c-Department Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Device_Certification__c-Device Certification Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -5131,6 +5122,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Goal_Tracker__c-Goal Tracker Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Grocery_Store__c-Grocery Store Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Health_Portal__c-Health Portal Layout</layout>
@@ -5264,6 +5258,12 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Solution-Solution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Staff__c-Staff Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Store_Location__c-Store Location Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Student_Portal__c-Student Portal Layout</layout>
