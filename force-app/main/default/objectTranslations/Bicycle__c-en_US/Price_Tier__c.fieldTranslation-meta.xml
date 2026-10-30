@@ -3,15 +3,15 @@
     <label><!-- Price Tier --></label>
     <name>Price_Tier__c</name>
     <picklistValues>
-        <masterLabel>250-750</masterLabel>
-        <translation><!-- 250-750 --></translation>
+        <masterLabel>Tier 1</masterLabel>
+        <translation><!-- Tier 1 --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>&lt;250</masterLabel>
-        <translation><!-- &lt;250 --></translation>
+        <masterLabel>Tier 2</masterLabel>
+        <translation><!-- Tier 2 --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>&gt;750</masterLabel>
-        <translation><!-- &gt;750 --></translation>
+        <masterLabel>Tier 3</masterLabel>
+        <translation><!-- Tier 3 --></translation>
     </picklistValues>
 </CustomFieldTranslation>
