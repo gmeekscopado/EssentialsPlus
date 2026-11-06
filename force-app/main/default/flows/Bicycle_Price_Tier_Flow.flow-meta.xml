@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Determine_Price_Tier</name>
+        <label>Determine Price Tier</label>
+        <locationX>314</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>No Change</defaultConnectorLabel>
+        <rules>
+            <name>Tier_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Price__c</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>500.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Price_Tier__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 3</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Tier_3</targetReference>
+            </connector>
+            <label>Tier 3</label>
+        </rules>
+        <rules>
+            <name>Tier_2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Price__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>500.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Price__c</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>1000.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Price_Tier__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 2</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Tier_2</targetReference>
+            </connector>
+            <label>Tier 2</label>
+        </rules>
+        <rules>
+            <name>Tier_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Price__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>1000.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Price_Tier__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 1</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Tier_1</targetReference>
+            </connector>
+            <label>Tier 1</label>
+        </rules>
+    </decisions>
+    <description>Sets Price Tier on Bicycle based on Price. Under $500 is Tier 3, $500 to under $1,000 is Tier 2, $1,000 or more is Tier 1.</description>
+    <interviewLabel>Bicycle Price Tier Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Bicycle Price Tier Flow</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_Tier_1</name>
+        <label>Set Tier 1</label>
+        <locationX>578</locationX>
+        <locationY>408</locationY>
+        <inputAssignments>
+            <field>Price_Tier__c</field>
+            <value>
+                <stringValue>Tier 1</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Set_Tier_2</name>
+        <label>Set Tier 2</label>
+        <locationX>314</locationX>
+        <locationY>408</locationY>
+        <inputAssignments>
+            <field>Price_Tier__c</field>
+            <value>
+                <stringValue>Tier 2</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Set_Tier_3</name>
+        <label>Set Tier 3</label>
+        <locationX>50</locationX>
+        <locationY>408</locationY>
+        <inputAssignments>
+            <field>Price_Tier__c</field>
+            <value>
+                <stringValue>Tier 3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Determine_Price_Tier</targetReference>
+        </connector>
+        <object>Bicycle__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
